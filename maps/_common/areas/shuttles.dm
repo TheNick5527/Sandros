@@ -216,7 +216,8 @@
 /area/shuttle/research/away
 	icon_state = "shuttle"
 	station_area = 0
-	base_turf = /turf/space
+	base_turf = /turf/simulated/floor/reinforced
+	dynamic_lighting = 0
 
 /area/shuttle/legion/centcom
 	name = "\improper Foreign Legion Shuttle"
