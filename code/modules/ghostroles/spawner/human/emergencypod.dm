@@ -12,11 +12,11 @@
 	outfit = /datum/outfit/admin/random/visitor
 	possible_species = list("Human","Skrell","Tajara","Unathi")
 	possible_genders = list(MALE,FEMALE)
-	allow_appearance_change = TRUE
+	allow_appearance_change = APPEARANCE_PLASTICSURGERY
 
 	assigned_role = "Pod Survivor"
 	special_role = "Pod Survivor"
-	respawn_flag = CREW
+	respawn_flag = null
 
 	mob_name = FALSE
 
@@ -65,6 +65,7 @@
 /datum/outfit/admin/pod
 	head = /obj/item/clothing/head/helmet/space/emergency
 	mask = /obj/item/clothing/mask/breath
+	id = /obj/item/weapon/card/id
 	suit = /obj/item/clothing/suit/space/emergency
 	suit_store = /obj/item/weapon/tank/emergency_oxygen/double
 	l_ear = /obj/item/device/radio/headset
@@ -76,13 +77,15 @@
 	H.internal = H.s_store
 	if(istype(H.internal,/obj/item/weapon/tank) && H.internals)
 		H.internals.icon_state = "internal1"
+	//Spawn a drill
+	new /obj/item/weapon/pickaxe/drill(H.loc)
+	new /obj/item/device/gps(H.loc)
 
 /datum/outfit/admin/pod/star
 	name = "RescuePod - Star"
 
 	uniform = "dress selection"
 	shoes = "flats selection"
-	id = /obj/item/weapon/card/id
 
 	backpack_contents = list(
 		/obj/item/weapon/lipstick/random = 2,
@@ -104,7 +107,6 @@
 
 	uniform = /obj/item/clothing/under/rank/chaplain
 	shoes = /obj/item/clothing/shoes/black
-	id = /obj/item/weapon/card/id
 	pda = /obj/item/device/pda/chaplain
 
 	backpack_contents = list(
