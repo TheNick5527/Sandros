@@ -9,7 +9,7 @@
 	var/percentage_dead = 0
 	var/can_call_ert = TRUE
 	var/ert_type = "NanoTrasen Response Team" //what ert type will be deployed
-	var/send_emergency_team = 0 
+	var/send_emergency_team = 0
 
 /datum/controller/subsystem/responseteam/Recover()
 	ert_progression_chance = SSresponseteam.ert_progression_chance
@@ -37,18 +37,18 @@
 		var/deadcount = 0
 		var/antagonists = 0
 		for(var/mob/living/carbon/human/H in mob_list)
-			if(!H.isMonkey() || H.client) 
+			if(!H.isMonkey() || H.client)
 				total++
 				if(is_special_character(H) >= 1) antagonists++
 				if(H.stat == 2) deadcount++
-				
+
 		if(total == 0)
 			percentage_antagonists = 0
 			percentage_dead = 0
 		else
 			percentage_antagonists = round(100 * antagonists / total)
 			percentage_dead = round(100 * deadcount / total)
-		
+
 
 		switch(get_security_level())
 			if("green")
@@ -78,8 +78,8 @@
 
 	if(forced_choice)
 		ert_type = forced_choice
-	else if(!forced_choice && !prob(ert_chance)) 
-		ert_type = "Tau Ceti Foreign Legion"
+	else if(!forced_choice && !prob(ert_chance))
+		ert_type = "NanoTrasen Response Team"
 
 	can_call_ert = FALSE // Only one call per round, gentleman.
 	send_emergency_team = 1
@@ -98,7 +98,7 @@
 	set desc = "Send an emergency response team to the station"
 
 	if(!holder)
-		to_chat(usr, "<span class='danger'>Only administrators may use this command.</span>") 
+		to_chat(usr, "<span class='danger'>Only administrators may use this command.</span>")
 		return
 	if(!ROUND_IS_STARTED)
 		to_chat(usr, "<span class='danger'>The round hasn't started yet!</span>")
