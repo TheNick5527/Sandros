@@ -132,7 +132,7 @@
 	desc = "Careful, the beverage you're about to enjoy is extremely hot."
 	icon_state = "coffee"
 	drop_sound = 'sound/items/drop/box.ogg'
-	center_of_mass = list("x"=15, "y"=10)
+	center_of_mass = list("x"=16, "y"=11)
 	Initialize()
 		. = ..()
 		reagents.add_reagent("coffee", 30)
@@ -142,7 +142,7 @@
 	desc = "A limited edition pumpkin spice coffee drink!"
 	icon_state = "psl_vended"
 	drop_sound = 'sound/items/drop/box.ogg'
-	center_of_mass = list("x"=15, "y"=10)
+	center_of_mass = list("x"=16, "y"=11)
 	Initialize()
 		. = ..()
 		reagents.add_reagent("sadpslatte", 30)
@@ -253,7 +253,7 @@
 	icon_state = "shaker"
 	amount_per_transfer_from_this = 10
 	volume = 120
-	center_of_mass = list("x"=17, "y"=10)
+	center_of_mass = list("x"=16, "y"=8)
 
 /obj/item/weapon/reagent_containers/food/drinks/teapot
 	name = "teapot"

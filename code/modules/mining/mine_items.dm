@@ -114,6 +114,7 @@
 	return	unwield()
 
 /obj/item/weapon/pickaxe/pickup(mob/user)
+	..()
 	unwield()
 
 /obj/item/weapon/pickaxe/attack_self(mob/user as mob)
