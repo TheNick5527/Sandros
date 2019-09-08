@@ -100,7 +100,9 @@ var/datum/vueui_module/player_panel/global_player_panel
 	if(isrobot(M))
 		return "Cyborg"
 	if(ishuman(M))
-		return M.real_name
+		if(M.real_name)
+			return M.real_name
+		return "Unknown"
 	if(istype(M, /mob/living/silicon/pai))
 		return "pAI"
 	if(istype(M, /mob/abstract/new_player))
