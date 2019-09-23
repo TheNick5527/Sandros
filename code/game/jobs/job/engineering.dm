@@ -1,5 +1,5 @@
 /datum/job/chief_engineer
-	title = "Engineering Chief"
+	title = "Chief Engineer"
 	flag = CHIEF
 	head_position = 1
 	department = "Engineering"
@@ -7,8 +7,8 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Colony Director"
-	selection_color = "#ffeeaa"
+	supervisors = "the captain"
+	selection_color = "#FFD737"
 	economic_modifier = 10
 
 	ideal_character_age = 50
@@ -26,7 +26,7 @@
 	outfit = /datum/outfit/job/chief_engineer
 
 /datum/outfit/job/chief_engineer
-	name = "Engineering Chief"
+	name = "Chief Engineer"
 	jobtype = /datum/job/chief_engineer
 
 	uniform = /obj/item/clothing/under/rank/chief_engineer
@@ -52,19 +52,19 @@
 		H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black(H), slot_gloves)
 
 /datum/job/engineer
-	title = "Colony Engineer"
+	title = "Station Engineer"
 	flag = ENGINEER
 	department = "Engineering"
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the Engineering Chief"
-	selection_color = "#fff5cc"
+	supervisors = "the chief engineer"
+	selection_color = "#FFEA95"
 	economic_modifier = 5
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics)
 	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction)
-	alt_titles = list("Colony Technician","Engine Specialist","Electrical Specialist")
+	alt_titles = list("Maintenance Technician","Engine Technician","Electrician")
 	outfit = /datum/outfit/job/engineer
 
 /datum/outfit/job/engineer
@@ -85,22 +85,22 @@
 	messengerbag = /obj/item/weapon/storage/backpack/messenger/engi
 
 /datum/job/atmos
-	title = "Life-Support Systems Technician"
+	title = "Atmospheric Technician"
 	flag = ATMOSTECH
 	department = "Engineering"
 	department_flag = ENGSEC
 	faction = "Station"
-	total_positions = 1
+	total_positions = 3
 	spawn_positions = 2
-	supervisors = "the Engineering Chief"
-	selection_color = "#fff5cc"
+	supervisors = "the chief engineer"
+	selection_color = "#FFEA95"
 	economic_modifier = 5
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_external_airlocks)
 	minimal_access = list(access_eva, access_engine, access_atmospherics, access_maint_tunnels, access_emergency_storage, access_construction, access_external_airlocks)
 	outfit = /datum/outfit/job/atmos
 
 /datum/outfit/job/atmos
-	name = "Life-Support Systems Technician"
+	name = "Atmospheric Technician"
 	jobtype = /datum/job/atmos
 
 	uniform = /obj/item/clothing/under/rank/atmospheric_technician
@@ -121,8 +121,8 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Engineering Chief"
-	selection_color = "#fff5cc"
+	supervisors = "the Chief Engineer"
+	selection_color = "#FFEA95"
 	access = list(access_maint_tunnels, access_construction, access_engine_equip, access_engine)
 	minimal_access = list(access_maint_tunnels, access_construction, access_engine_equip, access_engine)
 	outfit = /datum/outfit/job/intern_eng

@@ -1,7 +1,7 @@
 var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 /datum/job/captain
-	title = "Colony Director"
+	title = "Captain"
 	flag = CAPTAIN
 	department = "Command"
 	head_position = 1
@@ -9,8 +9,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Yourself, and the Terran Republics Government"
-	selection_color = "#ccccff"
+	supervisors = "company officials and Corporate Regulations"
+	selection_color = "#4747FF"
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
 	minimal_player_age = 14
@@ -21,7 +21,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	outfit = /datum/outfit/job/captain
 
 /datum/outfit/job/captain
-	name = "Colony Director"
+	name = "Captain"
 	jobtype = /datum/job/captain
 
 	uniform = /obj/item/clothing/under/rank/captain
@@ -58,11 +58,11 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 /datum/job/captain/announce(mob/living/carbon/human/H)
 	. = ..()
-	captain_announcement.Announce("Attention all personnel, Director [H.real_name] on site!")
+	captain_announcement.Announce("All hands, Captain [H.real_name] on deck!")
 	callHook("captain_spawned", list(H))
 
 /datum/job/hop
-	title = "Personnel Director"
+	title = "Head of Personnel"
 	flag = HOP
 	department = "Civilian"
 	head_position = 1
@@ -70,8 +70,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Colony Director"
-	selection_color = "#ddddff"
+	supervisors = "the captain"
+	selection_color = "#9696FF"
 	minimal_player_age = 10
 	economic_modifier = 10
 	ideal_character_age = 50
@@ -90,7 +90,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_weapons, access_journalist)
 
 /datum/outfit/job/hop
-	name = "Personnel Director"
+	name = "Head of Personnel"
 	jobtype = /datum/job/hop
 
 	uniform = /obj/item/clothing/under/rank/head_of_personnel

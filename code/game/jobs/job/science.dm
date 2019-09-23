@@ -1,5 +1,5 @@
 /datum/job/rd
-	title = "Science Director"
+	title = "Research Director"
 	flag = RD
 	head_position = 1
 	department = "Science"
@@ -7,8 +7,8 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Colony Director"
-	selection_color = "#ffddff"
+	supervisors = "the captain"
+	selection_color = "#FF40FF"
 	economic_modifier = 15
 	access = list(access_rd, access_heads, access_tox, access_genetics, access_morgue, access_eva, access_external_airlocks,
 			            access_tox_storage, access_teleporter, access_sec_doors, access_medical, access_engine, access_construction,
@@ -48,8 +48,8 @@
 	faction = "Station"
 	total_positions = 5
 	spawn_positions = 3
-	supervisors = "the Science Director"
-	selection_color = "#ffeeff"
+	supervisors = "the research director"
+	selection_color = "#FFAAFF"
 	economic_modifier = 7
 	access = list(access_robotics, access_tox, access_tox_storage, access_research, access_xenobiology, access_xenoarch)
 	minimal_access = list(access_tox, access_tox_storage, access_research, access_xenoarch)
@@ -81,8 +81,8 @@
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = "the Science Director"
-	selection_color = "#ffeeff"
+	supervisors = "the research director"
+	selection_color = "#FFAAFF"
 	economic_modifier = 7
 	access = list(access_robotics, access_tox, access_tox_storage, access_research, access_xenobiology, access_hydroponics)
 	minimal_access = list(access_research, access_xenobiology, access_hydroponics, access_tox_storage)
@@ -104,8 +104,8 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Science Director"
-	selection_color = "#ffeeff"
+	supervisors = "research director"
+	selection_color = "#FFAAFF"
 	economic_modifier = 5
 	access = list(access_robotics, access_tox, access_tox_storage, access_tech_storage, access_morgue, access_research) //As a job that handles so many corpses, it makes sense for them to have morgue access.
 	minimal_access = list(access_robotics, access_tech_storage, access_morgue, access_research) //As a job that handles so many corpses, it makes sense for them to have morgue access.
@@ -132,20 +132,20 @@
 	messengerbag = /obj/item/weapon/storage/backpack/messenger/tox
 
 /datum/job/intern_sci
-	title = "Research Assistant"
+	title = "Lab Assistant"
 	flag = INTERN_SCI
 	department_flag = MEDSCI
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Science Director, and all Scientists"
-	selection_color = "#ffeeff"
+	supervisors = "the Research Director"
+	selection_color = "#FFAAFF"
 	access = list(access_research, access_tox)
 	minimal_access = list(access_research, access_tox)
 	outfit = /datum/outfit/job/intern_sci
 
 /datum/outfit/job/intern_sci
-	name = "Research Assistant"
+	name = "Lab Assistant"
 	jobtype = /datum/job/intern_sci
 
 	uniform = /obj/item/clothing/under/rank/scientist

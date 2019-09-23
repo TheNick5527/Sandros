@@ -7,8 +7,8 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Personnel Director"
-	selection_color = "#dddddd"
+	supervisors = "the head of personnel"
+	selection_color = "#C0C0C0"
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_bar)
 	alt_titles = list("Barista")
@@ -32,8 +32,8 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Personnel Director"
-	selection_color = "#dddddd"
+	supervisors = "the head of personnel"
+	selection_color = "#C0C0C0"
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_kitchen)
 	alt_titles = list("Cook")
@@ -62,8 +62,8 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = "the Personnel Director"
-	selection_color = "#dddddd"
+	supervisors = "the head of personnel"
+	selection_color = "#C0C0C0"
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_hydroponics)
 	alt_titles = list("Hydroponicist")
@@ -96,7 +96,7 @@
 
 //Cargo
 /datum/job/qm
-	title = "Supply Officer"
+	title = "Quartermaster"
 	flag = QUARTERMASTER
 	head_position = 1
 	department = "Cargo"
@@ -104,8 +104,8 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Personnel Director"
-	selection_color = "#dddddd"
+	supervisors = "the head of personnel"
+	selection_color = "#C0C0C0"
 	economic_modifier = 5
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
@@ -115,7 +115,7 @@
 	outfit = /datum/outfit/job/qm
 
 /datum/outfit/job/qm
-	name = "Supply Officer"
+	name = "Quartermaster"
 	jobtype = /datum/job/qm
 
 	uniform = /obj/item/clothing/under/rank/cargo
@@ -127,21 +127,21 @@
 
 
 /datum/job/cargo_tech
-	title = "Supply Technician"
+	title = "Cargo Technician"
 	flag = CARGOTECH
 	department = "Cargo"
 	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Supply Officer and the Personnel Director"
-	selection_color = "#dddddd"
+	supervisors = "the quartermaster and the head of personnel"
+	selection_color = "#C0C0C0"
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_maint_tunnels, access_cargo, access_cargo_bot, access_mailsorting)
 	outfit = /datum/outfit/job/cargo_tech
 
 /datum/outfit/job/cargo_tech
-	name = "Supply Technician"
+	name = "Cargo Technician"
 	jobtype = /datum/job/cargo_tech
 
 	uniform = /obj/item/clothing/under/rank/cargotech
@@ -158,8 +158,8 @@
 	faction = "Station"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Supply Officer and the Personnel Director"
-	selection_color = "#dddddd"
+	supervisors = "the quartermaster and the head of personnel"
+	selection_color = "#C0C0C0"
 	economic_modifier = 5
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_mining, access_mining_station, access_mailsorting)
@@ -187,21 +187,21 @@
 
 //Not engineers, just the mop boys
 /datum/job/janitor
-	title = "Sanitation Technician"
+	title = "Janitor"
 	flag = JANITOR
 	department = "Civilian"
 	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Personnel Director"
-	selection_color = "#dddddd"
+	supervisors = "the head of personnel"
+	selection_color = "#C0C0C0"
 	access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
 	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
 	outfit = /datum/outfit/job/janitor
 
 /datum/outfit/job/janitor
-	name = "Sanitation Technician"
+	name = "Janitor"
 	jobtype = /datum/job/janitor
 
 	uniform = /obj/item/clothing/under/rank/janitor
@@ -210,24 +210,24 @@
 	l_ear = /obj/item/device/radio/headset/headset_service
 
 /datum/job/journalist
-	title = "Government Reporter"
+	title = "Corporate Reporter"
 	flag = JOURNALIST
 	department = "Civilian"
 	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Personnel Director, with allowances of the Security Chief to revoke your access."
-	selection_color = "#dddddd"
+	supervisors = "the head of personnel"
+	selection_color = "#C0C0C0"
 	access = list(access_journalist, access_maint_tunnels)
 	minimal_access = list(access_journalist, access_maint_tunnels)
 	alt_titles = list("Freelance Journalist")
 	alt_outfits = list("Freelance Journalist" = /datum/outfit/job/journalistf)
-	title_accesses = list("Government Reporter" = list(access_medical, access_sec_doors, access_research, access_engine))
+	title_accesses = list("Corporate Reporter" = list(access_medical, access_sec_doors, access_research, access_engine))
 	outfit = /datum/outfit/job/journalist
 
 /datum/outfit/job/journalist
-	name = "Government Reporter"
+	name = "Corporate Reporter"
 	jobtype = /datum/job/journalist
 
 	uniform = /obj/item/clothing/under/suit_jacket/red
@@ -260,8 +260,8 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Personnel Director"
-	selection_color = "#dddddd"
+	supervisors = "the head of personnel"
+	selection_color = "#C0C0C0"
 	access = list(access_library, access_maint_tunnels)
 	minimal_access = list(access_library)
 	outfit = /datum/outfit/job/librarian
