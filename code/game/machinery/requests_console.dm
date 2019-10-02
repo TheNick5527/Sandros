@@ -289,6 +289,7 @@ var/list/obj/machinery/requests_console/allConsoles = list()
 			var/name = query.item[2]
 			var/data = query.item[3]
 			var/obj/item/weapon/paper/C = new()
+			C.color = "#fff9e8"
 
 			//Let's start the BB >> HTML conversion!
 
@@ -396,6 +397,7 @@ var/list/obj/machinery/requests_console/allConsoles = list()
 						info += copied
 						info += "</font>"
 						var/pname = C.name
+						P.color = "#fff9e8"
 						P.fields = C.fields
 						P.stamps = C.stamps
 						P.stamped = C.stamped
