@@ -259,6 +259,13 @@
 	icon_state = "snow_outercornerT"
 	footstep_sound = "gravelstep"
 
+/turf/simulated/floor/snow/icefloor
+	name = "frozen surface"
+	desc = "Completely frozen. Don't lick this. It makes it uncomfortable."
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "ice_floor"
+	footstep_sound = "concretestep"
+
 /turf/simulated/floor/snow/Initialize()
 	. = ..()
 	icon_state = pick("snow[rand(1,12)]","snow0")
