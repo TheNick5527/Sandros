@@ -40,3 +40,4 @@ delete-after: True
 changes: 
   - maptweak: "Edited main level to include Civilian area's."
   - maptweak: "Edited Central Command level to include necessities."
+  - imageadd: "New directional sign for exterior exits."

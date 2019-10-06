@@ -261,6 +261,11 @@
 	desc = "A green sign that depicts a person climbing the ladder towards the arrow's direction, pointing at the emergency exit."
 	icon_state = "emerg_exitZ"
 
+/obj/structure/sign/directions/outsideexit
+	name = "\improper EXIT TO EXTERIOR"
+	desc = "A sign that denotes an exit to the exterior. Don't forget your winter coat!"
+	icon_state = "direction_exit"
+
 
 //Christmas
 /obj/structure/sign/christmas/lights
