@@ -353,27 +353,27 @@
 
 /obj/item/clothing/suit/storage/vest/officer
 	name = "officer armor vest"
-	desc = "A simple kevlar plate carrier belonging to Nanotrasen. This one has a security holobadge clipped to the chest."
-	icon_state = "officervest_nobadge"
-	item_state = "officervest_nobadge"
-	icon_badge = "officervest_badge"
-	icon_nobadge = "officervest_nobadge"
+	desc = "A simple kevlar plate carrier belonging to the Protections Officers of the Sandros. This one has an MP Brassard attached."
+	icon_state = "carrier_black"
+	item_state = "carrier_black"
+	icon_badge = "carrier_blackbadge"
+	icon_nobadge = "carrier_blackbadge"
 
 /obj/item/clothing/suit/storage/vest/warden
 	name = "warden armor vest"
-	desc = "A simple kevlar plate carrier belonging to Nanotrasen. This one has a silver badge clipped to the chest."
-	icon_state = "wardenvest_nobadge"
-	item_state = "wardenvest_nobadge"
-	icon_badge = "wardenvest_badge"
-	icon_nobadge = "wardenvest_nobadge"
+	desc = "A simple kevlar plate carrier belonging to the Protections Officers of the Sandros. This one has an MP Brassard attached."
+	icon_state = "carrier_black"
+	item_state = "carrier_black"
+	icon_badge = "carrier_blackbadge"
+	icon_nobadge = "carrier_blackbadge"
 
 /obj/item/clothing/suit/storage/vest/hos
 	name = "commander armor vest"
-	desc = "A simple kevlar plate carrier belonging to Nanotrasen. This one has a gold badge clipped to the chest."
-	icon_state = "hosvest_nobadge"
-	item_state = "hosvest_nobadge"
-	icon_badge = "hosvest_badge"
-	icon_nobadge = "hosvest_nobadge"
+	desc = "A simple kevlar plate carrier belonging to the Protections Officers of the Sandros. This one has an MP Commander Brassard attached."
+	icon_state = "sncocarrier_black"
+	item_state = "sncocarrier_black"
+	icon_badge = "sncocarrier_blackbadge"
+	icon_nobadge = "sncocarrier_blackbadge"
 	armor = list(melee = 65, bullet = 30, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/storage/vest/pcrc
