@@ -2,7 +2,7 @@
 //Fleet Uniforms (?)
 /obj/item/clothing/under/military
 	name = "Military Utility Uniform"
-	desc = "A sturdy uniform, carefully ironed and folded. Worn by military personnel in a cross-branch fashion in the Terran Republics.
+	desc = "A sturdy uniform, carefully ironed and folded. Worn by military personnel in a cross-branch fashion in the Terran Republics."
 	icon_state = "miluniform"
 	worn_state = "miluniform"
 
