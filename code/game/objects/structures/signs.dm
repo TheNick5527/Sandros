@@ -90,6 +90,11 @@
 	desc = "A warning sign which reads 'HIGH VOLTAGE'."
 	icon_state = "shock"
 
+/obj/structure/sign/electricshock
+	name = "\improper FREEZING TEMPERATURES"
+	desc = "A warning sign which reads 'FREEZING TEMPERATURE'."
+	icon_state = "cold"
+
 /obj/structure/sign/examroom
 	name = "\improper EXAM"
 	desc = "A guidance sign which reads 'EXAM ROOM'."
@@ -99,6 +104,11 @@
 	name = "\improper HARD VACUUM AHEAD"
 	desc = "A warning sign which reads 'HARD VACUUM AHEAD'."
 	icon_state = "space"
+
+/obj/structure/sign/vacuum
+	name = "\improper AUTOMATED AIRLOCK AHEAD"
+	desc = "A warning sign which reads 'AUTOMATED AIRLOCK AHEAD'."
+	icon_state = "auto"
 
 /obj/structure/sign/drop
 	name = "\improper DANGER! DROP HAZARD"
@@ -260,11 +270,6 @@
 	name = "\improper EMERGENCY LADDER"
 	desc = "A green sign that depicts a person climbing the ladder towards the arrow's direction, pointing at the emergency exit."
 	icon_state = "emerg_exitZ"
-
-/obj/structure/sign/directions/outsideexit
-	name = "\improper EXIT TO EXTERIOR"
-	desc = "A sign that denotes an exit to the exterior. Don't forget your winter coat!"
-	icon_state = "direction_exit"
 
 
 //Christmas
@@ -586,6 +591,17 @@
 
 /obj/structure/sign/flag/zenghu/right
 	icon_state = "zenghu_r"
+
+/obj/structure/sign/flag/tar
+	name = "Terran Republics flag"
+	desc = "The colors of the Terran Republics, fit with an image of Luna upon it's surface."
+	icon_state = "tar"
+
+/obj/structure/sign/flag/tar/left
+	icon_state = "tar_l"
+
+/obj/structure/sign/flag/tar/right
+	icon_state = "tar_r"
 
 /obj/item/weapon/flag
 	name = "boxed flag"
