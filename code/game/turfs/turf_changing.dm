@@ -26,11 +26,19 @@
 
 //Creates a new turf.
 // N is the type of the turf.
+#define NO_SPACE_TILES
+
 /turf/proc/ChangeTurf(N, tell_universe = TRUE, force_lighting_update = FALSE)
 	if (!N)
 		return
 	if(!use_preloader && N == type) // Don't no-op if the map loader requires it to be reconstructed
 		return src
+
+	#ifdef NO_SPACE_TILES
+	if (istype(src, /turf/simulated))
+		if (istype(N, /turf/space) || ispath(N, /turf/space))
+			return
+	#endif
 
 	// This makes sure that turfs are not changed to space when there's a multi-z turf below
 	if(N == /turf/space && HasBelow(z))
@@ -66,7 +74,7 @@
 	if (lighting_overlay && lighting_overlay.loc != src)
 		// This is a hack, but I can't figure out why the fuck they're not on the correct turf in the first place.
 		lighting_overlay.forceMove(src, harderforce = TRUE)
-		
+
 	affecting_lights = old_affecting_lights
 	corners = old_corners
 
