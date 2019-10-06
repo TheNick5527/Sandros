@@ -88,5 +88,5 @@
 /turf/simulated/wall/icewall
 	name = "ice wall"
 	desc = "A solidified rock of ice. No way to get through here"
-	icon = 'icons/turf/smooth/cult_wall.dmi'
+	icon = 'icons/turf/walls.dmi'
 	icon_state = "ice_wall"
