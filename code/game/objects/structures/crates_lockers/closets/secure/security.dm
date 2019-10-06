@@ -28,7 +28,7 @@
 		//Tools
 		new /obj/item/device/radio/headset/heads/captain(src)
 		new /obj/item/weapon/cartridge/captain(src)
-		new /obj/item/weapon/gun/energy/pistol(src)
+		new /obj/item/weapon/gun/projectile/sec/military/massproduce(src)
 		new /obj/item/device/flash(src)
 		new /obj/item/weapon/melee/telebaton(src)
 
@@ -80,8 +80,7 @@
 		//Tools
 		new /obj/item/weapon/cartridge/hop(src)
 		new /obj/item/device/radio/headset/heads/hop(src)
-		new /obj/item/weapon/gun/energy/pistol(src)
-		new /obj/item/weapon/gun/projectile/sec/flash(src)
+		new /obj/item/weapon/gun/projectile/sec/military/officer/flash(src)
 		new /obj/item/device/flash(src)
 
 /obj/structure/closet/secure_closet/hop2
@@ -146,7 +145,7 @@
 		new /obj/item/weapon/shield/riot/tact(src)
 		new /obj/item/weapon/melee/baton/loaded(src)
 		new /obj/item/weapon/melee/telebaton(src)
-		new /obj/item/weapon/gun/energy/pistol(src)
+		new /obj/item/weapon/gun/projectile/sec/military/officer/commander(src)
 		new /obj/item/taperoll/police(src)
 		new /obj/item/device/flash(src)
 		new /obj/item/device/holowarrant(src)
@@ -228,7 +227,7 @@
 		new /obj/item/taperoll/police(src)
 		new /obj/item/weapon/reagent_containers/spray/pepper(src)
 		new /obj/item/weapon/melee/baton/loaded(src)
-		new /obj/item/weapon/gun/energy/pistol(src)
+		new /obj/item/weapon/gun/projectile/sec/military/senior(src)
 		//Belts
 		if (prob(50))
 			new /obj/item/clothing/accessory/storage/black_vest(src)
@@ -296,7 +295,7 @@
 		new /obj/item/clothing/glasses/sunglasses/sechud/aviator(src)
 		new /obj/item/clothing/glasses/sunglasses/sechud(src)
 		new /obj/item/ammo_magazine/c45m/rubber(src)
-		new /obj/random/handgun(src)
+		new /obj/item/weapon/gun/projectile/sec/military/trooper/rubber(src)
 		new /obj/item/weapon/gun/energy/taser(src)
 		new /obj/item/device/flash(src)
 		new /obj/item/weapon/reagent_containers/spray/pepper(src)

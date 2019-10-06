@@ -2,7 +2,7 @@
 //Service Pistols
 /obj/item/weapon/gun/projectile/sec/military
 	name = "service pistol"
-	desc = "A Colby service sidearm. Uses .45 rounds."
+	desc = "A Colby service sidearm, with a green grip to show it's used in the military. Uses .45 rounds."
 	icon_state = "service"
 	item_state = "service"
 	magazine_type = /obj/item/ammo_magazine/c45m/rubber
@@ -21,6 +21,17 @@
 	else
 		icon_state = "service-e"
 
+/obj/item/weapon/gun/projectile/sec/military/massproduce
+	desc = "A Colby service sidearm with black finish and standard grip, mass produced and cheap. Uses .45 rounds."
+	icon_state = "service"
+	item_state = "service_black"
+
+/obj/item/weapon/gun/projectile/sec/military/massproduce/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "service_black"
+	else
+		icon_state = "service_black-e"
 
 /obj/item/weapon/gun/projectile/sec/military/senior
 	desc = "A Colby service sidearm with silver detailing and a wooden grip, commonly given to Senior Enlisted. Uses .45 rounds."
@@ -57,9 +68,14 @@
 /obj/item/weapon/gun/projectile/sec/military/trooper/flash
 	magazine_type = /obj/item/ammo_magazine/c45m/flash
 
+/obj/item/weapon/gun/projectile/sec/military/trooper/rubber
+	magazine_type = /obj/item/ammo_magazine/c45m/rubber
+
 /obj/item/weapon/gun/projectile/sec/military/officer/commander
 	magazine_type = /obj/item/ammo_magazine/c45m
 
+/obj/item/weapon/gun/projectile/sec/military/officer/flash
+	magazine_type = /obj/item/ammo_magazine/c45m/flash
 
 //Service Rifle
 /obj/item/weapon/gun/projectile/automatic/rifle/military
