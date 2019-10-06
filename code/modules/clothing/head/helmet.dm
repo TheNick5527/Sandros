@@ -63,6 +63,27 @@
 	icon_state = "officercap"
 	flags_inv = 0
 
+/obj/item/clothing/head/helmet/military
+	name = "Assault Helmet"
+	desc = "A helmet in a fetching tan, with the Terran Republic's flag in the side in matching color."
+	icon_state = "carrierhelm_tan"
+
+obj/item/clothing/head/helmet/military/visor
+	name = "Assault Helmet"
+	desc = "A helmet in a fetching tan, with the Terran Republic's flag on the side in matching color. This one has a red visor and an antennae."
+	icon_state = "ncocarrierhelm_tan"
+
+obj/item/clothing/head/helmet/military/goggles
+	name = "Assault Helmet"
+	desc = "A helmet in a fetching tan, with the TErran Republic's flag on the side in matching color. This one has a pair of goggles and an antennae."
+
+/obj/item/clothing/head/helmet/military/snco
+	name = "Assault Helmet"
+	desc = "A helmet in a fetching tan, with the Terran Republic's flag in the side in matching color. Looks to be slightly more armored than the average helmet."
+	icon_state = "carrierhelm_tan"
+	armor = list(melee = 65, bullet = 30, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
+	flags_inv = HIDEEARS
+
 /obj/item/clothing/head/helmet/riot
 	name = "riot helmet"
 	desc = "It's a helmet specifically designed to protect against close range attacks."

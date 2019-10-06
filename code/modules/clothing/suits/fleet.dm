@@ -48,16 +48,31 @@
 
 
 //Plate Carriers and Webbing
-/obj/item/clothing/suit/storage/vest/fleet
+/obj/item/clothing/suit/storage/vest/military
 	name = "plate carrier"
-	desc = "A plate carrier with attached pouches and pockets, allowing it to hold a variety of extra tools. This one is green."
+	desc = "A plate carrier with attached brassard, pouches and pockets, allowing it to hold a variety of extra tools. This one is green."
 	icon_state = "webbing_green"
 	item_state = "armor"
 
-/obj/item/clothing/suit/storage/vest/fleet/black
-	desc = "A plate carrier with attached pouches and pockets, allowing it to hold a variety of extra tools. This one is black."
-	icon_state = "webbing_black"
+/obj/item/clothing/suit/storage/vest/military/black
+	desc = "A plate carrier with attached brassard, pouches and pockets, allowing it to hold a variety of extra tools. This one is black."
+	icon_state = "carrier_black"
 
-/obj/item/clothing/suit/storage/vest/fleet/tan
-	desc = "A plate carrier with attached pouches and pockets, allowing it to hold a variety of extra tools. This one is tan."
-	icon_state = "webbing_tan"
+/obj/item/clothing/suit/storage/vest/military/tan
+	desc = "A plate carrier with attached brassard, pouches and pockets, allowing it to hold a variety of extra tools. This one is tan."
+	icon_state = "carrier_tan"
+
+/obj/item/clothing/suit/storage/vest/military/officer
+	desc = "A plate carrier with attached brassard, pouches and pockets, allowing it to hold a variety of extra tools, and belongs to a soldier in administration. This one is green."
+	icon_state = "sncocarrier_green"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 40, bomb = 20, bio = 0, rad = 0)
+	slowdown = 0
+
+/obj/item/clothing/suit/storage/vest/military/officer/black
+	desc = "A plate carrier with attached brassard, pouches and pockets, allowing it to hold a variety of extra tools, and belongs to a soldier in administration. This one is black."
+	icon_state = "sncocarrier_black"
+
+/obj/item/clothing/suit/storage/vest/military/officer/tan
+	desc = "A plate carrier with attached brassard, pouches and pockets, allowing it to hold a variety of extra tools, and belongs to a soldier in administration. This one is tan."
+	icon_state = "sncocarrier_black"

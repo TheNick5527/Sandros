@@ -354,26 +354,26 @@
 /obj/item/clothing/suit/storage/vest/officer
 	name = "officer armor vest"
 	desc = "A simple kevlar plate carrier belonging to the Protections Officers of the Sandros. This one has an MP Brassard attached."
-	icon_state = "carrier_black"
-	item_state = "carrier_black"
-	icon_badge = "carrier_blackbadge"
-	icon_nobadge = "carrier_blackbadge"
+	icon_state = "sncocarrier_tan"
+	item_state = "sncocarrier_tan"
+	icon_badge = "sncocarrier_tanbadge"
+	icon_nobadge = "sncocarrier_tanbadge"
 
 /obj/item/clothing/suit/storage/vest/warden
 	name = "warden armor vest"
 	desc = "A simple kevlar plate carrier belonging to the Protections Officers of the Sandros. This one has an MP Brassard attached."
-	icon_state = "carrier_black"
-	item_state = "carrier_black"
-	icon_badge = "carrier_blackbadge"
-	icon_nobadge = "carrier_blackbadge"
+	icon_state = "sncocarrier_tan"
+	item_state = "sncocarrier_tan"
+	icon_badge = "sncocarrier_tanbadge"
+	icon_nobadge = "sncocarrier_tanbadge"
 
 /obj/item/clothing/suit/storage/vest/hos
 	name = "commander armor vest"
 	desc = "A simple kevlar plate carrier belonging to the Protections Officers of the Sandros. This one has an MP Commander Brassard attached."
-	icon_state = "sncocarrier_black"
-	item_state = "sncocarrier_black"
-	icon_badge = "sncocarrier_blackbadge"
-	icon_nobadge = "sncocarrier_blackbadge"
+	icon_state = "sncocarrier_tan"
+	item_state = "sncocarrier_tan"
+	icon_badge = "sncocarrier_tanbadge"
+	icon_nobadge = "sncocarrier_tanbadge"
 	armor = list(melee = 65, bullet = 30, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/storage/vest/pcrc
