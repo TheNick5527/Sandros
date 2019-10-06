@@ -215,6 +215,7 @@
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
 	footstep_sound = "gravelstep"
+	temperature = T0C-20
 
 /turf/simulated/floor/snow/snow1
 	name = "shallow snow layer"
@@ -241,7 +242,7 @@
 	name = "gravel road"
 	desc = "A gravel road. How grim."
 	icon = 'icons/turf/snow.dmi'
-	icon_state = "snow_0"
+	icon_state = "old_dirt"
 	footstep_sound = "gravelstep"
 
 /turf/simulated/floor/snow/innercorner

@@ -11,6 +11,142 @@
 	var/junction = 0 //Because everything is terrible, I'm making this a fence-level var
 	var/basestate = "fence"
 
+/obj/structure/fence/shortend1south
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence1"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/shortend1north
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence2"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/middlevert
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence3"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/largeendleft
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence4"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/shortendleft
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence5"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/cornersoutheast1
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence6"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/cornersoutheast1
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence7"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/largeendright
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence8"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/shortendright
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence9"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/cornersouthwest1
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence10"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/cornersouthwest2
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence11"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/middlehor
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence12"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/xjunc
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence13"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/tjunc
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence14"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/tjunc2
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence15"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/cornernorthwest
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence16"
+	density = 1
+	anchored = 1
+
+/obj/structure/fence/cornernortheast
+	name = "fence"
+	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
+	icon = 'icons/obj/structures.dmi'
+	icon_state = "fence17"
+	density = 1
+	anchored = 1
+
 //create_debris creates debris like shards and rods. This also includes the window frame for explosions
 //If an user is passed, it will create a "user smashes through the window" message. AM is the item that hits
 //Please only fire this after a hit

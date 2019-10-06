@@ -1,5 +1,5 @@
 /obj/machinery/station_map
-	name = "station holomap"
+	name = "colony holomap"
 	desc = "A virtual map of the surrounding station."
 	icon = 'icons/obj/machines/stationmap.dmi'
 	icon_state = "station_map"
