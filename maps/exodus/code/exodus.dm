@@ -1,21 +1,21 @@
 // This file is not included because this map does not work at the moment.
 
 /datum/map/exodus
-	name = "Exodus"
-	full_name = "NSS Exodus"
+	name = "Sandros"
+	full_name = "Sandros Colony Hub"
 	path = "exodus"
 
 	lobby_screens = list("exodus_art")
 
-	station_name = "NSS Exodus"
-	station_short = "Exodus"
-	dock_name = "NTCC Odin"
-	dock_short = "Odin"
-	boss_name = "Central Command"
-	boss_short = "CentCom"
-	company_name = "NanoTrasen"
-	company_short = "NT"
-	system_name = "Tau Ceti"
+	station_name = "Sandros Colony Hub"
+	station_short = "Sandros"
+	dock_name = "TRDF Artemis"
+	dock_short = "Artemis"
+	boss_name = "High Command"
+	boss_short = "HighCom"
+	company_name = "Terran Republics"
+	company_short = "TAR"
+	system_name = "Epsilon Segunta"
 
 	station_networks = list(
 		NETWORK_CIVILIAN_EAST,
