@@ -1,75 +1,49 @@
 /datum/faction/eridani_pmc
-	name = "Eridani Private Military Contractors"
-	description = {"<p>Essentially the security branch of the Eridani Federation
-	Military, the EPMC is renowned for its brutal yet efficient and above all
-	legal security functions across the known galaxy. Staying as close as possible
-	to the famed Eridanian "Non Aggression Protocol" in which no one within should
-	conspire to damage, take part in damaging or incite others to damage corporate
-	interests. EPMCs tend to lean heavily towards giving fines to regulation breakers.
-	However, when the need to suppress civil disorder appears hell hath no fury like
-	that of an Eridian security contractor with a stun baton.
+	name = "Terran Eighth Fleet Command"
+	description = {"<p>
+	Welcome to the Terran Eighth Fleet. Whether you're a brand new officer, an enlisted
+	who's been serving for the better part of fifteen years, you've gained yourself a
+	position leading people. Whether you plan to lead with an iron fist, or with a
+	flowery persona, keep in mind you're going to be held accountable for any orders
+	you give. Be that saving the colony and earning yourself a promotion, or leading
+	your mean to death and getting... taken care of.
 	</p>
 	<p>Some character examples are:
 	<ul>
-	<li><b>Eridanian Private Military Contractor</b>: You are the law, civil disorder
-	damages the bottom line. Everyone knew what they signed up for when they chose
-	to be employed with NanoTrasen thus rule breakers are violating the NAP which
-	you cannot abide. That being said you're here to make a profit and stuffing
-	someone in a cell is a waste of human resources - think of the money lost in
-	time! Abhorrent! The best thing to do is fine perpetrators and set them back
-	to work. Remember your fine quota still applies, you don't want to miss out on
-	your bonus because you didn't hit target after all, it is a substantial bonus.</li>
+	<li><b>Die-hard Protections Commander</b>: You are the law, civil disorder
+	is something you won't stand for. You uphold the colony's law with an
+	iron fist, and you won't relinquish it unless you're bleeding out on the
+	snow. And even then, the loyalty you inspire keeps your men fellowing your
+	word even after. We're proud to have you, Security Chief.</li>
+	<li><b>Fleet Intelligence Representative</b>: You are the direct link to
+	High Command on the Sandros, with a top secret clearance and the ability,
+	knowledge, and will to help the people on this colony run it cleanly, efficiently,
+	and following government and military standards. This also means you take care of
+	any complaints that may come across your desk. You do, of course, manage all the
+	enlisted.</li>
 	</ul></p>"}
-	title_suffix = "EPMC"
+	title_suffix = "COM"
 
 	allowed_role_types = list(
-		/datum/job/officer,
-		/datum/job/warden,
-		/datum/job/forensics,
-		/datum/job/paramedic,
-		/datum/job/representative
+		/datum/job/representative,
+		/datum/job/hos
 	)
 
 	allowed_species_types = list(
-		/datum/species/human,
-		/datum/species/skrell,
-		/datum/species/tajaran,
-		/datum/species/unathi,
-		/datum/species/bug
+		/datum/species/human
 	)
 
 	titles_to_loadout = list(
-		"Security Officer" = /datum/outfit/job/officer/eridani,
-		"Warden" = /datum/outfit/job/warden/eridani,
-		"Forensic Technician" = /datum/outfit/job/forensics/eridani,
-		"Paramedic" = /datum/outfit/job/paramedic/eridani,
-		"Corporate Liaison" = /datum/outfit/job/representative/eridani
+		"Security Chief" = /datum/outfit/job/hos/command,
+		"Fleet Intelligence Representative" = /datum/outfit/job/representative/command
 	)
 
-/datum/outfit/job/officer/eridani
-	name = "Security Officer - Eridani"
-	uniform = /obj/item/clothing/under/rank/security/eridani
-	id = /obj/item/weapon/card/id/eridani
+/datum/outfit/job/hos/command
+	name = "Security Chief - COM"
+	uniform = /obj/item/clothing/under/military/command
+	id = /obj/item/weapon/card/id/gold
 
-/datum/outfit/job/warden/eridani
-	name = "Warden - Eridani"
-	uniform = /obj/item/clothing/under/rank/security/eridani
-	id = /obj/item/weapon/card/id/eridani
-
-/datum/outfit/job/forensics/eridani
-	name = "Forensic Technician - Eridani"
-	uniform = /obj/item/clothing/under/rank/security/eridani
-	id = /obj/item/weapon/card/id/eridani
-
-/datum/outfit/job/paramedic/eridani
-	name = "Paramedic - Eridani"
-	uniform = /obj/item/clothing/under/rank/security/eridani/alt
-	id = /obj/item/weapon/card/id/eridani
-
-/datum/outfit/job/representative/eridani
-	name = "Corporate Liaison - Eridani"
-	uniform = /obj/item/clothing/under/rank/security/eridani/alt
-	head = null
-	suit = null
-	implants = null
-	id = /obj/item/weapon/card/id/eridani
+/datum/outfit/job/representative/command
+	name = "Fleet Intelligence Representative - COM"
+	uniform = /obj/item/clothing/under/military/snco
+	id = /obj/item/weapon/card/id/gold

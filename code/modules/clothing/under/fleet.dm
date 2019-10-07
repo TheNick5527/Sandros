@@ -37,9 +37,15 @@
 	worn_state = "miluniform_com"
 
 /obj/item/clothing/under/military/snco
-	name = "Administrative Service Uniform"
-	desc = "A clean and sharp Terran Military service uniform, belonging to a dedicated member of the Eigth Fleet. Probably worn by someone who definitely knows what they're doing."
+	name = "Administrative Service Slacks"
+	desc = "A clean and sharp Terran Military service uniform, belonging to a dedicated member of the Terran Eigth Fleet. Probably worn by someone who definitely knows what they're doing."
 	icon_state = "snco"
+	worn_state = "snco"
+
+/obj/item/clothing/under/military/snco/fem
+	name = "Administrative Service Skirt"
+	desc = "A clean and sharp Terran Military service uniform, belonging to a dedicated member of the Terran Eigth Fleet. Probably worn by someone who definitely knows what they're doing."
+	icon_state = "snco_f"
 	worn_state = "snco_f"
 
 //Specialist Uniforms (?)

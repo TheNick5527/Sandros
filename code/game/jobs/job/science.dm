@@ -1,5 +1,5 @@
 /datum/job/rd
-	title = "Research Director"
+	title = "Science Director"
 	flag = RD
 	head_position = 1
 	department = "Science"
@@ -7,7 +7,7 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "the Colony Director"
 	selection_color = "#ffddff"
 	economic_modifier = 15
 	access = list(access_rd, access_heads, access_tox, access_genetics, access_morgue, access_eva, access_external_airlocks,
@@ -48,7 +48,7 @@
 	faction = "Station"
 	total_positions = 5
 	spawn_positions = 3
-	supervisors = "the research director"
+	supervisors = "the Science Director"
 	selection_color = "#ffeeff"
 	economic_modifier = 7
 	access = list(access_robotics, access_tox, access_tox_storage, access_research, access_xenobiology, access_xenoarch)
@@ -81,7 +81,7 @@
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = "the research director"
+	supervisors = "the Science Director"
 	selection_color = "#ffeeff"
 	economic_modifier = 7
 	access = list(access_robotics, access_tox, access_tox_storage, access_research, access_xenobiology, access_hydroponics)
@@ -104,7 +104,7 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "research director"
+	supervisors = "the Science Director"
 	selection_color = "#ffeeff"
 	economic_modifier = 5
 	access = list(access_robotics, access_tox, access_tox_storage, access_tech_storage, access_morgue, access_research) //As a job that handles so many corpses, it makes sense for them to have morgue access.
@@ -132,20 +132,20 @@
 	messengerbag = /obj/item/weapon/storage/backpack/messenger/tox
 
 /datum/job/intern_sci
-	title = "Lab Assistant"
+	title = "Research Assistant"
 	flag = INTERN_SCI
 	department_flag = MEDSCI
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Research Director"
+	supervisors = "the Science Director, and all Scientists"
 	selection_color = "#ffeeff"
 	access = list(access_research, access_tox)
 	minimal_access = list(access_research, access_tox)
 	outfit = /datum/outfit/job/intern_sci
 
 /datum/outfit/job/intern_sci
-	name = "Lab Assistant"
+	name = "Research Assistant"
 	jobtype = /datum/job/intern_sci
 
 	uniform = /obj/item/clothing/under/rank/scientist
