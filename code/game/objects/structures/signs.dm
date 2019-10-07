@@ -90,7 +90,7 @@
 	desc = "A warning sign which reads 'HIGH VOLTAGE'."
 	icon_state = "shock"
 
-/obj/structure/sign/electricshock
+/obj/structure/sign/freezing
 	name = "\improper FREEZING TEMPERATURES"
 	desc = "A warning sign which reads 'FREEZING TEMPERATURE'."
 	icon_state = "cold"
@@ -105,7 +105,7 @@
 	desc = "A warning sign which reads 'HARD VACUUM AHEAD'."
 	icon_state = "space"
 
-/obj/structure/sign/vacuum
+/obj/structure/sign/airlock
 	name = "\improper AUTOMATED AIRLOCK AHEAD"
 	desc = "A warning sign which reads 'AUTOMATED AIRLOCK AHEAD'."
 	icon_state = "auto"
