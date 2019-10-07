@@ -67,6 +67,6 @@
 	icon_state = "entry_4"
 
 /area/hallway/secondary/entry/dock
-	name = "\improper Surface - Blue Dock"
+	name = "\improper Surface - Spaceport"
 	icon_state = "arrivals_dock"
 	holomap_color = HOLOMAP_AREACOLOR_ARRIVALS
