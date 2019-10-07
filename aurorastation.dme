@@ -10,7 +10,7 @@
 #define DEBUG
 // END_PREFERENCES
 // BEGIN_INCLUDE
-#include "_maps\aurora.dm"
+#include "_maps\exodus.dm"
 #include "code\global.dm"
 #include "code\hub.dm"
 #include "code\names.dm"
