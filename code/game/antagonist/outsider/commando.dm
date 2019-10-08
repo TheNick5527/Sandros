@@ -35,18 +35,6 @@ var/datum/antagonist/deathsquad/mercenary/commandos
 	player.equip_to_slot_or_del(new /obj/item/weapon/melee/energy/sword(player), slot_r_store)
 	player.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/rifle/sts35(player), slot_l_hand)
 
-	var/obj/item/weapon/storage/belt/military/syndie_belt = new(player)
-	syndie_belt.contents += new /obj/item/ammo_magazine/c762
-	syndie_belt.contents += new /obj/item/ammo_magazine/c762
-	syndie_belt.contents += new /obj/item/ammo_magazine/c762
-	syndie_belt.contents += new /obj/item/weapon/pinpointer
-	syndie_belt.contents += new /obj/item/weapon/shield/energy
-	syndie_belt.contents += new /obj/item/weapon/handcuffs
-	syndie_belt.contents += new /obj/item/weapon/grenade/flashbang
-	syndie_belt.contents += new /obj/item/weapon/grenade/frag
-	syndie_belt.contents += new /obj/item/weapon/plastique
-	player.equip_to_slot_or_del(syndie_belt, slot_belt)
-
 	var/obj/item/weapon/rig/merc/mercrig = new(get_turf(player))
 	mercrig.seal_delay = 0
 	player.put_in_hands(mercrig)

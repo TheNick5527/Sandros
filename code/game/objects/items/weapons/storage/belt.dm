@@ -64,6 +64,7 @@
 		/obj/item/weapon/weldingtool = 1,
 		/obj/item/weapon/crowbar = 1,
 		/obj/item/weapon/wirecutters = 1,
+		/obj/item/device/multitool = 1,
 		/obj/item/stack/cable_coil/random = 1
 	)
 
@@ -184,45 +185,6 @@
 	storage_slots = 9
 	max_w_class = 3
 	max_storage_space = 28
-
-/obj/item/weapon/storage/belt/military
-	name = "military belt"
-	desc = "A lightweight, quick to use, military belt. Designed to be comfortably worn even during lengthy military operations."
-	icon_state = "militarybelt"
-	item_state = "militarybelt"
-	storage_slots = 9 //same as a combat belt now
-	max_w_class = 3
-	max_storage_space  = 28
-	can_hold = list(
-		/obj/item/weapon/grenade,
-		/obj/item/weapon/handcuffs,
-		/obj/item/device/flash,
-		/obj/item/clothing/glasses,
-		/obj/item/ammo_casing/shotgun,
-		/obj/item/ammo_magazine,
-		/obj/item/weapon/melee/baton,
-		/obj/item/device/flashlight,
-		/obj/item/device/pda,
-		/obj/item/device/radio/headset,
-		/obj/item/weapon/melee,
-		/obj/item/weapon/shield/energy,
-		/obj/item/weapon/pinpointer,
-		/obj/item/weapon/plastique,
-		/obj/item/weapon/gun/projectile/pistol,
-		/obj/item/weapon/gun/energy/crossbow,
-		/obj/item/weapon/material/knife/trench,
-		/obj/item/ammo_casing/a145,
-		/obj/item/device/radio/uplink,
-		/obj/item/weapon/card/emag,
-		/obj/item/device/multitool/hacktool,
-		/obj/item/weapon/reagent_containers/hypospray/combat,
-		/obj/item/stack/telecrystal
-		)
-
-/obj/item/weapon/storage/belt/military/syndicate
-	desc = "A syndicate belt designed to be used by boarding parties. Its style is modeled after the hardsuits they wear."
-	icon_state = "militarybelt_syndie"
-	item_state = "militarybelt_syndie"
 
 /obj/item/weapon/storage/belt/janitor
 	name = "janibelt"
@@ -405,3 +367,38 @@
  	name = "yellow fannypack"
  	icon_state = "fannypack_yellow"
  	item_state = "fannypack_yellow"
+
+/obj/item/weapon/storage/belt/general
+	name = "equipment belt"
+	desc = "Can hold general equipment such as tablets, folders, and other office supplies."
+	icon_state = "gearbelt"
+	item_state = "gear"
+	can_hold = list(
+		/obj/item/device/flash,
+		/obj/item/weapon/melee/telebaton,
+		/obj/item/device/taperecorder,
+		/obj/item/weapon/folder,
+		/obj/item/weapon/paper,
+		/obj/item/weapon/clipboard,
+		/obj/item/modular_computer/tablet,
+		/obj/item/device/flashlight,
+		/obj/item/device/pda,
+		/obj/item/device/radio/headset,
+		/obj/item/device/megaphone,
+		/obj/item/taperoll,
+		/obj/item/device/holowarrant,
+		/obj/item/device/radio,
+		/obj/item/tape,
+		/obj/item/weapon/pen,
+		/obj/item/weapon/stamp,
+		/obj/item/stack/packageWrap,
+		/obj/item/device/binoculars,
+		/obj/item/weapon/marshalling_wand,
+		/obj/item/device/camera,
+		/obj/item/weapon/hand_labeler,
+		/obj/item/device/destTagger,
+		/obj/item/clothing/glasses,
+		/obj/item/clothing/head/soft,
+		/obj/item/weapon/hand_labeler,
+		/obj/item/clothing/gloves
+		)
