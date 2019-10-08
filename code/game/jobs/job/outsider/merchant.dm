@@ -1,5 +1,5 @@
 /datum/job/merchant
-	title = "Merchant"
+	title = "Free Trader"
 	faction = "Station"
 	department = "Civilian"
 	flag = MERCHANT
@@ -22,7 +22,7 @@
 	outfit = /datum/outfit/job/merchant
 
 /datum/outfit/job/merchant
-	name = "Merchant"
+	name = "Free Trader"
 	jobtype = /datum/job/merchant
 
 	uniform =/obj/item/clothing/under/color/grey
@@ -32,7 +32,7 @@
 	r_pocket = /obj/item/device/price_scanner
 
 /datum/job/merchant/announce(mob/living/carbon/human/H)
-	to_chat(H,"You are a merchant heading to the [station_name()] to make profit, your main objective is to sell and trade with the crew.")
+	to_chat(H,"You are a Free Trader, an independant merchant, heading to the [station_name()] to make profit, your main objective is to sell and trade with the station, ship, or colony.")
 
 /datum/job/merchant/New()
 	..()

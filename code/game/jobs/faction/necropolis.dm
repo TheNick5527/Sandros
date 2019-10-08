@@ -1,99 +1,36 @@
 /datum/faction/necropolis_industries
-	name = "Necropolis Industries"
+	name = "Terran Eighth Fleet"
 	description = {"<p>
-	The largest weapons producer in human space, Necropolis Industries initially
-	found their place with the invention of a militarized RIG suit for use in the
-	Interstellar War. With many extraordinarily weapons contracts thanks to SolGov,
-	as well as acquisitions of other major armaments companies, Necropolis Industries
-	weapons can be found in the hands of nearly every military force across the Orion
-	Spur. They are prominently associated with the Empire of Dominia, and are at
-	the forefront of genetic modification technology.
+	The Terran Eighth Fleet, housing the boldest and most prominent soldiers
+	in the entire Terran Navy. Most noted for their reclamation of Mars on the
+	ground, when the Army was outgunned, they're a step above the rest when it
+	comes to keeping their home, and their people, secure. A contingent of the
+	Eighth fleet were sent with the Sandros to keep order, guide them through
+	matters of keeping a tidy base, colony, and ship along the way, and not
+	to mention keep them safe, secure, and happy in their new lives.
 	</p>
 	<p>Some character examples are:
 	<ul>
-	<li><b>Bio-technician</b>: Unit to unit Necropolis ships the most firearms
-	and weapons compared to any other corporation in the known galaxy and you're
-	proud of it just as you take a vulgar pride in your known unscrupulous and
-	slimy mannerisms, if only they knew the fools. Your genetics research has
-	seen the advent of geneboosted sentients championed by the Dominian Empire,
-	a civilization your company is very close to. The ethical concerns of both
-	of those achievements are largely irrelevant compared to the general benefits
-	and of course profits to be had. Your one rival in both these fields is NT
-	whose cloning technologies and weapons technology outpaces all others. You
-	need to get your hands on that tech without compromising Necropolises contract,
-	and you think you might know how.</li>
-	<li><b>Personal Security Professional</b>: Excellent customer service and client
-	care is why Necropolis wins security contracts and you know this. A cut above
-	the rest you are clear, calm, concise and polite when working. As a security
-	force you were voted the top firm to employ and as such, NT ISD should really
-	be referring to your better judgement with security issues as far as you're
-	concerned. All crew are your customers and as such deserve a top notch customer
-	experience.</li>
+	<li><b>Veteran Protection Officer</b>: Man to man, shoulder to shoulder, you're
+	used to keeping order and protecting the Terran Republics from pirates and other
+	unsavory types. Professional, clear headed, and most of all experienced. You know
+	you represent the Eighth fleet, and you wear that with pride.</li>
+	<li><b>Newly Enlisted Trainee</b>: Welcome to the Terran Eighth Fleet. You decided
+	to pass your time by enlisting, perhaps as a runaway, perhaps you were simply bored.
+	Worry not, however, because becoming part of the Navy is an honor like no other. You
+	may be new, and you may have passed the two week training regiment, but that's no
+	excuse to get lazy now. Your learning has just begun.</li>
 	</ul></p>"}
-	title_suffix = "Necro"
+	title_suffix = "MP"
 
 	allowed_role_types = list(
 		/datum/job/officer,
 		/datum/job/warden,
-		/datum/job/doctor,
-		/datum/job/pharmacist,
-		/datum/job/scientist,
-		/datum/job/roboticist,
-		/datum/job/representative
+		/datum/job/intern_sec,
+		/datum/job/detective,
+		/datum/job/forensics
 	)
 
 	allowed_species_types = list(
-		/datum/species/human,
-		/datum/species/skrell,
-		/datum/species/tajaran,
-		/datum/species/unathi
+		/datum/species/human
 	)
-
-	titles_to_loadout = list(
-		"Security Officer" = /datum/outfit/job/officer/necropolis,
-		"Warden" = /datum/outfit/job/warden/necropolis,
-		"Medical Doctor" = /datum/outfit/job/doctor/necropolis,
-		"Pharmacist" = /datum/outfit/job/pharmacist/necropolis,
-		"Medical Doctor" = /datum/outfit/job/doctor/necropolis,
-		"Scientist" = /datum/outfit/job/scientist/necropolis,
-		"Roboticist" = /datum/outfit/job/roboticist/necropolis,
-		"Corporate Liaison" = /datum/outfit/job/representative/necropolis
-	)
-
-/datum/outfit/job/officer/necropolis
-	name = "Security Officer - Necropolis"
-	uniform = /obj/item/clothing/under/rank/security/necropolis
-	id = /obj/item/weapon/card/id/necropolis/sec
-
-/datum/outfit/job/warden/necropolis
-	name = "Warden - Necropolis"
-	uniform = /obj/item/clothing/under/rank/security/necropolis
-	id = /obj/item/weapon/card/id/necropolis/sec
-
-/datum/outfit/job/doctor/necropolis
-	name = "Medical Doctor - Necropolis"
-	uniform = /obj/item/clothing/under/rank/necropolis
-	id = /obj/item/weapon/card/id/necropolis
-
-/datum/outfit/job/pharmacist/necropolis
-	name = "Pharmacist - Necropolis"
-	uniform = /obj/item/clothing/under/rank/necropolis
-	id = /obj/item/weapon/card/id/necropolis
-
-/datum/outfit/job/scientist/necropolis
-	name = "Scientist - Necropolis"
-	uniform = /obj/item/clothing/under/rank/necropolis
-	id = /obj/item/weapon/card/id/necropolis
-
-/datum/outfit/job/roboticist/necropolis
-	name = "Roboticist - Necropolis"
-	uniform = /obj/item/clothing/under/rank/necropolis
-	id = /obj/item/weapon/card/id/necropolis
-
-/datum/outfit/job/representative/necropolis
-	name = "Corporate Liaison - Necropolis"
-	uniform = /obj/item/clothing/under/rank/necropolis
-	head = null
-	suit = null
-	implants = null
-	id = /obj/item/weapon/card/id/necropolis

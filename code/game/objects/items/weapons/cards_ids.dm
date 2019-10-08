@@ -301,7 +301,7 @@ var/const/NO_EMAG_ACT = -50
 	access = list(access_syndicate, access_external_airlocks)
 
 /obj/item/weapon/card/id/captains_spare
-	name = "captain's spare ID"
+	name = "colony director's spare ID"
 	desc = "The spare ID of the High Lord himself."
 	icon_state = "gold"
 	item_state = "gold_id"
@@ -313,9 +313,9 @@ var/const/NO_EMAG_ACT = -50
 	..()
 
 /obj/item/weapon/card/id/merchant
-	name = "merchant pass"
+	name = "free trader pass"
 	icon_state = "centcom"
-	desc = "An identification card issued to NanoTrasen sanctioned merchants, indicating their right to sell and buy goods."
+	desc = "An identification card issued to Free-Trade Union sanctioned merchants, indicating their right to sell and buy goods."
 	access = list(access_merchant)
 
 /obj/item/weapon/card/id/synthetic
@@ -341,8 +341,8 @@ var/const/NO_EMAG_ACT = -50
 	..()
 
 /obj/item/weapon/card/id/centcom
-	name = "\improper CentCom. ID"
-	desc = "An ID straight from Cent. Com."
+	name = "\improper HighCom. ID"
+	desc = "An ID straight from High Com."
 	icon_state = "centcom"
 	registered_name = "Central Command"
 	assignment = "General"
@@ -352,9 +352,9 @@ var/const/NO_EMAG_ACT = -50
 	..()
 
 /obj/item/weapon/card/id/ert
-	name = "\improper Emergency Response Team ID"
+	name = "\improper Quick Reactionary Force ID"
 	icon_state = "centcom"
-	assignment = "Emergency Response Team"
+	assignment = "Quick Reactionary Force"
 
 /obj/item/weapon/card/id/ert/New()
 	access = get_all_station_access() + get_centcom_access("Emergency Response Team")

@@ -184,14 +184,14 @@
 	worn_state = "gentlesuit"
 
 /obj/item/clothing/under/gimmick/rank/captain/suit
-	name = "captain's suit"
+	name = "director's suit"
 	desc = "A green suit and yellow necktie. Exemplifies authority."
 	icon_state = "green_suit"
 	item_state = "dg_suit"
 	worn_state = "green_suit"
 
 /obj/item/clothing/under/gimmick/rank/head_of_personnel/suit
-	name = "head of personnel's suit"
+	name = "personnel director's suit"
 	desc = "A teal suit and yellow necktie. An authoritative yet tacky ensemble."
 	icon_state = "teal_suit"
 	item_state = "g_suit"
@@ -331,7 +331,7 @@
 	item_state = "red_evening_gown"
 
 /obj/item/clothing/under/dress/dress_cap
-	name = "captain's dress uniform"
+	name = "colony director's dress uniform"
 	desc = "Feminine fashion for the style concious captain."
 	icon_state = "dress_cap"
 	item_state = "b_suit"
@@ -339,7 +339,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/under/dress/dress_hop
-	name = "head of personnel dress uniform"
+	name = "personnel director dress uniform"
 	desc = "Feminine fashion for the style concious HoP."
 	icon_state = "dress_hop"
 	item_state = "b_suit"
@@ -456,28 +456,28 @@
 	worn_state = "crdress"
 
 /obj/item/clothing/under/captainformal
-	name = "captain's formal uniform"
+	name = "colony director's formal uniform"
 	desc = "A captain's formal-wear, for special occasions."
 	icon_state = "captain_formal"
 	item_state = "b_suit"
 	worn_state = "captain_formal"
 
 /obj/item/clothing/under/hosformalmale
-	name = "head of security's formal uniform"
+	name = "security chief's formal uniform"
 	desc = "A male head of security's formal-wear, for special occasions."
 	icon_state = "hos_formal_male"
 	item_state = "r_suit"
 	worn_state = "hos_formal_male"
 
 /obj/item/clothing/under/hosformalfem
-	name = "head of security's formal uniform"
+	name = "security chief's formal uniform"
 	desc = "A female head of security's formal-wear, for special occasions."
 	icon_state = "hos_formal_fem"
 	item_state = "r_suit"
 	worn_state = "hos_formal_fem"
 
 /obj/item/clothing/under/assistantformal
-	name = "assistant's formal uniform"
+	name = "colonist's formal uniform"
 	desc = "An assistant's formal-wear. Why an assistant needs formal-wear is still unknown."
 	icon_state = "assistant_formal"
 	item_state = "gy_suit"
@@ -585,8 +585,8 @@
 
 /obj/item/clothing/under/dom_thermal
 	name = "lyodsuit"
-	desc = "An imitation Lyodsuit from Dominia. Though it is not able to protect against extreme cold like a true lyodsuit it's lightweight and high quality fabric make it extremely comfortable to wear. \
-	Fashionable amongst the middle and lower classes of Dominia"
+	desc = "A thermal suit from Terra. Though it is not able to protect against extreme cold like a true lyodsuit it's lightweight and high quality fabric make it extremely comfortable to wear. \
+	Fashionable amongst the middle and lower classes of Terra"
 	icon_state = "dom_thermal"
 
 //stripper

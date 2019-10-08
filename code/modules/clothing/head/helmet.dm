@@ -28,8 +28,8 @@
 	..()
 
 /obj/item/clothing/head/helmet/warden
-	name = "warden's hat"
-	desc = "It's a special helmet issued to the Warden of a securiy force. Protects the head from impacts."
+	name = "master-at-arms' hat"
+	desc = "It's a special wheel cover issued to the MAA of a securiy force. Protects the head from impacts."
 	icon_state = "policehelm"
 	flags_inv = 0
 
@@ -39,7 +39,7 @@
 	icon_state = "commissarcap"
 
 /obj/item/clothing/head/helmet/HoS
-	name = "head of security hat"
+	name = "security chief hat"
 	desc = "The hat of the Head of Security. For showing the officers who's in charge."
 	icon_state = "hoscap"
 	armor = list(melee = 65, bullet = 30, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)

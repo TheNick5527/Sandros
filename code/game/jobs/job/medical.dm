@@ -1,5 +1,5 @@
 /datum/job/cmo
-	title = "Chief Medical Officer"
+	title = "Medical Director"
 	flag = CMO
 	head_position = 1
 	department = "Medical"
@@ -7,7 +7,7 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "the Colony Director"
 	selection_color = "#ffddf0"
 	economic_modifier = 10
 	access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
@@ -24,7 +24,7 @@
 	outfit = /datum/outfit/job/cmo
 
 /datum/outfit/job/cmo
-	name = "Chief Medical Officer"
+	name = "Medical Director"
 	jobtype = /datum/job/cmo
 
 	uniform = /obj/item/clothing/under/rank/chief_medical_officer
@@ -49,7 +49,7 @@
 	faction = "Station"
 	total_positions = 5
 	spawn_positions = 3
-	supervisors = "the chief medical officer"
+	supervisors = "the Medical Director"
 	selection_color = "#ffeef0"
 	economic_modifier = 7
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_genetics, access_eva)
@@ -112,15 +112,15 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the chief medical officer"
+	supervisors = "the Medical Director"
 	selection_color = "#ffeef0"
 	economic_modifier = 5
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_genetics)
 	minimal_access = list(access_medical, access_medical_equip, access_pharmacy, access_virology)
-	alt_titles = list("Biochemist")
+	alt_titles = list("Virologist")
 	outfit = /datum/outfit/job/pharmacist
 	alt_outfits = list(
-		"Biochemist"=/datum/outfit/job/pharmacist/biochemist
+		"Virologist"=/datum/outfit/job/pharmacist/biochemist
 		)
 
 /datum/outfit/job/pharmacist
@@ -139,7 +139,7 @@
 	messengerbag = /obj/item/weapon/storage/backpack/messenger/pharm
 
 /datum/outfit/job/pharmacist/biochemist
-	name = "Biochemist"
+	name = "Virologist"
 	jobtype = /datum/job/pharmacist
 
 	uniform = /obj/item/clothing/under/rank/biochemist
@@ -159,7 +159,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	economic_modifier = 5
-	supervisors = "the chief medical officer"
+	supervisors = "the Medical Director"
 	selection_color = "#ffeef0"
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_genetics, access_psychiatrist)
 	minimal_access = list(access_medical, access_medical_equip, access_psychiatrist)
@@ -193,7 +193,7 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the chief medical officer"
+	supervisors = "the Medical Director"
 	selection_color = "#ffeef0"
 	economic_modifier = 4
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_paramedic)
@@ -234,7 +234,7 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Chief Medical Officer"
+	supervisors = "the Medical Director"
 	selection_color = "#ffeef0"
 	access = list(access_medical, access_surgery, access_medical_equip)
 	minimal_access = list(access_medical, access_surgery, access_medical_equip)

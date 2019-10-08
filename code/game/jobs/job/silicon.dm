@@ -1,5 +1,5 @@
 /datum/job/ai
-	title = "AI"
+	title = "Artificial Intelligence"
 	flag = AI
 	department_flag = ENGSEC
 	faction = "Station"
@@ -29,7 +29,7 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "your laws and the AI"	//Nodrak
+	supervisors = "your laws and the Artificial Intelligence, if linked."	//Nodrak
 	selection_color = "#ddffdd"
 	minimal_player_age = 1
 	alt_titles = list("Android", "Robot")

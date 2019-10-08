@@ -9,24 +9,24 @@
 
 
 /obj/item/clothing/under/rank/captain //Alright, technically not a 'civilian' but its better then giving a .dm file for a single define.
-	desc = "It's a blue jumpsuit with some gold markings denoting the rank of \"Captain\"."
-	name = "captain's jumpsuit"
+	desc = "It's a black jumpsuit with some gold markings denoting the rank of \"Captain\"."
+	name = "colony director's jumpsuit"
 	icon_state = "captain"
 	item_state = "b_suit"
 	worn_state = "captain"
 
 
 /obj/item/clothing/under/rank/cargo
-	name = "quartermaster's jumpsuit"
-	desc = "It's a jumpsuit worn by the quartermaster. It's specially designed to prevent back injuries caused by pushing paper."
+	name = "supply officer's jumpsuit"
+	desc = "It's a jumpsuit worn by the supply officer. It's specially designed to prevent back injuries caused by pushing paper."
 	icon_state = "qm"
 	item_state = "lb_suit"
 	worn_state = "qm"
 
 
 /obj/item/clothing/under/rank/cargotech
-	name = "cargo technician's jumpsuit"
-	desc = "Shooooorts! They're comfy and easy to wear!"
+	name = "supply technician's jumpsuit"
+	desc = "A comfortable and easy to wear uniform!"
 	icon_state = "cargotech"
 	item_state = "lb_suit"
 	worn_state = "cargo"
@@ -59,14 +59,14 @@
 
 /obj/item/clothing/under/rank/head_of_personnel
 	desc = "It's a jumpsuit worn by someone who works in the position of \"Head of Personnel\"."
-	name = "head of personnel's jumpsuit"
+	name = "personnel director's jumpsuit"
 	icon_state = "hop"
 	item_state = "b_suit"
 	worn_state = "hop"
 
 /obj/item/clothing/under/rank/head_of_personnel_whimsy
-	desc = "A blue jacket and red tie, with matching red cuffs! Snazzy. Wearing this makes you feel more important than your job title does."
-	name = "head of personnel's suit"
+	desc = "A black jacket and red tie, with matching red cuffs! Snazzy. Wearing this makes you feel more important than your job title does."
+	name = "personnel director's suit"
 	icon_state = "hopwhimsy"
 	item_state = "b_suit"
 	worn_state = "hopwhimsy"
@@ -82,8 +82,8 @@
 
 
 /obj/item/clothing/under/rank/liaison
-	desc = "The plain, professional attire of a corporate liaison. The collar is <i>immaculately</i> starched."
-	name = "corporate liaison uniform"
+	desc = "The plain, professional attire of a government liaison. The collar is <i>immaculately</i> starched."
+	name = "government liaison uniform"
 	icon_state = "internalaffairs"
 	item_state = "ba_suit"
 	worn_state = "internalaffairs"

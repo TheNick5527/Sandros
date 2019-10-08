@@ -12,27 +12,27 @@
 	attack_verb = list("stamped")
 
 /obj/item/weapon/stamp/captain
-	name = "captain's rubber stamp"
+	name = "colony director's rubber stamp"
 	icon_state = "stamp-cap"
 
 /obj/item/weapon/stamp/hop
-	name = "head of personnel's rubber stamp"
+	name = "personnel director's rubber stamp"
 	icon_state = "stamp-hop"
 
 /obj/item/weapon/stamp/hos
-	name = "head of security's rubber stamp"
+	name = "security chief's rubber stamp"
 	icon_state = "stamp-hos"
 
 /obj/item/weapon/stamp/ce
-	name = "chief engineer's rubber stamp"
+	name = "engineering chief's rubber stamp"
 	icon_state = "stamp-ce"
 
 /obj/item/weapon/stamp/rd
-	name = "research director's rubber stamp"
+	name = "science director's rubber stamp"
 	icon_state = "stamp-rd"
 
 /obj/item/weapon/stamp/cmo
-	name = "chief medical officer's rubber stamp"
+	name = "medical director's rubber stamp"
 	icon_state = "stamp-cmo"
 
 /obj/item/weapon/stamp/denied
@@ -44,11 +44,11 @@
 	icon_state = "stamp-clown"
 
 /obj/item/weapon/stamp/internalaffairs
-	name = "internal affairs rubber stamp"
+	name = "government representative rubber stamp"
 	icon_state = "stamp-intaff"
 
 /obj/item/weapon/stamp/centcomm
-	name = "centcomm rubber stamp"
+	name = "highcom rubber stamp"
 	icon_state = "stamp-cent"
 
 // Syndicate stamp to forge documents.

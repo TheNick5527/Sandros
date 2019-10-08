@@ -696,7 +696,7 @@
 	can_repair = 1
 
 /obj/machinery/suit_cycler/hos
-	name = "Head of Security suit cycler"
+	name = "Security Chief suit cycler"
 	model_text = "Head of Security"
 	req_access = list(access_hos)
 	departments = list("Head of Security")
@@ -704,7 +704,7 @@
 	can_repair = 1
 
 /obj/machinery/suit_cycler/captain
-	name = "Captain suit cycler"
+	name = "Colony Director suit cycler"
 	model_text = "Captain"
 	req_access = list(access_captain)
 	departments = list("Captain")

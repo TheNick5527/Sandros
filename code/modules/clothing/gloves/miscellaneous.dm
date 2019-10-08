@@ -1,6 +1,6 @@
 /obj/item/clothing/gloves/captain
-	desc = "Regal blue gloves, with a nice gold trim. Swanky."
-	name = "captain's gloves"
+	desc = "Regal black gloves, with a nice gold trim. Swanky."
+	name = "colony director's gloves"
 	icon_state = "captain"
 	item_state = "egloves"
 

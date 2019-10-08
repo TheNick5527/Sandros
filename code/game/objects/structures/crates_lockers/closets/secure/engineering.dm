@@ -1,5 +1,5 @@
 /obj/structure/closet/secure_closet/engineering_chief
-	name = "chief engineer's locker"
+	name = "engineering chief's locker"
 	req_access = list(access_ce)
 	icon_state = "securece1"
 	icon_closed = "securece"
@@ -36,7 +36,7 @@
 	new /obj/item/taperoll/engineering(src)
 
 /obj/structure/closet/secure_closet/engineering_chief2
-	name = "chief engineer's attire"
+	name = "engineering chief's attire"
 	req_access = list(access_ce)
 	icon_state = "securece1"
 	icon_closed = "securece"

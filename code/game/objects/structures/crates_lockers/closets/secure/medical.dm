@@ -87,7 +87,7 @@
 
 
 /obj/structure/closet/secure_closet/CMO
-	name = "chief medical officer's locker"
+	name = "medical director's locker"
 	req_access = list(access_cmo)
 	icon_state = "cmosecure1"
 	icon_closed = "cmosecure"
@@ -116,7 +116,7 @@
 		new /obj/item/clothing/glasses/hud/health/aviator(src)
 
 /obj/structure/closet/secure_closet/CMO2
-	name = "chief medical officer's attire"
+	name = "medical director's attire"
 	req_access = list(access_cmo)
 	icon_state = "cmosecure1"
 	icon_closed = "cmosecure"

@@ -1,5 +1,5 @@
 /datum/job/hos
-	title = "Head of Security"
+	title = "Security Chief"
 	flag = HOS
 	head_position = 1
 	department = "Security"
@@ -7,7 +7,7 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "High Command"
 	selection_color = "#ffdddd"
 	economic_modifier = 10
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory,
@@ -24,10 +24,10 @@
 	outfit = /datum/outfit/job/hos
 
 /datum/outfit/job/hos
-	name = "Head of Security"
+	name = "Security Chief"
 	jobtype = /datum/job/hos
 
-	uniform = /obj/item/clothing/under/rank/head_of_security
+	uniform = /obj/item/clothing/under/military/command
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_ear = /obj/item/device/radio/headset/heads/hos
 	pda = /obj/item/device/pda/heads/hos
@@ -58,14 +58,14 @@
 
 
 /datum/job/warden
-	title = "Warden"
+	title = "Master-At-Arms"
 	flag = WARDEN
 	department = "Security"
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of security"
+	supervisors = "the Security Chief"
 	selection_color = "#ffeeee"
 	economic_modifier = 5
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory, access_maint_tunnels, access_morgue, access_external_airlocks, access_weapons)
@@ -74,10 +74,10 @@
 	outfit = /datum/outfit/job/warden
 
 /datum/outfit/job/warden
-	name = "Warden"
+	name = "Master-At-Arms"
 	jobtype = /datum/job/warden
 
-	uniform = /obj/item/clothing/under/rank/warden
+	uniform = /obj/item/clothing/under/military/protection
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	pda = /obj/item/device/pda/warden
@@ -104,14 +104,14 @@
 
 
 /datum/job/detective
-	title = "Detective"
+	title = "NCIS Agent"
 	flag = DETECTIVE
 	department = "Security"
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of security"
+	supervisors = "the Security Chief"
 	selection_color = "#ffeeee"
 	economic_modifier = 5
 	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_detective, access_weapons)
@@ -120,11 +120,11 @@
 	outfit = /datum/outfit/job/detective
 
 /datum/outfit/job/detective
-	name = "Detective"
+	name = "NCIS Agent"
 	jobtype = /datum/job/detective
 
-	uniform = /obj/item/clothing/under/det
-	shoes = /obj/item/clothing/shoes/laceup
+	uniform = /obj/item/clothing/under/military/protection
+	shoes = /obj/item/clothing/shoes/jackboots
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	pda = /obj/item/device/pda/detective
 
@@ -143,28 +143,28 @@
 
 
 /datum/job/forensics
-	title = "Forensic Technician"
+	title = "NCIS Technician"
 	flag = FORENSICS
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of security"
+	supervisors = "the Security Chief"
 	selection_color = "#ffeeee"
 	economic_modifier = 5
 	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_weapons)
 	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_weapons)
-	alt_titles = list("Crime Scene Investigator")
+	alt_titles = list("NCIS Field Technician")
 	minimal_player_age = 3
 	outfit = /datum/outfit/job/forensics
-	alt_outfits = list("Crime Scene Investigator"=/datum/outfit/job/forensics/csi)
+	alt_outfits = list("NCIS Field Technician"=/datum/outfit/job/forensics/csi)
 
 /datum/outfit/job/forensics
-	name = "Forensic Technician"
+	name = "NCIS Technician"
 	jobtype = /datum/job/forensics
 
-	uniform = /obj/item/clothing/under/det/forensics
-	shoes = /obj/item/clothing/shoes/laceup
+	uniform = /obj/item/clothing/under/military/protection
+	shoes = /obj/item/clothing/shoes/jackboots
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	pda = /obj/item/device/pda/detective
 
@@ -183,20 +183,20 @@
 
 
 /datum/outfit/job/forensics/csi
-	name = "Crime Scene Investigator"
+	name = "NCIS Field Technician"
 	jobtype = /datum/job/forensics
 
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 
 /datum/job/officer
-	title = "Security Officer"
+	title = "Protections Officer"
 	flag = OFFICER
 	department = "Security"
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the head of security"
+	supervisors = "the Security Chief"
 	selection_color = "#ffeeee"
 //	alt_titles = list("Junior Officer") //aurora already has security cadets
 	economic_modifier = 4
@@ -206,10 +206,10 @@
 	outfit = /datum/outfit/job/officer
 
 /datum/outfit/job/officer
-	name = "Security Officer"
+	name = "Protections Officer"
 	jobtype = /datum/job/officer
 
-	uniform = /obj/item/clothing/under/rank/security
+	uniform = /obj/item/clothing/under/military/protection
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	pda = /obj/item/device/pda/security
@@ -234,24 +234,23 @@
 		H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black(H), slot_gloves)
 
 /datum/job/intern_sec
-	title = "Security Cadet"
+	title = "Protections Trainee"
 	flag = INTERN_SEC
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Head of Security"
+	supervisors = "the Chief of Security, and Protections Officers"
 	selection_color = "#ffeeee"
 	access = list(access_security, access_sec_doors, access_maint_tunnels)
 	minimal_access = list(access_security, access_sec_doors, access_maint_tunnels)
 	outfit = /datum/outfit/job/intern_sec
 
 /datum/outfit/job/intern_sec
-	name = "Security Cadet"
+	name = "Protections Trainee"
 	jobtype = /datum/job/intern_sec
 
-	uniform = /obj/item/clothing/under/rank/cadet
-	suit = /obj/item/clothing/suit/storage/vest/cadet
+	uniform = /obj/item/clothing/under/military/protection
 	head = /obj/item/clothing/head/beret/sec/cadet
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_ear = /obj/item/device/radio/headset/headset_sec

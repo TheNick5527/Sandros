@@ -469,7 +469,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/derelict/ship)
 "bf" = (
-/obj/item/organ/diona/node,
+/obj/item/organ/xenos/hivenode,
 /turf/simulated/floor/tiled/dark,
 /area/derelict/ship)
 "bg" = (
@@ -2906,7 +2906,7 @@
 /area/derelict/ship)
 "hp" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/crate/extinguisher_cartridges,
+/obj/structure/closet/crate/extinguisher_catridges,
 /obj/machinery/light{
 	dir = 8
 	},

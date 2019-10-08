@@ -55,25 +55,25 @@ var/list/assistant_occupations = list() //Leaving this on one line stops Travis 
 
 
 var/list/command_positions = list(
-	"Captain",
-	"Head of Personnel",
-	"Head of Security",
-	"Chief Engineer",
-	"Research Director",
-	"Chief Medical Officer"
+	"Colony Director",
+	"Personnel Director",
+	"Security Chief",
+	"Engineering Chief",
+	"Science Director",
+	"Medical Director"
 )
 
 
 var/list/engineering_positions = list(
-	"Chief Engineer",
-	"Station Engineer",
-	"Atmospheric Technician",
+	"Engineering Chief",
+	"Colony Engineer",
+	"Life-Support Systems Specialist",
 	"Engineering Apprentice"
 )
 
 
 var/list/medical_positions = list(
-	"Chief Medical Officer",
+	"Medical Director",
 	"Medical Doctor",
 	"Psychiatrist",
 	"Pharmacist",
@@ -83,52 +83,52 @@ var/list/medical_positions = list(
 
 
 var/list/science_positions = list(
-	"Research Director",
+	"Science Director",
 	"Scientist",
 	"Roboticist",
 	"Xenobiologist",
-	"Lab Assistant"
+	"Science Assistant"
 )
 
 //BS12 EDIT
 var/list/cargo_positions = list(
-	"Quartermaster",
-	"Cargo Technician",
+	"Supply Officer",
+	"Supply Technician",
 	"Shaft Miner"
 )
 
 var/list/civilian_positions = list(
-	"Head of Personnel",
-	"Corporate Liaison",
+	"Personnel Director",
+	"Government Liaison",
 	"Bartender",
 	"Gardener",
 	"Chef",
-	"Janitor",
+	"Sanitation Technician",
 	"Librarian",
-	"Corporate Reporter",
+	"Government Reporter",
 	"Chaplain",
 	"Assistant"
 )
 
 
 var/list/security_positions = list(
-	"Head of Security",
-	"Warden",
-	"Detective",
-	"Forensic Technician",
-	"Security Officer",
-	"Security Cadet"
+	"Security Chief",
+	"Master-At-Arms",
+	"NCIS Agent",
+	"NCIS Technician",
+	"Protections Officer",
+	"Protections Trainee"
 )
 
 var/list/nonhuman_positions = list(
 	"AI",
 	"Cyborg",
 	"pAI",
-	"Merchant"
+	"Free Trader"
 )
 
 /proc/guest_jobbans(var/job)
-	return ((job in command_positions) || job == "Corporate Liaison")
+	return ((job in command_positions) || job == "Government Liaison")
 
 /proc/get_job_datums()
 	var/list/occupations = list()

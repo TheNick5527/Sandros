@@ -5,21 +5,21 @@
 */
 
 /obj/item/clothing/accessory/badge
-	name = "detective's badge"
-	desc = "A corporate security badge, made from gold and set on false leather."
+	name = "ncis agent's badge"
+	desc = "A naval security badge, made from gold and set on REAL leather!"
 	icon_state = "badge"
 	item_state = "marshalbadge"
 	slot_flags = SLOT_BELT | SLOT_TIE
 
 	var/stored_name
-	var/badge_string = "Corporate Security"
+	var/badge_string = "NCIS Agent"
 
 /obj/item/clothing/accessory/badge/press
-	name = "corporate press pass"
-	desc = "A corporate reporter's pass, emblazoned with the NanoTrasen logo."
+	name = "Government press pass"
+	desc = "A corporate reporter's pass, emblazoned with the Terran Government logo."
 	icon_state = "pressbadge"
 	item_state = "pbadge"
-	badge_string = "Corporate Reporter"
+	badge_string = "Governmental Press"
 
 /obj/item/clothing/accessory/badge/press/independent
 	name = "press pass"
@@ -56,7 +56,7 @@
 //.Holobadges.
 /obj/item/clothing/accessory/badge/holo
 	name = "holobadge"
-	desc = "This glowing blue badge marks the holder as a member of corporate security."
+	desc = "This glowing blue badge marks the holder as a member of naval security."
 	icon_state = "holobadge"
 	item_state = "holobadge"
 	var/emagged //Emagging removes Sec check.
@@ -100,15 +100,15 @@
 	..()
 
 /obj/item/clothing/accessory/badge/warden
-	name = "warden's badge"
-	desc = "A silver corporate security badge. Stamped with the words 'Brig Officer.'"
+	name = "master-at-arms' badge"
+	desc = "A silver naval security badge. Stamped with the words 'Master-At-Arms.'"
 	icon_state = "silverbadge"
 	slot_flags = SLOT_TIE
 
 
 /obj/item/clothing/accessory/badge/hos
-	name = "commander's badge"
-	desc = "An immaculately polished gold security badge. Labeled 'Commander.'"
+	name = "security chief's badge"
+	desc = "An immaculately polished gold naval security badge. Labeled 'Security Chief.'"
 	icon_state = "goldbadge"
 	slot_flags = SLOT_TIE
 

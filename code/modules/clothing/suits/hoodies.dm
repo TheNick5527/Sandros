@@ -101,7 +101,7 @@
 	canremove = 0
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/captain
-	name = "captain's winter coat"
+	name = "colony director's winter coat"
 	icon_state = "coatcaptain"
 	item_state = "coatcaptain"
 
