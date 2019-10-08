@@ -1,5 +1,5 @@
 /obj/structure/closet/secure_closet/cargotech
-	name = "cargo technician's locker"
+	name = "supply technician's locker"
 	req_access = list(access_cargo)
 	icon_state = "securecargo1"
 	icon_closed = "securecargo"
@@ -19,7 +19,7 @@
 		new /obj/item/export_scanner(src)
 
 /obj/structure/closet/secure_closet/quartermaster
-	name = "quartermaster's locker"
+	name = "supply officer's locker"
 	req_access = list(access_qm)
 	icon_state = "secureqm1"
 	icon_closed = "secureqm"
@@ -43,5 +43,5 @@
 		new /obj/item/export_scanner(src)
 
 /obj/structure/closet/secure_closet/merchant
-	name = "merchant locker"
+	name = "free trader locker"
 	req_access = list(access_merchant)

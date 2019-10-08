@@ -1,5 +1,5 @@
 /obj/structure/closet/secure_closet/captains
-	name = "captain's locker"
+	name = "colony director's locker"
 	req_access = list(access_captain)
 	icon_state = "capsecure1"
 	icon_closed = "capsecure"
@@ -33,7 +33,7 @@
 		new /obj/item/weapon/melee/telebaton(src)
 
 /obj/structure/closet/secure_closet/captains2
-	name = "captain's attire"
+	name = "colony director's attire"
 	req_access = list(access_captain)
 	icon_state = "capsecure1"
 	icon_closed = "capsecure"
@@ -59,7 +59,7 @@
 
 
 /obj/structure/closet/secure_closet/hop
-	name = "head of personnel's locker"
+	name = "personnel director's locker"
 	req_access = list(access_hop)
 	icon_state = "hopsecure1"
 	icon_closed = "hopsecure"
@@ -84,7 +84,7 @@
 		new /obj/item/device/flash(src)
 
 /obj/structure/closet/secure_closet/hop2
-	name = "head of personnel's attire"
+	name = "personnel director's attire"
 	req_access = list(access_hop)
 	icon_state = "hopsecure1"
 	icon_closed = "hopsecure"
@@ -110,7 +110,7 @@
 		new /obj/item/clothing/head/caphat/hop(src)
 
 /obj/structure/closet/secure_closet/hos
-	name = "head of security's locker"
+	name = "security chief's locker"
 	req_access = list(access_hos)
 	icon_state = "hossecure1"
 	icon_closed = "hossecure"
@@ -153,7 +153,7 @@
 
 
 /obj/structure/closet/secure_closet/hos2
-	name = "head of security's attire"
+	name = "security chief's attire"
 	req_access = list(access_hos)
 	icon_state = "hossecure1"
 	icon_closed = "hossecure"
@@ -182,7 +182,7 @@
 		new /obj/item/device/breath_analyzer(src)
 
 /obj/structure/closet/secure_closet/warden
-	name = "warden's locker"
+	name = "master-at-arms' locker"
 	req_access = list(access_armory)
 	icon_state = "wardensecure1"
 	icon_closed = "wardensecure"
@@ -228,7 +228,7 @@
 
 
 /obj/structure/closet/secure_closet/security_cadet
-	name = "security cadet's locker"
+	name = "protections trainee's locker"
 	req_access = list(access_security)
 	icon_state = "seccadet1"
 	icon_closed = "seccadet"
@@ -262,7 +262,7 @@
 		new /obj/item/weapon/storage/belt/security(src)
 
 /obj/structure/closet/secure_closet/security
-	name = "security officer's locker"
+	name = "protections officer's locker"
 	req_access = list(access_brig)
 	icon_state = "sec1"
 	icon_closed = "sec"
@@ -333,7 +333,7 @@
 
 
 /obj/structure/closet/secure_closet/detective
-	name = "detective's locker"
+	name = "ncis agent's locker"
 	req_access = list(access_detective)
 	icon_state = "sec1"
 	icon_closed = "sec"
@@ -384,7 +384,7 @@
 
 
 /obj/structure/closet/secure_closet/csi
-	name = "forensic technician's locker"
+	name = "ncis technician's locker"
 	req_access = list(access_forensics_lockers)
 	icon_state = "sec1"
 	icon_closed = "sec"

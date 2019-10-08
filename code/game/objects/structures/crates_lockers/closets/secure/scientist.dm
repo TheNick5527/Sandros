@@ -20,7 +20,7 @@
 
 
 /obj/structure/closet/secure_closet/RD
-	name = "research director's locker"
+	name = "science director's locker"
 	req_access = list(access_rd)
 	icon_state = "rdsecure1"
 	icon_closed = "rdsecure"
@@ -48,7 +48,7 @@
 		new /obj/item/device/pin_extractor(src)
 
 /obj/structure/closet/secure_closet/RD2
-	name = "research director's attire"
+	name = "science director's attire"
 	req_access = list(access_rd)
 	icon_state = "rdsecure1"
 	icon_closed = "rdsecure"

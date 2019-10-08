@@ -1522,7 +1522,7 @@
 /area/derelict/ship)
 "eN" = (
 /obj/effect/floor_decal/industrial/outline,
-/obj/structure/closet/crate/extinguisher_cartridges,
+/obj/structure/closet/crate/extinguisher_catridges,
 /turf/simulated/floor/tiled/dark,
 /area/derelict/ship)
 "eO" = (

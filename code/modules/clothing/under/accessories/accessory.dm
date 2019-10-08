@@ -202,7 +202,7 @@
 
 /obj/item/clothing/accessory/medal/conduct
 	name = "distinguished conduct medal"
-	desc = "A bronze medal awarded for distinguished conduct. Whilst a great honor, this is most basic award on offer. It is often awarded by a captain to a member of their crew."
+	desc = "A bronze medal awarded for distinguished conduct. Whilst a great honor, this is most basic award on offer. It is often awarded by an administrator to a member of their crew."
 	icon_state = "bronze_nt"
 
 /obj/item/clothing/accessory/medal/bronze_heart
@@ -222,7 +222,7 @@
 
 /obj/item/clothing/accessory/medal/iron/merit
 	name = "iron merit medal"
-	desc = "An iron medal awarded to NanoTrasen employees for merit."
+	desc = "An iron medal awarded to Terran Government employees for merit."
 	icon_state = "iron_nt"
 
 /obj/item/clothing/accessory/medal/silver
@@ -237,7 +237,7 @@
 
 /obj/item/clothing/accessory/medal/silver/security
 	name = "robust security award"
-	desc = "An award for distinguished combat and sacrifice in defence of corporate commercial interests. Often awarded to security staff."
+	desc = "An award for distinguished combat and sacrifice in defence of corporate commercial interests. Often awarded to military staff."
 	icon_state = "silver_nt"
 
 /obj/item/clothing/accessory/medal/gold
@@ -247,8 +247,8 @@
 	item_state = "gold"
 
 /obj/item/clothing/accessory/medal/gold/captain
-	name = "medal of captaincy"
-	desc = "A golden medal awarded exclusively to those promoted to the rank of captain. It signifies the codified responsibilities of a captain, and their undisputable authority over their crew."
+	name = "medal of administration"
+	desc = "A golden medal awarded exclusively to those promoted to the rank of Head Administrator. It signifies the codified responsibilities of a Colony Director, and their undisputable authority over their crew."
 	icon_state = "gold_nt"
 
 /obj/item/clothing/accessory/medal/gold/heroism
@@ -405,50 +405,50 @@
  * Cloak
  */
 /obj/item/clothing/accessory/poncho/roles/cloak
-	name = "quartermaster's cloak"
+	name = "supply officer's cloak"
 	desc = "An elaborate brown and gold cloak."
 	icon_state = "qmcloak"
 	item_state = "qmcloak"
 	body_parts_covered = null
 
 /obj/item/clothing/accessory/poncho/roles/cloak/ce
-	name = "chief engineer's cloak"
+	name = "engineering chief's cloak"
 	desc = "An elaborate cloak worn by the chief engineer."
 	icon_state = "cecloak"
 	item_state = "cecloak"
 
 /obj/item/clothing/accessory/poncho/roles/cloak/cmo
-	name = "chief medical officer's cloak"
+	name = "mefidcal director's cloak"
 	desc = "An elaborate cloak meant to be worn by the chief medical officer."
 	icon_state = "cmocloak"
 	item_state = "cmocloak"
 
 /obj/item/clothing/accessory/poncho/roles/cloak/hop
-	name = "head of personnel's cloak"
+	name = "personnel director's cloak"
 	desc = "An elaborate cloak meant to be worn by the head of personnel."
 	icon_state = "hopcloak"
 	item_state = "hopcloak"
 
 /obj/item/clothing/accessory/poncho/roles/cloak/rd
-	name = "research director's cloak"
+	name = "science director's cloak"
 	desc = "An elaborate cloak meant to be worn by the research director."
 	icon_state = "rdcloak"
 	item_state = "rdcloak"
 
 /obj/item/clothing/accessory/poncho/roles/cloak/qm
-	name = "quartermaster's cloak"
+	name = "supply officer's cloak"
 	desc = "An elaborate cloak meant to be worn by the quartermaster."
 	icon_state = "qmcloak"
 	item_state = "qmcloak"
 
 /obj/item/clothing/accessory/poncho/roles/cloak/captain
-	name = "captain's cloak"
+	name = "colony director's cloak"
 	desc = "An elaborate cloak meant to be worn by the Captain."
 	icon_state = "capcloak"
 	item_state = "capcloak"
 
 /obj/item/clothing/accessory/poncho/roles/cloak/hos
-	name = "head of security's cloak"
+	name = "security chief's cloak"
 	desc = "An elaborate cloak meant to be worn by the Head of Security."
 	icon_state = "hoscloak"
 	item_state = "hoscloak"
@@ -497,7 +497,7 @@
 
 /obj/item/clothing/accessory/poncho/roles/cloak/security
 	name = "dark blue cloak"
-	desc = "A simple dark blue cloak awarded by NanoTrasen for failing the introductory literacy test."
+	desc = "A simple dark blue cloak awarded by the Government for failing to realize your department color is red."
 	icon_state = "seccloak"
 	item_state = "seccloak"
 

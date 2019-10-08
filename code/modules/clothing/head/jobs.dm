@@ -53,28 +53,28 @@
 
 //berets
 /obj/item/clothing/head/beret/sec
-	name = "security beret"
-	desc = "A beret with the security insignia emblazoned on it. For officers that are more inclined towards style than safety."
+	name = "military beret"
+	desc = "A beret with the security insignia emblazoned on it. For military personnel that are more inclined towards style than safety."
 	icon_state = "beret_badge"
 
 /obj/item/clothing/head/beret/sec/alt
-	name = "officer beret"
-	desc = "A navy blue beret with an officer's rank emblem. For officers that are more inclined towards style than safety."
+	name = "protections officer beret"
+	desc = "A beret with an officer's rank emblem. For officers that are more inclined towards style than safety."
 	icon_state = "officerberet"
 
 /obj/item/clothing/head/beret/sec/cadet
-	name = "cadet beret"
+	name = "trainee beret"
 	desc = "A beret with the security insignia emblazoned on it. This one is for in training security personnel."
 	icon_state = "cadetberet"
 
 /obj/item/clothing/head/beret/sec/hos
-	name = "commander beret"
-	desc = "A navy blue beret with a commander's rank emblem. For officers that are more inclined towards style than safety."
+	name = "security chief beret"
+	desc = "A beret with a security chief's rank emblem. For officers that are more inclined towards style than safety."
 	icon_state = "hosberet"
 
 /obj/item/clothing/head/beret/sec/warden
-	name = "warden beret"
-	desc = "A navy blue beret with a warden's rank emblem. For officers that are more inclined towards style than safety."
+	name = "master-at-arms' beret"
+	desc = "A beret with a master-at-arms's rank emblem. For officers that are more inclined towards style than safety."
 	icon_state = "wardenberet"
 
 /obj/item/clothing/head/beret/engineering
@@ -88,8 +88,8 @@
 	icon_state = "purpleberet"
 
 /obj/item/clothing/head/beret/liaison
-	name = "corporate liaison beret"
-	desc = "A stylish beret worn by corporate liaisons."
+	name = "government liason beret"
+	desc = "A stylish beret worn by government liaisons."
 	icon_state = "centcomofficerberet"
 
 /obj/item/clothing/head/beret/centcom/officer

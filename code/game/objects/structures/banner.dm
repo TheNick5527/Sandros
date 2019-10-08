@@ -122,3 +122,27 @@
 	desc = "A banner depicting the flag of New Gibson."
 	icon_state = "newgibson_down"
 	icon_up = "newgibson_up"
+
+/obj/structure/banner/eng
+	name = "engineering banner"
+	desc = "A banner depicting the insignia of the engineering department."
+	icon_state = "eng_down"
+	icon_up = "eng_up"
+
+/obj/structure/banner/med
+	name = "medical banner"
+	desc = "A banner depicting the insignia of the medical department."
+	icon_state = "med_down"
+	icon_up = "med_up"
+
+obj/structure/banner/sci
+	name = "science banner"
+	desc = "A banner depicting the insignia of the science department."
+	icon_state = "sci_down"
+	icon_up = "sci_up"
+
+obj/structure/banner/sec
+	name = "security banner"
+	desc = "A banner depicting the insignia of the security department."
+	icon_state = "sec_down"
+	icon_up = "sec_up"

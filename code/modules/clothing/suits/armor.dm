@@ -72,7 +72,7 @@
 	item_state = "armor"
 
 /obj/item/clothing/suit/armor/vest/warden
-	name = "warden's jacket"
+	name = "master-at-arms's jacket"
 	desc = "An armoured jacket with silver rank pips and livery."
 	icon_state = "warden_jacket"
 	item_state = "warden_jacket"
@@ -86,7 +86,7 @@
 	item_state = "commissar_warden"
 
 /obj/item/clothing/suit/armor/hos
-	name = "head of security's jacket"
+	name = "security chief's jacket"
 	desc = "An armoured jacket with golden rank pips and livery."
 	icon_state = "hos"
 	item_state = "hos"
@@ -352,7 +352,7 @@
 	pockets.storage_slots = 2	//two slots
 
 /obj/item/clothing/suit/storage/vest/officer
-	name = "officer armor vest"
+	name = "protections officer armor vest"
 	desc = "A simple kevlar plate carrier belonging to the Protections Officers of the Sandros. This one has an MP Brassard attached."
 	icon_state = "sncocarrier_tan"
 	item_state = "sncocarrier_tan"
@@ -360,7 +360,7 @@
 	icon_nobadge = "sncocarrier_tanbadge"
 
 /obj/item/clothing/suit/storage/vest/warden
-	name = "warden armor vest"
+	name = "master-at-arms armor vest"
 	desc = "A simple kevlar plate carrier belonging to the Protections Officers of the Sandros. This one has an MP Brassard attached."
 	icon_state = "sncocarrier_tan"
 	item_state = "sncocarrier_tan"
@@ -368,7 +368,7 @@
 	icon_nobadge = "sncocarrier_tanbadge"
 
 /obj/item/clothing/suit/storage/vest/hos
-	name = "commander armor vest"
+	name = "security chief armor vest"
 	desc = "A simple kevlar plate carrier belonging to the Protections Officers of the Sandros. This one has an MP Commander Brassard attached."
 	icon_state = "sncocarrier_tan"
 	item_state = "sncocarrier_tan"
@@ -385,7 +385,7 @@
 	icon_nobadge = "pcrcvest_nobadge"
 
 /obj/item/clothing/suit/storage/vest/detective
-	name = "detective armor vest"
+	name = "ncis agent armor vest"
 	desc = "A simple kevlar plate carrier in a vintage brown, it has a detective's badge clipped to the chest."
 	icon_state = "detectivevest_nobadge"
 	item_state = "detectivevest_nobadge"
@@ -393,7 +393,7 @@
 	icon_nobadge = "detectivevest_nobadge"
 
 /obj/item/clothing/suit/storage/vest/csi
-	name = "forensic technician armor vest"
+	name = "ncis technician armor vest"
 	desc = "A simple kevlar plate carrier belonging to Nanotrasen. This one has a forensic technician's badge clipped to the chest."
 	icon_state = "csivest_nobadge"
 	item_state = "csivest_nobadge"
@@ -416,7 +416,7 @@
 	slowdown = 1
 
 /obj/item/clothing/suit/storage/vest/heavy/officer
-	name = "officer heavy armor vest"
+	name = "protections officer heavy armor vest"
 	desc = "A heavy kevlar plate carrier belonging to Nanotrasen with webbing attached. This one has a security holobadge clipped to the chest."
 	icon_state = "officerwebvest_nobadge"
 	item_state = "officerwebvest_nobadge"
@@ -424,7 +424,7 @@
 	icon_nobadge = "officerwebvest_nobadge"
 
 /obj/item/clothing/suit/storage/vest/heavy/warden
-	name = "warden heavy armor vest"
+	name = "master-at-arms' heavy armor vest"
 	desc = "A heavy kevlar plate carrier belonging to Nanotrasen with webbing attached. This one has a silver badge clipped to the chest."
 	icon_state = "wardenwebvest_nobadge"
 	item_state = "wardenwebvest_nobadge"
@@ -432,7 +432,7 @@
 	icon_nobadge = "wardenwebvest_nobadge"
 
 /obj/item/clothing/suit/storage/vest/heavy/hos
-	name = "commander heavy armor vest"
+	name = "security chief heavy armor vest"
 	desc = "A heavy kevlar plate carrier belonging to Nanotrasen with webbing attached. This one has a gold badge clipped to the chest."
 	icon_state = "hoswebvest_nobadge"
 	item_state = "hoswebvest_nobadge"

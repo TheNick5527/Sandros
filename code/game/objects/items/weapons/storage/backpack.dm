@@ -128,8 +128,8 @@
 	item_state_slots = null
 
 /obj/item/weapon/storage/backpack/captain
-	name = "captain's backpack"
-	desc = "It's a special backpack made exclusively for officers."
+	name = "colony director's backpack"
+	desc = "It's a special backpack made exclusively for administrators."
 	icon_state = "captainpack"
 	item_state_slots = null
 
@@ -257,8 +257,8 @@
 	icon_state = "satchel_hyd"
 
 /obj/item/weapon/storage/backpack/satchel_cap
-	name = "captain's satchel"
-	desc = "An exclusive satchel for officers."
+	name = "colony director's satchel"
+	desc = "An exclusive satchel for administrators."
 	icon_state = "satchel-cap"
 	item_state_slots = list(
 		slot_l_hand_str = "satchel-cap",
@@ -277,8 +277,8 @@
 
 //ERT backpacks.
 /obj/item/weapon/storage/backpack/ert
-	name = "emergency response team backpack"
-	desc = "A spacious backpack with lots of pockets, used by members of the Emergency Response Team."
+	name = "quick reactionary force backpack"
+	desc = "A spacious backpack with lots of pockets, used by members of the Quick Reactionary Force."
 	icon_state = "ert_commander"
 	item_state_slots = list(
 		slot_l_hand_str = "securitypack",
@@ -287,25 +287,25 @@
 
 //Commander
 /obj/item/weapon/storage/backpack/ert/commander
-	name = "emergency response team commander backpack"
-	desc = "A spacious backpack with lots of pockets, worn by the commander of an Emergency Response Team."
+	name = "quick reactionary force commander backpack"
+	desc = "A spacious backpack with lots of pockets, worn by the commander of an Quick Reactionary Force."
 
 //Security
 /obj/item/weapon/storage/backpack/ert/security
-	name = "emergency response team security backpack"
-	desc = "A spacious backpack with lots of pockets, worn by security members of an Emergency Response Team."
+	name = "quick reactionary force security backpack"
+	desc = "A spacious backpack with lots of pockets, worn by security members of an Quick Reactionary Force."
 	icon_state = "ert_security"
 
 //Engineering
 /obj/item/weapon/storage/backpack/ert/engineer
-	name = "emergency response team engineer backpack"
-	desc = "A spacious backpack with lots of pockets, worn by engineering members of an Emergency Response Team."
+	name = "quick reactionary force engineer backpack"
+	desc = "A spacious backpack with lots of pockets, worn by engineering members of an Quick Reactionary Force."
 	icon_state = "ert_engineering"
 
 //Medical
 /obj/item/weapon/storage/backpack/ert/medical
-	name = "emergency response team medical backpack"
-	desc = "A spacious backpack with lots of pockets, worn by medical members of an Emergency Response Team."
+	name = "quick reactionary force medical backpack"
+	desc = "A spacious backpack with lots of pockets, worn by medical members of an Quick Reactionary Force."
 	icon_state = "ert_medical"
 
 // Duffel Bags
@@ -322,8 +322,8 @@
 	max_storage_space = 38
 
 /obj/item/weapon/storage/backpack/duffel/cap
-	name = "captain's duffel bag"
-	desc = "A rare and special duffel bag for only the most air-headed of Nanotrasen personnel."
+	name = "colony director's duffel bag"
+	desc = "A rare and special duffel bag for only the most air-headed of Government Administrators."
 	icon_state = "duffel-captain"
 	item_state_slots = list(
 		slot_l_hand_str = "duffle_captain",
@@ -437,7 +437,7 @@
 	icon_state = "courierbaggenetics"
 
 /obj/item/weapon/storage/backpack/messenger/com
-	name = "captain's messenger bag"
+	name = "colony director's messenger bag"
 	desc = "A special backpack worn over one shoulder.  This one is made specifically for command officers."
 	icon_state = "courierbagcom"
 
