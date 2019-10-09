@@ -229,7 +229,7 @@
 //merchant station and shuttle
 
 /area/merchant_station
-	name = "\improper Merchant Station"
+	name = "\improper Free-Trader Post"
 	icon_state = "merchant"
 	requires_power = 0
 	dynamic_lighting = 1
@@ -242,14 +242,14 @@
 	centcomm_area = 1
 
 /area/merchant_ship
-	name = "\improper Merchant Ship"
+	name = "\improper Free-Trader Ship"
 	icon_state = "yellow"
 	requires_power = 0
 	flags = RAD_SHIELDED | SPAWN_ROOF
 	no_light_control = 1
 
 /area/merchant_ship/start
-	name = "\improper Merchant Ship Docked"
+	name = "\improper Free-Trader Ship Docked"
 	icon_state = "yellow"
 	centcomm_area = 1
 	base_turf = /turf/space

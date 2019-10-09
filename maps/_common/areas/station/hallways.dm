@@ -8,19 +8,19 @@
 	holomap_color = HOLOMAP_AREACOLOR_HALLWAYS
 
 /area/hallway/primary/fore
-	name = "\improper Fore Primary Hallway"
+	name = "\improper North Primary Hallway"
 	icon_state = "hallF"
 
 /area/hallway/primary/starboard
-	name = "\improper Starboard Primary Hallway"
+	name = "\improper East Primary Hallway"
 	icon_state = "hallS"
 
 /area/hallway/primary/aft
-	name = "\improper Aft Primary Hallway"
+	name = "\improper South Primary Hallway"
 	icon_state = "hallA"
 
 /area/hallway/primary/port
-	name = "\improper Port Primary Hallway"
+	name = "\improper West Primary Hallway"
 	icon_state = "hallP"
 
 /area/hallway/primary/central_one
@@ -36,7 +36,7 @@
 	icon_state = "hallC3"
 
 /area/hallway/secondary/exit
-	name = "\improper Surface - Red Dock"
+	name = "\improper Colony Departures Dock"
 	icon_state = "escape"
 	no_light_control = 1
 	holomap_color = HOLOMAP_AREACOLOR_ESCAPE
@@ -47,26 +47,26 @@
 	allow_nightmode = 0
 
 /area/hallway/secondary/entry/fore
-	name = "\improper Surface Lvl. Hallway Fore"
+	name = "\improper Spaceport North Hallway"
 	icon_state = "entry_1"
 
 /area/hallway/secondary/entry/port
-	name = "\improper Surface - Yellow Dock"
+	name = "\improper Spaceport Spare Docking"
 	icon_state = "entry_2"
 
 /area/hallway/secondary/entry/starboard
-	name = "\improper Arrival Shuttle Hallway - Starboard"
+	name = "\improper Spaceport East Hallway"
 	icon_state = "entry_3"
 
 /area/hallway/secondary/entry/central
-	name = "\improper Surface Lvl. Hallway Central"
+	name = "\improper Spaceport Central Hallway"
 	icon_state = "entry_3"
 
 /area/hallway/secondary/entry/aft
-	name = "\improper Surface Lvl. Hallway Aft"
+	name = "\improper Spaceport South Hallway"
 	icon_state = "entry_4"
 
 /area/hallway/secondary/entry/dock
-	name = "\improper Surface - Spaceport"
+	name = "\improper Spaceport Arrivals Dock"
 	icon_state = "arrivals_dock"
 	holomap_color = HOLOMAP_AREACOLOR_ARRIVALS

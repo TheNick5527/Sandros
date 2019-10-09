@@ -1,14 +1,14 @@
 //Command
 
 /area/bridge
-	name = "\improper Bridge"
+	name = "\improper Administrative Offices"
 	icon_state = "bridge"
 	no_light_control = 1
 	station_area = 1
 	holomap_color = HOLOMAP_AREACOLOR_COMMAND
 
 /area/bridge/minibar
-	name = "\improper Command Break Room"
+	name = "\improper Administrative Break Room"
 	icon_state = "bridge"
 
 /area/bridge/ailobby
@@ -20,19 +20,19 @@
 	icon_state = "ai_foyer"
 
 /area/bridge/centcom_meetingroom
-	name = "\improper Level A Meeting Room"
+	name = "\improper Military Admin Lounge"
 	icon_state = "bridge"
 
 /area/bridge/levela
-	name = "\improper Surface - Bridge"
+	name = "\improper Administrative Docks"
 	icon_state = "bridge"
 
 /area/crew_quarters/heads/cryo
-	name = "\improper Command - Dormitory"
+	name = "\improper Admin - Dormitory"
 	icon_state = "head_quarters"
 
 /area/bridge/meeting_room
-	name = "\improper Command - Conference Room"
+	name = "\improper Admin - Conference Room"
 	icon_state = "bridge"
 	ambience = list()
 	sound_env = MEDIUM_SOFTFLOOR
@@ -42,7 +42,7 @@
 	icon_state = "bridge"
 
 /area/crew_quarters/captain
-	name = "\improper Command - Captain's Office"
+	name = "\improper Admin - Colony Director's Office"
 	icon_state = "captain"
 	sound_env = MEDIUM_SOFTFLOOR
 	holomap_color = HOLOMAP_AREACOLOR_COMMAND
@@ -51,23 +51,23 @@
 	holomap_color = HOLOMAP_AREACOLOR_COMMAND
 
 /area/crew_quarters/heads/hop
-	name = "\improper Command - HoP's Office"
+	name = "\improper Admin - Personnel Director's Office"
 	icon_state = "head_quarters"
 
 /area/crew_quarters/heads/hor
-	name = "\improper Research - RD's Office"
+	name = "\improper Research - Science Director's Office"
 	icon_state = "head_quarters"
 
 /area/crew_quarters/heads/chief
-	name = "\improper Engineering - CE's Office"
+	name = "\improper Engineering - Engineering Chief's Office"
 	icon_state = "head_quarters"
 
 /area/crew_quarters/heads/hos
-	name = "\improper Security - HoS' Office"
+	name = "\improper Security - Security Chief's Office"
 	icon_state = "head_quarters"
 
 /area/crew_quarters/heads/cmo
-	name = "\improper Medbay - CMO's Office"
+	name = "\improper Medbay - Medical Director's Office"
 	icon_state = "head_quarters"
 
 /area/crew_quarters/courtroom

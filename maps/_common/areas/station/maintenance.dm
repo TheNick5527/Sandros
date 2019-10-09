@@ -14,23 +14,23 @@
 	station_area = 1
 
 /area/maintenance/civ
-	name = "\improper Civilian Maintenance"
+	name = "\improper Spaceport Maintenance"
 	icon_state = "maintcentral"
 
 /area/maintenance/aft
-	name = "Aft Maintenance"
+	name = "Spaceport Airlock - South"
 	icon_state = "amaint"
 
 /area/maintenance/fore
-	name = "Fore Maintenance"
+	name = "Spaceport Airlock - North"
 	icon_state = "fmaint"
 
 /area/maintenance/starboard
-	name = "Starboard Maintenance"
+	name = "Spaceport Airlock - East"
 	icon_state = "smaint"
 
 /area/maintenance/port
-	name = "Port Maintenance"
+	name = "Spaceport Airlock - West"
 	icon_state = "pmaint"
 
 /area/maintenance/atmos_control
@@ -70,15 +70,15 @@
 	icon_state = "asmaint"
 
 /area/maintenance/apmaint
-	name = "Cargo Maintenance"
+	name = "Supply Maintenance"
 	icon_state = "apmaint"
 
 /area/maintenance/maintcentral
-	name = "Bridge Maintenance"
+	name = "Admin Offices Maintenance"
 	icon_state = "maintcentral"
 
 /area/maintenance/arrivals
-	name = "Surface Maintenance"
+	name = "Spaceport Arrivals Maintenance"
 	icon_state = "maint_arrivals"
 
 /area/maintenance/bar
@@ -90,7 +90,7 @@
 	icon_state = "red"
 
 /area/maintenance/cargo
-	name = "Cargo Maintenance"
+	name = "Supply Maintenance"
 	icon_state = "maint_cargo"
 
 /area/maintenance/cargo/surface

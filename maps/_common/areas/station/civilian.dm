@@ -154,42 +154,42 @@
 	station_area = 1
 
 /area/quartermaster
-	name = "\improper Quartermasters"
+	name = "\improper Supply Officer"
 	icon_state = "quart"
 	station_area = 1
 	holomap_color = HOLOMAP_AREACOLOR_CARGO
 
 /area/quartermaster/office
-	name = "\improper Cargo Office"
+	name = "\improper Supply Office"
 	icon_state = "quartoffice"
 
 /area/quartermaster/lobby
-	name = "\improper Cargo Lobby"
+	name = "\improper Supply Lobby"
 	icon_state = "green"
 
 /area/quartermaster/break_room
-	name = "\improper Cargo Break Room"
+	name = "\improper Supply Break Room"
 	icon_state = "blue"
 
 /area/quartermaster/mail_room
-	name = "\improper Cargo Mail Room"
+	name = "\improper Supply Mail Room"
 	icon_state = "red"
 
 /area/quartermaster/storage
-	name = "\improper Cargo Warehouse"
+	name = "\improper Supply Warehouse"
 	icon_state = "quartstorage"
 	sound_env = LARGE_ENCLOSED
 
 /area/quartermaster/loading
-	name = "\improper Cargo Bay"
+	name = "\improper Shipping Bay"
 	icon_state = "quartloading"
 
 /area/quartermaster/qm
-	name = "\improper Cargo - Quartermaster's Office"
+	name = "\improper Supply - Supply Officer's Office"
 	icon_state = "quart"
 
 /area/quartermaster/miningdock
-	name = "\improper Cargo Mining Dock"
+	name = "\improper Supply Mining Dock"
 	icon_state = "mining"
 
 /area/janitor/
