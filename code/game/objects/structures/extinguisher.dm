@@ -8,6 +8,18 @@
 	var/obj/item/weapon/extinguisher/has_extinguisher
 	var/opened = 0
 
+/obj/structure/extinguisher_cabinet/west
+	pixel_x = -32
+
+/obj/structure/extinguisher_cabinet/east
+	pixel_x = 32
+
+/obj/structure/extinguisher_cabinet/north
+	pixel_y = 32
+
+/obj/structure/extinguisher_cabinet/south
+	pixel_y = -32
+
 /obj/structure/extinguisher_cabinet/New()
 	..()
 	has_extinguisher = new/obj/item/weapon/extinguisher(src)
