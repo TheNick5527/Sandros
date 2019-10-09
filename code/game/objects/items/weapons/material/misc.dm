@@ -73,3 +73,22 @@
 	slot_flags = SLOT_BACK
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	attack_verb = list("chopped", "sliced", "cut", "reaped")
+
+/obj/item/weapon/material/hatchet/machete
+	name = "machete"
+	desc = "A long, sturdy blade with a rugged handle. Leading the way to cursed treasures since before space travel."
+	item_state = "machete"
+	w_class = ITEMSIZE_NORMAL
+	slot_flags = SLOT_BELT
+
+/obj/item/weapon/material/hatchet/machete/Initialize()
+	icon_state = "machete[pick("","_red","_blue", "_black", "_olive")]"
+	. = ..()
+
+/obj/item/weapon/material/hatchet/machete/deluxe
+	name = "deluxe machete"
+	desc = "A fine example of a machete, with a polished blade, wooden handle and a leather cord loop."
+
+/obj/item/weapon/material/hatchet/machete/deluxe/Initialize()
+	. = ..()
+	icon_state = "machetedx"
