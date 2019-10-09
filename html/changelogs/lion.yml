@@ -42,3 +42,5 @@ changes:
   - imageadd: "New fence sprites + code."
   - imageadd: "New floor sprites for outside area's. Snow turfs and gravel roads."
   - experiment: "Makes all simulated floors indestructible. This is a test right now."
+  - rscdel: "Removed military belts."
+  - rscadd: "Adds a new toy item called Marshalling Wand. It serves use in LZ's."

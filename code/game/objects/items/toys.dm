@@ -125,6 +125,48 @@
 	icon_state = "singularity_s1"
 
 /*
+ * Marshalling Wand
+ */
+
+ /obj/item/weapon/marshalling_wand
+	name = "marshalling wand"
+	desc = "An illuminated, hand-held baton used by hangar personnel to visually signal shuttle pilots. The signal changes depending on your intent."
+	icon_state = "marshallingwand"
+	item_state = "marshallingwand"
+	icon = 'icons/obj/toy.dmi'
+	item_icons = list(
+		icon_l_hand = 'icons/mob/items/lefthand.dmi',
+		icon_r_hand = 'icons/mob/items/righthand.dmi',
+		)
+	slot_flags = SLOT_BELT
+	w_class = ITEMSIZE_SMALL
+	force = 1
+	attack_verb = list("attacked", "whacked", "jabbed", "poked", "marshalled")
+
+/obj/item/weapon/marshalling_wand/Initialize()
+	set_light(0.6, 0.5, 2, 2, "#ff0000")
+	return ..()
+
+/obj/item/weapon/marshalling_wand/attack_self(mob/living/user as mob)
+	playsound(src.loc, 'sound/effects/rustle1.ogg', 100, 1)
+	if (user.a_intent == I_HELP)
+		user.visible_message("<span class='notice'>[user] beckons with \the [src], signalling forward motion.</span>",
+							"<span class='notice'>You beckon with \the [src], signalling forward motion.</span>")
+	else if (user.a_intent == I_DISARM)
+		user.visible_message("<span class='notice'>[user] holds \the [src] above their head, signalling a stop.</span>",
+							"<span class='notice'>You hold \the [src] above your head, signalling a stop.</span>")
+	else if (user.a_intent == I_GRAB)
+		var/WAND_TURN_DIRECTION
+		if (user.l_hand == src) WAND_TURN_DIRECTION = "left"
+		else if (user.r_hand == src) WAND_TURN_DIRECTION = "right"
+		else return //how can you not be holding it in either hand?? black magic
+		user.visible_message("<span class='notice'>[user] waves \the [src] to the [WAND_TURN_DIRECTION], signalling a turn.</span>",
+							"<span class='notice'>You wave \the [src] to the [WAND_TURN_DIRECTION], signalling a turn.</span>")
+	else if (user.a_intent == I_HURT)
+		user.visible_message("<span class='warning'>[user] frantically waves \the [src] above their head!</span>",
+							"<span class='warning'>You frantically wave \the [src] above your head!</span>")
+
+/*
  * Toy crossbow
  */
 

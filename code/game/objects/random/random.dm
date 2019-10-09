@@ -340,7 +340,6 @@
 		/obj/item/weapon/storage/belt/medical = 0.4,
 		/obj/item/weapon/storage/belt/medical/emt = 0.4,
 		/obj/item/weapon/storage/belt/security/tactical = 0.1,
-		/obj/item/weapon/storage/belt/military = 0.1,
 		/obj/item/weapon/storage/belt/janitor = 0.4
 	)
 

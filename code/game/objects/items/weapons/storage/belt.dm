@@ -64,6 +64,7 @@
 		/obj/item/weapon/weldingtool = 1,
 		/obj/item/weapon/crowbar = 1,
 		/obj/item/weapon/wirecutters = 1,
+		/obj/item/device/multitool = 1,
 		/obj/item/stack/cable_coil/random = 1
 	)
 
@@ -122,8 +123,8 @@
 /obj/item/weapon/storage/belt/security
 	name = "security belt"
 	desc = "Can hold security gear like handcuffs and flashes."
-	icon_state = "securitybelt"
-	item_state = "security"
+	icon_state = "basicsecuritybelt"
+	item_state = "basicsecurity"
 	can_hold = list(
 		/obj/item/weapon/grenade,
 		/obj/item/weapon/reagent_containers/spray/pepper,
@@ -134,13 +135,13 @@
 		/obj/item/ammo_magazine,
 		/obj/item/weapon/reagent_containers/food/snacks/donut/,
 		/obj/item/weapon/melee/baton,
-		/obj/item/weapon/gun/energy/taser,
 		/obj/item/weapon/flame/lighter,
 		/obj/item/clothing/glasses/hud/security,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/device/flashlight/flare,
 		/obj/item/device/flashlight/flare/glowstick,
 		/obj/item/device/pda,
+		/obj/item/weapon/gun/energy/taser,
 		/obj/item/device/radio/headset,
 		/obj/item/device/hailer,
 		/obj/item/device/megaphone,
@@ -151,6 +152,39 @@
 		/obj/item/weapon/shield/energy,
 		/obj/item/weapon/shield/riot/tact,
 		/obj/item/device/holowarrant
+		)
+
+/obj/item/weapon/storage/belt/holster/security
+	name = "security holster belt"
+	desc = "Can hold security gear like handcuffs and flashes. This one has a convenient holster."
+	icon_state = "securitybelt"
+	item_state = "security"
+	storage_slots = 8
+
+	can_hold = list(
+		/obj/item/weapon/crowbar,
+		/obj/item/weapon/grenade,
+		/obj/item/weapon/reagent_containers/spray/pepper,
+		/obj/item/weapon/handcuffs,
+		/obj/item/device/flash,
+		/obj/item/clothing/glasses,
+		/obj/item/ammo_casing/shotgun,
+		/obj/item/ammo_magazine,
+		/obj/item/weapon/reagent_containers/food/snacks/donut/,
+		/obj/item/weapon/melee/baton,
+		/obj/item/weapon/melee/telebaton,
+		/obj/item/weapon/flame/lighter,
+		/obj/item/weapon/gun/energy/taser,
+		/obj/item/device/flashlight,
+		/obj/item/device/pda,
+		/obj/item/device/radio/headset,
+		/obj/item/device/hailer,
+		/obj/item/device/megaphone,
+		/obj/item/weapon/melee,
+		/obj/item/taperoll,
+		/obj/item/device/holowarrant,
+		/obj/item/device/binoculars,
+		/obj/item/clothing/gloves
 		)
 
 /obj/item/weapon/storage/belt/soulstone
@@ -184,45 +218,6 @@
 	storage_slots = 9
 	max_w_class = 3
 	max_storage_space = 28
-
-/obj/item/weapon/storage/belt/military
-	name = "military belt"
-	desc = "A lightweight, quick to use, military belt. Designed to be comfortably worn even during lengthy military operations."
-	icon_state = "militarybelt"
-	item_state = "militarybelt"
-	storage_slots = 9 //same as a combat belt now
-	max_w_class = 3
-	max_storage_space  = 28
-	can_hold = list(
-		/obj/item/weapon/grenade,
-		/obj/item/weapon/handcuffs,
-		/obj/item/device/flash,
-		/obj/item/clothing/glasses,
-		/obj/item/ammo_casing/shotgun,
-		/obj/item/ammo_magazine,
-		/obj/item/weapon/melee/baton,
-		/obj/item/device/flashlight,
-		/obj/item/device/pda,
-		/obj/item/device/radio/headset,
-		/obj/item/weapon/melee,
-		/obj/item/weapon/shield/energy,
-		/obj/item/weapon/pinpointer,
-		/obj/item/weapon/plastique,
-		/obj/item/weapon/gun/projectile/pistol,
-		/obj/item/weapon/gun/energy/crossbow,
-		/obj/item/weapon/material/knife/trench,
-		/obj/item/ammo_casing/a145,
-		/obj/item/device/radio/uplink,
-		/obj/item/weapon/card/emag,
-		/obj/item/device/multitool/hacktool,
-		/obj/item/weapon/reagent_containers/hypospray/combat,
-		/obj/item/stack/telecrystal
-		)
-
-/obj/item/weapon/storage/belt/military/syndicate
-	desc = "A syndicate belt designed to be used by boarding parties. Its style is modeled after the hardsuits they wear."
-	icon_state = "militarybelt_syndie"
-	item_state = "militarybelt_syndie"
 
 /obj/item/weapon/storage/belt/janitor
 	name = "janibelt"
@@ -405,3 +400,160 @@
  	name = "yellow fannypack"
  	icon_state = "fannypack_yellow"
  	item_state = "fannypack_yellow"
+
+/obj/item/weapon/storage/belt/general
+	name = "equipment belt"
+	desc = "Can hold general equipment such as tablets, folders, and other office supplies."
+	icon_state = "gearbelt"
+	item_state = "gear"
+	can_hold = list(
+		/obj/item/device/flash,
+		/obj/item/weapon/melee/telebaton,
+		/obj/item/device/taperecorder,
+		/obj/item/weapon/folder,
+		/obj/item/weapon/paper,
+		/obj/item/weapon/clipboard,
+		/obj/item/modular_computer/tablet,
+		/obj/item/device/flashlight,
+		/obj/item/device/pda,
+		/obj/item/device/radio/headset,
+		/obj/item/device/megaphone,
+		/obj/item/taperoll,
+		/obj/item/device/holowarrant,
+		/obj/item/device/radio,
+		/obj/item/tape,
+		/obj/item/weapon/pen,
+		/obj/item/weapon/stamp,
+		/obj/item/stack/packageWrap,
+		/obj/item/device/binoculars,
+		/obj/item/weapon/marshalling_wand,
+		/obj/item/device/camera,
+		/obj/item/weapon/hand_labeler,
+		/obj/item/device/destTagger,
+		/obj/item/clothing/glasses,
+		/obj/item/clothing/head/soft,
+		/obj/item/weapon/hand_labeler,
+		/obj/item/clothing/gloves
+		)
+
+/obj/item/weapon/storage/belt/holster
+	name = "holster belt"
+	icon_state = "holsterbelt"
+	item_state = "holster"
+	desc = "Can holster various things."
+	storage_slots = 2
+	var/sound_in = 'sound/effects/holster/holsterin.ogg'
+	var/sound_out = 'sound/effects/holster/holsterout.ogg'
+	var/list/can_holster //List of objects which this item can store in the designated holster slot(if unset, it will default to any holsterable items)
+	can_hold = list(
+		/obj/item/weapon/melee/baton,
+		/obj/item/weapon/melee/telebaton,
+		/obj/item/weapon/gun/projectile/sec/military
+		)
+
+/obj/item/weapon/storage/belt/holster/general
+	name = "holster belt"
+	desc = "Can hold general equipment such as tablets, folders, and other office supplies. Comes with a holster."
+	icon_state = "commandbelt"
+	item_state = "command"
+	storage_slots = 7
+	can_hold = list(
+		/obj/item/device/flash,
+		/obj/item/weapon/melee/telebaton,
+		/obj/item/device/taperecorder,
+		/obj/item/weapon/folder,
+		/obj/item/weapon/paper,
+		/obj/item/weapon/clipboard,
+		/obj/item/modular_computer/tablet,
+		/obj/item/device/flash,
+		/obj/item/device/flashlight,
+		/obj/item/device/pda,
+		/obj/item/device/radio/headset,
+		/obj/item/device/megaphone,
+		/obj/item/taperoll,
+		/obj/item/device/holowarrant,
+		/obj/item/device/radio,
+//		/obj/item/device/tape,
+		/obj/item/weapon/pen,
+		/obj/item/weapon/stamp,
+		/obj/item/stack/packageWrap,
+		/obj/item/device/binoculars,
+		/obj/item/weapon/marshalling_wand,
+		/obj/item/device/camera,
+		/obj/item/device/destTagger,
+		/obj/item/clothing/glasses,
+		/obj/item/clothing/head/soft,
+		/obj/item/weapon/hand_labeler,
+		/obj/item/clothing/gloves,
+		/obj/item/weapon/crowbar
+		)
+
+/obj/item/weapon/storage/belt/holster/forensic
+	name = "forensic belt"
+	desc = "Can hold forensic gear like fingerprint powder and luminol."
+	icon_state = "forensicbelt"
+	item_state = "forensic"
+	storage_slots = 8
+	can_hold = list(
+		/obj/item/weapon/reagent_containers/spray/luminol,
+		/obj/item/device/uv_light,
+		/obj/item/weapon/reagent_containers/syringe,
+		/obj/item/weapon/forensics/swab,
+		/obj/item/weapon/sample/print,
+		/obj/item/weapon/sample/fibers,
+		/obj/item/device/taperecorder,
+		/obj/item/clothing/gloves/latex,
+		/obj/item/clothing/gloves/black,
+		/obj/item/weapon/folder,
+		/obj/item/weapon/paper,
+		/obj/item/weapon/forensics/sample_kit,
+		/obj/item/device/camera,
+		/obj/item/device/taperecorder
+		)
+
+/obj/item/weapon/storage/belt/holster/machete
+	name = "machete belt"
+	desc = "Can hold general surveying equipment used for exploration, as well as your very own machete."
+	icon_state = "machetebelt"
+	item_state = "machetebelt"
+	storage_slots = 8
+	can_hold = list(
+		/obj/item/device/binoculars,
+		/obj/item/device/camera,
+		/obj/item/stack/flag,
+		/obj/item/device/flashlight,
+		/obj/item/device/radio,
+		/obj/item/device/gps,
+		/obj/item/weapon/mining_scanner,
+		/obj/item/device/slime_scanner,
+		/obj/item/device/analyzer/plant_analyzer,
+		/obj/item/weapon/folder,
+		/obj/item/weapon/paper,
+		/obj/item/weapon/pen,
+		/obj/item/device/flashlight/flare,
+		/obj/item/device/radio/beacon,
+		/obj/item/device/taperecorder,
+		/obj/item/device/analyzer
+		)
+	can_holster = list(/obj/item/weapon/material/hatchet/machete)
+	sound_in = 'sound/effects/holster/sheathin.ogg'
+	sound_out = 'sound/effects/holster/sheathout.ogg'
+
+/obj/item/weapon/storage/belt/waistpack
+	name = "waist pack"
+	desc = "A small bag designed to be worn on the waist. May make your butt look big."
+	icon_state = "fannypack_white"
+	item_state = "fannypack_white"
+	storage_slots = null
+	max_w_class = ITEMSIZE_SMALL
+	max_storage_space = ITEMSIZE_SMALL * 4
+	slot_flags = SLOT_BELT | SLOT_BACK
+
+/obj/item/weapon/storage/belt/waistpack/big
+	name = "large waist pack"
+	desc = "A bag designed to be worn on the waist. Definitely makes your butt look big."
+	icon_state = "fannypack_big_white"
+	item_state = "fannypack_big_white"
+	w_class = ITEMSIZE_LARGE
+	max_w_class = ITEMSIZE_NORMAL
+	max_storage_space = ITEMSIZE_NORMAL * 4
