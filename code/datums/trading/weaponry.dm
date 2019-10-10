@@ -153,6 +153,6 @@
 		/obj/item/clothing/under/tactical                         = TRADER_THIS_TYPE,
 		/obj/item/clothing/mask/gas/tactical                      = TRADER_THIS_TYPE,
 		/obj/item/weapon/shield/riot/tact                         = TRADER_THIS_TYPE,
-		/obj/item/weapon/storage/belt/security/tactical           = TRADER_THIS_TYPE,
+		/obj/item/weapon/storage/belt/holster/security/tactical   = TRADER_THIS_TYPE,
 		/obj/item/clothing/accessory/storage/bandolier            = TRADER_THIS_TYPE
 	)

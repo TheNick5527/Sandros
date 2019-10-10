@@ -47,7 +47,7 @@
 	name = "Syndicate Operative"
 
 	suit = /obj/item/clothing/suit/space/void/merc
-	belt = /obj/item/weapon/storage/belt/security/tactical
+	belt = /obj/item/weapon/storage/belt/holster/security/tactical
 	head = /obj/item/clothing/head/helmet/space/void/merc
 	mask = /obj/item/clothing/mask/gas/syndicate
 	l_ear = /obj/item/device/radio/headset/syndicate
@@ -511,7 +511,7 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/sechud
 	head = /obj/item/clothing/head/fleet/securityberet
 	suit_store = /obj/item/weapon/gun/projectile/sec/military/trooper
-	belt = /obj/item/weapon/storage/belt/security
+	belt = /obj/item/weapon/storage/belt/holster/security/tactical
 
 	backpack_contents = list(
 		/obj/item/weapon/storage/box/engineer = 1,

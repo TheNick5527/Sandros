@@ -154,7 +154,7 @@ var/list/worths = list(
 //STORAGE,
 					/obj/item/weapon/storage/briefcase/crimekit = -50,
 					/obj/item/weapon/storage/belt/wands = 800,
-					/obj/item/weapon/storage/belt/security/tactical = 500,
+					/obj/item/weapon/storage/belt/holster/security/tactical = 500,
 					/obj/item/weapon/storage/belt/soulstone = 800,
 					/obj/item/weapon/storage/belt = -50,
 					/obj/item/weapon/storage/backpack/holding = -3000,

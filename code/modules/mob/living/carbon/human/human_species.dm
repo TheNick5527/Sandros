@@ -129,16 +129,16 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 	src.equip_to_slot_or_del(new /obj/item/weapon/grenade/frag(src), slot_l_store)
 	src.equip_to_slot_or_del(new /obj/item/weapon/melee/energy/sword(src), slot_r_store)
 
-	var/obj/item/weapon/storage/belt/security/tactical/commando_belt = new(src)
-	commando_belt.contents += new /obj/item/ammo_magazine/flechette
-	commando_belt.contents += new /obj/item/ammo_magazine/flechette/explosive
-	commando_belt.contents += new /obj/item/ammo_magazine/flechette/explosive
-	commando_belt.contents += new /obj/item/weapon/melee/baton/loaded
-	commando_belt.contents += new /obj/item/weapon/shield/energy
-	commando_belt.contents += new /obj/item/weapon/handcuffs
-	commando_belt.contents += new /obj/item/weapon/handcuffs
-	commando_belt.contents += new /obj/item/weapon/plastique
-	src.equip_to_slot_or_del(commando_belt, slot_belt)
+	var/obj/item/weapon/storage/belt/holster/security/tactical = new(src)
+	tactical.contents += new /obj/item/ammo_magazine/flechette
+	tactical.contents += new /obj/item/ammo_magazine/flechette/explosive
+	tactical.contents += new /obj/item/ammo_magazine/flechette/explosive
+	tactical.contents += new /obj/item/weapon/melee/baton/loaded
+	tactical.contents += new /obj/item/weapon/shield/energy
+	tactical.contents += new /obj/item/weapon/handcuffs
+	tactical.contents += new /obj/item/weapon/handcuffs
+	tactical.contents += new /obj/item/weapon/plastique
+	src.equip_to_slot_or_del(tactical, slot_belt)
 	src.gender = NEUTER
 
 /mob/living/carbon/human/terminator

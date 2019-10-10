@@ -218,7 +218,6 @@
 	storage_slots = 9
 	max_w_class = 3
 	max_storage_space = 28
-	var/list/can_holster //List of objects which this item can store in the designated holster slot(if unset, it will default to any holsterable items)
 
 /obj/item/weapon/storage/belt/janitor
 	name = "janibelt"
