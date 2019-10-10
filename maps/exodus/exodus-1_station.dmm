@@ -10674,6 +10674,16 @@
 /obj/structure/filingcabinet,
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
+"xH" = (
+/obj/machinery/portable_atmospherics/hydroponics,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/grass,
+/area/hydroponics)
 "yb" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -10685,6 +10695,11 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/secondary/entry/dock)
+"yy" = (
+/obj/structure/window/reinforced/full,
+/obj/structure/grille,
+/turf/simulated/floor,
+/area/maintenance/aft)
 "zG" = (
 /obj/machinery/floodlight{
 	name = "Landing Zone Floodlight";
@@ -10700,6 +10715,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
 /area/hallway/secondary/entry/dock)
+"Hp" = (
+/obj/machinery/smartfridge,
+/turf/simulated/wall,
+/area/crew_quarters/kitchen)
+"Ij" = (
+/turf/simulated/wall/wood,
+/area/space)
 "It" = (
 /obj/structure/bed/chair,
 /obj/machinery/light{
@@ -10709,6 +10731,25 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/secondary/entry/dock)
+"KS" = (
+/obj/machinery/cryopod,
+/turf/simulated/floor/tiled,
+/area/space)
+"Ov" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/maintenance/starboard)
+"OK" = (
+/obj/structure/simple_door/wood{
+	name = "Cryogenics Storage"
+	},
+/turf/simulated/floor/tiled,
+/area/crew_quarters/sleep)
 "PP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
@@ -10747,6 +10788,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/secondary/entry/dock)
+"QS" = (
+/obj/structure/cryofeed{
+	icon_state = "cryo_rear";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/space)
 "RO" = (
 /obj/machinery/floodlight{
 	name = "Landing Zone Floodlight";
@@ -10782,6 +10830,23 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/secondary/entry/dock)
+"UK" = (
+/obj/structure/cryofeed,
+/turf/simulated/floor/tiled,
+/area/space)
+"Vp" = (
+/obj/machinery/cryopod{
+	icon_state = "body_scanner";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/space)
+"XI" = (
+/obj/machinery/computer/cryopod{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled,
+/area/space)
 "YA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	icon_state = "intact-supply";
@@ -46946,10 +47011,10 @@ pj
 pj
 xn
 xo
-mb
+yy
 xq
 xr
-mb
+yy
 rP
 ai
 ai
@@ -52251,7 +52316,7 @@ jB
 lx
 nU
 ol
-ol
+nT
 lg
 pg
 po
@@ -52564,7 +52629,7 @@ jB
 lg
 lg
 lg
-lg
+Hp
 lg
 nV
 nV
@@ -52877,8 +52942,8 @@ fx
 fx
 nV
 iW
-jm
-jm
+oI
+xH
 jm
 nr
 oI
@@ -53178,11 +53243,11 @@ hT
 hT
 ak
 aw
-xt
+Ov
 kS
 hE
 ma
-xt
+Ov
 fx
 fx
 fx
@@ -53491,11 +53556,11 @@ hT
 hT
 ak
 aw
-hz
+xt
 hz
 hH
 hz
-hz
+xt
 fx
 fx
 fx
@@ -55720,11 +55785,11 @@ sU
 ta
 sU
 sU
-fx
-fx
-fx
-fx
-fx
+Ij
+Ij
+Ij
+Ij
+Ij
 fx
 fx
 fx
@@ -56033,11 +56098,11 @@ tb
 sY
 tb
 sU
-fx
-fx
-fx
-fx
-fx
+QS
+QS
+QS
+QS
+Ij
 fx
 fx
 fx
@@ -56346,11 +56411,11 @@ sY
 sY
 sY
 sU
-fx
-fx
-fx
-fx
-fx
+Vp
+Vp
+Vp
+Vp
+Ij
 fx
 fx
 fx
@@ -56659,11 +56724,11 @@ tb
 sY
 tb
 sU
-fx
-fx
-fx
-fx
-fx
+XI
+vT
+vT
+vT
+Ij
 fx
 fx
 fx
@@ -56971,12 +57036,12 @@ sY
 sY
 sY
 sY
-sU
-fx
-fx
-fx
-fx
-fx
+OK
+vT
+vT
+vT
+vT
+Ij
 fx
 fx
 fx
@@ -57285,11 +57350,11 @@ tb
 sY
 tb
 sU
-fx
-fx
-fx
-fx
-fx
+vT
+vT
+vT
+vT
+Ij
 fx
 fx
 fx
@@ -57598,11 +57663,11 @@ sY
 sY
 sY
 sU
-fx
-fx
-fx
-fx
-fx
+KS
+KS
+KS
+KS
+Ij
 fx
 fx
 fx
@@ -57911,11 +57976,11 @@ tb
 sY
 tb
 sU
-fx
-fx
-fx
-fx
-fx
+UK
+UK
+UK
+UK
+Ij
 fx
 fx
 fx
@@ -58224,11 +58289,11 @@ sU
 ta
 sU
 sU
-fx
-fx
-fx
-fx
-fx
+Ij
+Ij
+Ij
+Ij
+Ij
 fx
 fx
 fx
