@@ -146,3 +146,9 @@ obj/structure/banner/sec
 	desc = "A banner depicting the insignia of the security department."
 	icon_state = "sec_down"
 	icon_up = "sec_up"
+
+obj/structure/banner/tar
+	name = "terran republic banner"
+	desc = "A banner depicting the insignia of the Terran Republics, showing Luna in all it's glory."
+	icon_state = "tar_down"
+	icon_up = "tar_up"

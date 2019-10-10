@@ -50,17 +50,17 @@ var/datum/antagonist/deathsquad/deathsquad
 		player.equip_to_slot_or_del(new /obj/item/weapon/melee/energy/sword(player), slot_r_store)
 	player.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/rifle/pulse(player), slot_l_hand)
 
-	var/obj/item/weapon/storage/belt/security/tactical/commando_belt = new(player)
-	commando_belt.contents += new /obj/item/ammo_magazine/a454
-	commando_belt.contents += new /obj/item/ammo_magazine/a454
-	commando_belt.contents += new /obj/item/weapon/melee/baton/loaded
-	commando_belt.contents += new /obj/item/weapon/shield/energy
-	commando_belt.contents += new /obj/item/weapon/grenade/flashbang
-	commando_belt.contents += new /obj/item/weapon/grenade/flashbang
-	commando_belt.contents += new /obj/item/weapon/handcuffs
-	commando_belt.contents += new /obj/item/weapon/handcuffs
-	commando_belt.contents += new /obj/item/weapon/grenade/frag
-	player.equip_to_slot_or_del(commando_belt, slot_belt)
+	var/obj/item/weapon/storage/belt/holster/security/tactical = new(player)
+	tactical.contents += new /obj/item/ammo_magazine/a454
+	tactical.contents += new /obj/item/ammo_magazine/a454
+	tactical.contents += new /obj/item/weapon/melee/baton/loaded
+	tactical.contents += new /obj/item/weapon/shield/energy
+	tactical.contents += new /obj/item/weapon/grenade/flashbang
+	tactical.contents += new /obj/item/weapon/grenade/flashbang
+	tactical.contents += new /obj/item/weapon/handcuffs
+	tactical.contents += new /obj/item/weapon/handcuffs
+	tactical.contents += new /obj/item/weapon/grenade/frag
+	player.equip_to_slot_or_del(tactical, slot_belt)
 
 	var/obj/item/weapon/rig/ert/assetprotection/mercrig = new(get_turf(player))
 	mercrig.seal_delay = 0
