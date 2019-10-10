@@ -55,7 +55,7 @@
 /turf/space/transit/north // moving to the north
 
 	pushdirection = SOUTH  // south because the space tile is scrolling south
-	icon_state="debug-north"
+	icon_state="sky_slow"
 
 	// Isn't legacy code fun.
 	// These are here so I don't have to remap all this shit.
@@ -78,12 +78,12 @@
 /turf/space/transit/south // moving to the south
 
 	pushdirection = NORTH
-	icon_state="debug-south"
+	icon_state="sky_slow"
 
 /turf/space/transit/east // moving to the east
 
 	pushdirection = WEST
-	icon_state="debug-east"
+	icon_state="sky_slow"
 
 	shuttlespace_ew1
 	shuttlespace_ew2
