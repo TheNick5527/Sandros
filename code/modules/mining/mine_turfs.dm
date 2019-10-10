@@ -1,8 +1,8 @@
 /**********************Mineral deposits**************************/
 /turf/unsimulated/mineral
 	name = "impassable rock"
-	icon = 'icons/turf/walls.dmi'
-	icon_state = "rock-dark"
+	icon = 'icons/turf/map_placeholders.dmi'
+	icon_state = "rock"
 	blocks_air = 1
 	density = 1
 	gender = PLURAL

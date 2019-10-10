@@ -175,7 +175,7 @@
 
 /obj/item/weapon/rig/bunker
 	name = "bunker suit control module"
-	desc = "A powerful niche-function hardsuit utilized by Ceres' Lance to apprehend synthetics. Unstoppable in the right circumstances, and nothing more than a burden anywhere else."
+	desc = "A bulky, extremely heavy RIGsuit capable of blocking massive amounts of damage. An outdated and no longer used Terran design. It seems to be recolored white."
 	icon_state = "bunker"
 	suit_type = "bunker suit"
 	armor = list(melee = 80, bullet = 80, laser = 80, energy = 80, bomb = 25, bio = 25, rad = 25)
@@ -186,7 +186,7 @@
 
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/handcuffs)
 
-	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_UTILITY
+	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY | MODULE_VAURCA
 
 	species_restricted = list("Human")
 
