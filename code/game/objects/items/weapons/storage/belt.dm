@@ -210,7 +210,7 @@
 		"/obj/item/clothing/mask/luchador"
 		)
 
-/obj/item/weapon/storage/belt/security/tactical
+/obj/item/weapon/storage/belt/holster/security/tactical
 	name = "combat belt"
 	desc = "Can hold security gear like handcuffs and flashes, with more pouches for more storage."
 	icon_state = "swatbelt"
@@ -218,6 +218,7 @@
 	storage_slots = 9
 	max_w_class = 3
 	max_storage_space = 28
+	var/list/can_holster //List of objects which this item can store in the designated holster slot(if unset, it will default to any holsterable items)
 
 /obj/item/weapon/storage/belt/janitor
 	name = "janibelt"
