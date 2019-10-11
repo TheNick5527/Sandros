@@ -216,6 +216,11 @@
 	desc = "A direction sign, pointing out which way the Engineering department is."
 	icon_state = "direction_eng"
 
+/obj/structure/sign/directions/engineering/x03
+	name = "\improper X03 - Engineering Wing"
+	desc = "A direction sign, pointing out which way the Engineering wing is."
+	icon_state = "direction_x3"
+
 /obj/structure/sign/directions/security
 	name = "\improper Security department"
 	desc = "A direction sign, pointing out which way the Security department is."
@@ -225,6 +230,11 @@
 	name = "\improper Medical Bay"
 	desc = "A direction sign, pointing out which way the Medical Bay is."
 	icon_state = "direction_med"
+
+/obj/structure/sign/directions/info
+	name = "\improper Information Desk"
+	desc = "A direction sign, pointing out which way the Information Desk is."
+	icon_state = "direction_info"
 
 /obj/structure/sign/directions/evac
 	name = "\improper Escape Dock"

@@ -70,3 +70,4 @@
 	name = "\improper Spaceport Arrivals Dock"
 	icon_state = "arrivals_dock"
 	holomap_color = HOLOMAP_AREACOLOR_ARRIVALS
+

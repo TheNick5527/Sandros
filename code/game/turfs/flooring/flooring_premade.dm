@@ -315,3 +315,81 @@
 	name = "alien floor"
 	icon = 'icons/turf/flooring/misc.dmi'
 	icon_state = "vaurca"
+
+/*
+ * THEMIS ROADS
+*/
+
+/turf/simulated/floor/themis/road/asphalt
+	name = "asphalt road"
+	icon = 'icons/turf/themis-asphalt.dmi'
+	icon_state = "asphalt"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt1
+	name = "asphalt road"
+	icon = 'icons/turf/themis-asphalt.dmi'
+	icon_state = "asphalt1"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt2
+	name = "asphalt road"
+	icon_state = "asphalt2"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt3
+	name = "asphalt road"
+	icon_state = "asphalt3"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt4
+	name = "asphalt road"
+	icon_state = "asphalt4"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt5
+	name = "asphalt road"
+	icon_state = "asphalt5"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt6
+	name = "asphalt road"
+	icon_state = "asphalt6"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt7
+	name = "asphalt road"
+	icon_state = "asphalt7"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt8
+	name = "asphalt road"
+	icon_state = "asphalt8"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt9
+	name = "asphalt road"
+	icon_state = "asphalt9"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt10
+	name = "asphalt road"
+	icon_state = "asphalt10"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt11
+	name = "asphalt road"
+	icon_state = "asphalt11"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt12
+	name = "asphalt road"
+	icon_state = "asphalt12"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt13
+	name = "asphalt road"
+	icon_state = "asphalt13"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt14
+	name = "asphalt road"
+	icon_state = "asphalt14"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt15
+	name = "asphalt road"
+	icon_state = "asphalt15"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt16
+	name = "asphalt road"
+	icon_state = "asphalt16"
+
+/turf/simulated/floor/themis/road/asphalt/asphalt17
+	name = "asphalt road"
+	icon_state = "asphalt17"
