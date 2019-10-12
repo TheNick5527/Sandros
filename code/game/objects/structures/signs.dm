@@ -217,9 +217,14 @@
 	icon_state = "direction_eng"
 
 /obj/structure/sign/directions/engineering/x03
-	name = "\improper X03 - Engineering Wing"
+	name = "\improper X-03 - Engineering Wing"
 	desc = "A direction sign, pointing out which way the Engineering wing is."
 	icon_state = "direction_x3"
+
+/obj/structure/sign/directions/engineering/x12
+	name = "\improper X-12 - Primary Power Plant"
+	desc = "A direction sign, pointing out which way the power plant is."
+	icon_state = "direction_x12"
 
 /obj/structure/sign/directions/security
 	name = "\improper Security department"
