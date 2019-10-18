@@ -1,3 +1,6 @@
+/datum/outfit/admin
+	var/id_icon
+
 /datum/outfit/admin/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 	if(!visualsOnly)
@@ -5,6 +8,124 @@
 			H.mind.assigned_role = name
 		H.job = name
 
+/datum/outfit/admin/imprint_idcard(mob/living/carbon/human/H, obj/item/weapon/card/id/C)
+	..()
+	if(id_icon)
+		C.icon_state = id_icon
+
+/datum/outfit/admin/lance
+	name = "Lancer"
+
+	uniform = /obj/item/clothing/under/lance
+	back = /obj/item/weapon/gun/energy/rifle/pulse
+	gloves = /obj/item/clothing/gloves/force/basic
+	shoes = /obj/item/clothing/shoes/magboots
+	belt = /obj/item/weapon/storage/belt/military
+	l_ear = /obj/item/device/radio/headset/ert
+	id = /obj/item/weapon/card/id/syndicate
+	suit_store = /obj/item/weapon/tank/oxygen
+	suit = /obj/item/clothing/suit/space/void/lancer
+	head = /obj/item/clothing/head/helmet/space/void/lancer
+	belt_contents = list(
+							/obj/item/weapon/plastique = 1,
+							/obj/item/weapon/grenade/frag = 1,
+							/obj/item/weapon/melee/energy/sword = 1,
+							/obj/item/weapon/shield/energy = 1,
+							/obj/item/device/flash = 1,
+							/obj/item/weapon/handcuffs/ziptie = 2,
+							/obj/item/weapon/melee/baton/loaded = 1,
+							/obj/item/weapon/grenade/empgrenade = 1
+						)
+	var/id_access = "Lancer"
+
+/datum/outfit/admin/lance_operative/get_id_access()
+	return get_syndicate_access(id_access)
+
+/datum/outfit/admin/lance_engineer
+	name = "Lance Engineer"
+
+	uniform = /obj/item/clothing/under/lance
+	back = /obj/item/weapon/gun/projectile/shotgun/pump/combat/sol
+	gloves = /obj/item/clothing/gloves/yellow
+	shoes = /obj/item/clothing/shoes/magboots
+	belt = /obj/item/weapon/storage/belt/utility/full
+	l_ear = /obj/item/device/radio/headset/ert
+	id = /obj/item/weapon/card/id/syndicate
+	suit_store = /obj/item/weapon/tank/oxygen
+	suit = /obj/item/clothing/suit/space/void/lancer
+	head = /obj/item/clothing/head/helmet/space/void/lancer
+	accessory = /obj/item/clothing/accessory/storage/brown_vest
+	accessory_contents = list(
+								/obj/item/weapon/plastique = 3,
+								/obj/item/weapon/grenade/frag = 1,
+								/obj/item/device/flash = 1
+							)
+	belt_contents = list(
+							/obj/item/device/multitool = 1
+	)
+	var/id_access = "Lance Engineer"
+
+/datum/outfit/admin/lance_engineer/get_id_access()
+	return get_syndicate_access(id_access)
+
+/datum/outfit/admin/lance_medic
+	name = "Lance Medic"
+
+	uniform = /obj/item/clothing/under/lance
+	gloves = /obj/item/clothing/gloves/latex/nitrile
+	shoes = /obj/item/clothing/shoes/magboots
+	belt = /obj/item/weapon/storage/belt/medical
+	mask = /obj/item/clothing/mask/surgical
+	l_ear = /obj/item/device/radio/headset/ert
+	id = /obj/item/weapon/card/id/syndicate
+	suit_store = /obj/item/weapon/tank/oxygen
+	suit = /obj/item/clothing/suit/space/void/lancer
+	head = /obj/item/clothing/head/helmet/space/void/lancer
+	accessory = /obj/item/clothing/accessory/holster/thigh
+	belt_contents = list(
+							/obj/item/device/healthanalyzer = 1,
+							/obj/item/weapon/reagent_containers/hypospray/combat = 1,
+							/obj/item/weapon/reagent_containers/syringe = 1,
+							/obj/item/weapon/personal_inhaler/combat = 1,
+							/obj/item/weapon/reagent_containers/personal_inhaler_cartridge/large = 2,
+							/obj/item/weapon/reagent_containers/glass/bottle/dexalin_plus = 1,
+							/obj/item/weapon/reagent_containers/glass/bottle/epinephrine = 1,
+							/obj/item/weapon/reagent_containers/glass/bottle/spaceacillin = 1,
+
+						)
+	accessory_contents = list(/obj/item/weapon/gun/energy/pulse/pistol = 1)
+	var/id_access = "Lance Medic"
+
+/datum/outfit/admin/lance_medic/get_id_access()
+	return get_syndicate_access(id_access)
+
+/datum/outfit/admin/lance_operative
+	name = "Lance Operative"
+
+	uniform = /obj/item/clothing/under/dress/lance_dress/male
+	back = /obj/item/weapon/storage/backpack/satchel
+	gloves = /obj/item/clothing/gloves/latex
+	shoes = /obj/item/clothing/shoes/laceup
+	belt = /obj/item/weapon/storage/belt/utility/full
+	l_ear = /obj/item/device/radio/headset/ert
+	id = /obj/item/weapon/card/id/syndicate
+	suit_store = /obj/item/weapon/tank/oxygen
+	suit = /obj/item/clothing/suit/space/void/lancer
+	head = /obj/item/clothing/head/helmet/space/void/lancer
+	accessory = /obj/item/clothing/accessory/holster/thigh
+	accessory_contents = list(/obj/item/weapon/gun/energy/pulse/pistol = 1)
+
+	backpack_contents = list(
+		/obj/item/device/flash = 1,
+		/obj/item/clothing/gloves/yellow = 1
+	)
+	belt_contents = list(
+							/obj/item/device/multitool = 1
+	)
+	var/id_access = "Lance Operative"
+
+/datum/outfit/admin/lance_operative/get_id_access()
+	return get_syndicate_access(id_access)
 
 /datum/outfit/admin/syndicate
 	name = "Syndicate Agent"
@@ -24,8 +145,6 @@
 		/obj/item/weapon/reagent_containers/food/snacks/donkpocket/sinpocket = 1,
 		/obj/item/device/multitool = 1
 	)
-
-	var/id_icon = "syndie"
 	var/id_access = "Syndicate Operative"
 	var/uplink_uses = 20
 
@@ -47,7 +166,7 @@
 	name = "Syndicate Operative"
 
 	suit = /obj/item/clothing/suit/space/void/merc
-	belt = /obj/item/weapon/storage/belt/holster/security/tactical
+	belt = /obj/item/weapon/storage/belt/military/syndicate
 	head = /obj/item/clothing/head/helmet/space/void/merc
 	mask = /obj/item/clothing/mask/gas/syndicate
 	l_ear = /obj/item/device/radio/headset/syndicate
@@ -91,7 +210,6 @@
 	implants = list(
 		/obj/item/weapon/implant/explosive
 	)
-	id_icon = "commander"
 	id_access = "Syndicate Operative Leader"
 
 
@@ -105,6 +223,40 @@
 	implants = list(
 		/obj/item/weapon/implant/explosive
 	)
+
+/datum/outfit/admin/syndicate/ninja
+	name = "Infiltrator"
+
+	uniform = /obj/item/clothing/under/syndicate/ninja
+	back = /obj/item/weapon/rig/light/ninja
+	belt = /obj/item/weapon/storage/belt/ninja
+	shoes = /obj/item/clothing/shoes/swat/ert
+	gloves = /obj/item/clothing/ring/ninja
+	mask = /obj/item/clothing/mask/balaclava
+	l_ear = /obj/item/device/radio/headset/ninja
+	glasses = /obj/item/clothing/glasses/sunglasses/sechud/tactical
+	id = /obj/item/weapon/card/id/syndicate
+	l_pocket = null
+	r_pocket = null
+	accessory = /obj/item/clothing/accessory/storage/pouches/black
+
+	backpack_contents = list()
+
+	belt_contents = list(
+		/obj/item/device/flashlight/maglight = 1,
+		/obj/item/weapon/crowbar = 1,
+		/obj/item/weapon/screwdriver = 1,
+		/obj/item/device/paicard = 1
+	)
+
+	id_access = "Syndicate Agent"
+
+/datum/outfit/admin/syndicate/ninja/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	if(visualsOnly)
+		return
+
+	H.equip_to_slot_or_del(new /obj/item/device/ninja_uplink(H, H.mind), slot_l_store)
 
 
 /datum/outfit/admin/nt
@@ -122,7 +274,7 @@
 		/obj/item/weapon/storage/box/engineer = 1
 	)
 
-	var/id_icon = "centcom"
+	id_icon = "centcom"
 	var/id_access = "NanoTrasen Representative"
 
 /datum/outfit/admin/nt/get_id_access()
@@ -238,7 +390,7 @@
 	name = "CCIA Agent"
 
 	uniform = /obj/item/clothing/under/rank/centcom_officer
-	suit = /obj/item/clothing/suit/storage/toggle/internalaffairs/cciaa
+	suit = /obj/item/clothing/suit/storage/toggle/liaison
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/white
 	l_ear = /obj/item/device/radio/headset/ert/ccia
@@ -247,6 +399,7 @@
 	l_pocket = /obj/item/weapon/reagent_containers/spray/pepper
 	r_pocket = /obj/item/device/taperecorder/cciaa
 	l_hand = /obj/item/weapon/storage/lockbox/cciaa
+	pda = /obj/item/device/pda/central
 
 /datum/outfit/admin/nt/odinsec
 	name = "NTCC Odin Security Specialist"
@@ -483,150 +636,9 @@
 
 	id = /obj/item/weapon/card/id
 	pda = /obj/item/device/pda
+
 /datum/outfit/admin/random/visitor/get_id_assignment()
 	return "Visitor"
+
 /datum/outfit/admin/random/visitor/get_id_rank()
 	return "Visitor"
-
-
-//Fleet Intelligence
-/datum/outfit/admin/fleet
-	name = "Naval Intelligence Officer"
-
-	uniform = /obj/item/clothing/under/fleet/officer
-	back = /obj/item/weapon/storage/backpack/satchel
-	gloves = /obj/item/clothing/gloves/white
-	shoes = /obj/item/clothing/shoes/laceup
-	l_ear = /obj/item/device/radio/headset/heads/hop
-	glasses = /obj/item/clothing/glasses/sunglasses
-	id = /obj/item/weapon/card/id
-
-	backpack_contents = list(
-		/obj/item/weapon/storage/box/engineer = 1
-	)
-
-	var/id_icon = "centcom"
-	var/id_access = "Naval Intelligence Officer"
-
-/datum/outfit/admin/fleet/get_id_access()
-	return get_all_accesses() | get_centcom_access(id_access)
-
-/datum/outfit/admin/fleet/officer
-	name = "Naval Intelligence Officer"
-
-	uniform = /obj/item/clothing/under/fleet/officer
-	suit = /obj/item/clothing/suit/storage/fleet/officer
-	head = /obj/item/clothing/head/fleet/officerberet
-	l_ear = /obj/item/device/radio/headset/heads/captain
-	suit_store = /obj/item/weapon/gun/projectile/sec/military
-
-	backpack_contents = list(
-		/obj/item/weapon/storage/box/engineer = 1,
-		/obj/item/ammo_magazine/c45m/rubber = 1
-	)
-
-
-
-//Intelligence SecArm
-/datum/outfit/admin/fleet/trooper
-	name = "Naval Intelligence Operative"
-
-	uniform = /obj/item/clothing/under/fleet/security
-	suit = /obj/item/clothing/suit/storage/vest/heavy/fleet/trooper
-	shoes = /obj/item/clothing/shoes/swat
-	gloves = /obj/item/clothing/gloves/swat/tactical
-	l_ear = /obj/item/device/radio/headset/ert
-	glasses = /obj/item/clothing/glasses/sunglasses/sechud
-	head = /obj/item/clothing/head/fleet/securityberet
-	suit_store = /obj/item/weapon/gun/projectile/sec/military/trooper
-	belt = /obj/item/weapon/storage/belt/holster/security/tactical
-
-	backpack_contents = list(
-		/obj/item/weapon/storage/box/engineer = 1,
-		/obj/item/clothing/head/helmet/fleet/trooper = 1,
-		/obj/item/clothing/accessory/holster/hip = 1,
-		/obj/item/ammo_magazine/c45m = 2
-	)
-
-	implants = list(
-		/obj/item/weapon/implant/loyalty
-	)
-
-/datum/outfit/admin/fleet/trooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-
-	if(H && H.belt)
-
-		var/obj/item/weapon/reagent_containers/spray/pepper/pepperspray = new(H)
-		var/obj/item/weapon/melee/baton/loaded/baton = new(H)
-		var/obj/item/weapon/shield/riot/tact/shield = new(H)
-		var/obj/item/weapon/grenade/flashbang/flashbang = new(H)
-		var/obj/item/weapon/handcuffs/cuffs = new(H)
-		var/obj/item/device/flash/flash = new(H)
-		var/obj/item/device/flashlight/flare/flare = new(H)
-
-		H.belt.contents += flare
-		H.belt.contents += flashbang
-		H.belt.contents += cuffs
-		H.belt.contents += pepperspray
-		H.belt.contents += flash
-		H.belt.contents += baton
-		H.belt.contents += shield
-
-
-/datum/outfit/admin/fleet/trooper/commander
-	name = "Naval Intelligence Security Commander"
-
-	suit = /obj/item/clothing/suit/storage/vest/heavy/fleet/commander
-	suit_store = /obj/item/weapon/gun/projectile/sec/military/officer/commander
-
-	backpack_contents = list(
-		/obj/item/weapon/storage/box/engineer = 1,
-		/obj/item/clothing/head/helmet/fleet/trooper = 1,
-		/obj/item/clothing/accessory/holster/hip = 1,
-		/obj/item/ammo_magazine/c45m = 2
-	)
-
-
-/datum/outfit/admin/fleet/trooper/formal
-	name = "Naval Intelligence Operative Formal"
-
-	uniform = /obj/item/clothing/under/fleet/security/dress
-	suit = /obj/item/clothing/suit/storage/fleet/troopercoat
-	gloves = /obj/item/clothing/gloves/white
-	shoes = /obj/item/clothing/shoes/laceup
-	l_ear = /obj/item/device/radio/headset/ert
-	head = /obj/item/clothing/head/fleet/securityberet
-	suit_store = /obj/item/weapon/gun/projectile/sec/military/trooper/flash
-	belt = null
-
-	backpack_contents = list(
-		/obj/item/weapon/storage/box/engineer = 1,
-		/obj/item/clothing/accessory/holster/hip = 1
-	)
-
-/datum/outfit/admin/fleet/trooper/formal/get_id_assignment()
-    return "Naval Intelligence Operative"
-/datum/outfit/admin/fleet/trooper/formal/get_id_rank()
-    return "Naval Intelligence Operative"
-
-/datum/outfit/admin/fleet/trooper/formal/fem
-	name = "Naval Intelligence Operative Formal Female"
-	uniform = /obj/item/clothing/under/fleet/security/dress/fem
-	shoes = /obj/item/clothing/shoes/flats
-
-/datum/outfit/admin/fleet/trooper/formal/commander
-	name = "Naval Intelligence Security Commander Formal"
-
-	suit = /obj/item/clothing/suit/storage/fleet/commandercoat
-	suit_store = /obj/item/weapon/gun/projectile/sec/military/officer/hop
-
-/datum/outfit/admin/fleet/trooper/formal/commander/get_id_assignment()
-    return "Naval Intelligence Security Commander"
-/datum/outfit/admin/fleet/trooper/formal/commander/get_id_rank()
-    return "Naval Intelligence Security Commander"
-
-/datum/outfit/admin/fleet/trooper/formal/commander/fem
-	name = "Naval Intelligence Security Commander Formal Female"
-	uniform = /obj/item/clothing/under/fleet/security/dress/fem
-	shoes = /obj/item/clothing/shoes/flats
-

@@ -1006,7 +1006,8 @@
 		/obj/item/eightball/haunted						= 1,
 		/obj/item/eightball/broken						= 1,
 		/obj/item/weapon/spirit_board					= 5,
-		/obj/item/device/laser_pointer						= 1
+		/obj/item/device/laser_pointer					= 1,
+		/obj/item/clothing/accessory/badge/press/plastic = 2
 
 
 	)
@@ -1036,7 +1037,8 @@
 		/obj/item/device/megaphone						= 11,
 		/obj/item/eightball								= 11,
 		/obj/item/eightball/haunted						= 5,
-		/obj/item/weapon/spirit_board					= 5
+		/obj/item/weapon/spirit_board					= 5,
+		/obj/item/clothing/accessory/badge/press/plastic = 2
 	)
 
 /obj/random/custom_ka

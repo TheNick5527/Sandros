@@ -10,7 +10,7 @@
 
 /datum/gear/accessory/suspenders/New()
 	..()
-	gear_tweaks = list(gear_tweak_free_color_choice)
+	gear_tweaks += gear_tweak_free_color_choice
 
 /datum/gear/accessory/waistcoat
 	display_name = "waistcoat"
@@ -18,7 +18,7 @@
 
 /datum/gear/accessory/waistcoat/New()
 	..()
-	gear_tweaks = list(gear_tweak_free_color_choice)
+	gear_tweaks += gear_tweak_free_color_choice
 
 
 /datum/gear/accessory/armband
@@ -81,7 +81,7 @@
 
 /datum/gear/accessory/bowtie/New()
 	..()
-	gear_tweaks = list(gear_tweak_free_color_choice)
+	gear_tweaks += gear_tweak_free_color_choice
 
 /datum/gear/accessory/brown_vest
 	display_name = "webbing, engineering"
@@ -105,23 +105,27 @@
 
 /datum/gear/accessory/brown_pouches
 	display_name = "drop pouches, engineering"
-	path = /obj/item/clothing/accessory/storage/brown_pouches
+	path = /obj/item/clothing/accessory/storage/pouches/brown
 	allowed_roles = list("Station Engineer", "Atmospheric Technician", "Chief Engineer", "Engineering Apprentice")
 
 /datum/gear/accessory/black_pouches
 	display_name = "drop pouches, security"
-	path = /obj/item/clothing/accessory/storage/black_pouches
+	path = /obj/item/clothing/accessory/storage/pouches/black
 	allowed_roles = list("Security Officer","Head of Security", "Warden", "Security Cadet", "Detective", "Forensic Technician")
 
 /datum/gear/accessory/white_pouches
 	display_name = "drop pouches, medical"
-	path = /obj/item/clothing/accessory/storage/white_pouches
+	path = /obj/item/clothing/accessory/storage/pouches/white
 	allowed_roles = list("Chief Medical Officer", "Medical Doctor", "Pharmacist","Psychiatrist", "Paramedic", "Medical Resident")
 
 /datum/gear/accessory/pouches
 	display_name = "drop pouches, simple"
-	path = /obj/item/clothing/accessory/storage/pouches
+	path = /obj/item/clothing/accessory/storage/pouches/colour
 	cost = 2
+
+/datum/gear/accessory/pouches/New()
+	..()
+	gear_tweaks += gear_tweak_free_color_choice
 
 /datum/gear/accessory/sweater
 	display_name = "sweater"
@@ -129,7 +133,7 @@
 
 /datum/gear/accessory/sweater/New()
 	..()
-	gear_tweaks = list(gear_tweak_free_color_choice)
+	gear_tweaks += gear_tweak_free_color_choice
 
 /datum/gear/accessory/dressshirt
 	display_name = "dress shirt"
@@ -137,7 +141,7 @@
 
 /datum/gear/accessory/dressshirt/New()
 	..()
-	gear_tweaks = list(gear_tweak_free_color_choice)
+	gear_tweaks += gear_tweak_free_color_choice
 
 /datum/gear/accessory/dressshirt_r
 	display_name = "dress shirt, rolled up"
@@ -145,7 +149,7 @@
 
 /datum/gear/accessory/dressshirt_r/New()
 	..()
-	gear_tweaks = list(gear_tweak_free_color_choice)
+	gear_tweaks += gear_tweak_free_color_choice
 
 /datum/gear/accessory/longsleeve
 	display_name = "long-sleeved shirt"
@@ -153,7 +157,7 @@
 
 /datum/gear/accessory/longsleeve/New()
 	..()
-	gear_tweaks = list(gear_tweak_free_color_choice)
+	gear_tweaks += gear_tweak_free_color_choice
 
 /datum/gear/accessory/longsleeve_s
 	display_name = "long-sleeved shirt, striped"
@@ -172,7 +176,7 @@
 
 /datum/gear/accessory/tshirt/New()
 	..()
-	gear_tweaks = list(gear_tweak_free_color_choice)
+	gear_tweaks += gear_tweak_free_color_choice
 
 /datum/gear/accessory/scarf
 	display_name = "scarf selection"
@@ -184,7 +188,7 @@
 	scarfs["plain scarf"] = /obj/item/clothing/accessory/scarf
 	scarfs["zebra scarf"] = /obj/item/clothing/accessory/scarf/zebra
 	gear_tweaks += new/datum/gear_tweak/path(scarfs)
-	gear_tweaks += list(gear_tweak_free_color_choice)
+	gear_tweaks += gear_tweak_free_color_choice
 
 /datum/gear/accessory/chaps
 	display_name = "chaps, brown"
@@ -193,3 +197,54 @@
 /datum/gear/accessory/chaps/black
 	display_name = "chaps, black"
 	path = /obj/item/clothing/accessory/chaps/black
+
+/datum/gear/accessory/dogtags
+	display_name = "dogtags"
+	path = /obj/item/clothing/accessory/dogtags
+
+/datum/gear/accessory/holobadge
+	display_name = "badge, holo"
+	path = /obj/item/clothing/accessory/badge/holo
+	allowed_roles = list("Security Officer","Head of Security", "Warden", "Security Cadet")
+
+/datum/gear/accessory/holobadge/New()
+	..()
+	var/holobadges = list()
+	holobadges["holobadge"] = /obj/item/clothing/accessory/badge/holo
+	holobadges["holobadge cord"] = /obj/item/clothing/accessory/badge/holo/cord
+	gear_tweaks += new/datum/gear_tweak/path(holobadges)
+
+/datum/gear/accessory/wardenbadge
+	display_name = "badge, warden"
+	path = /obj/item/clothing/accessory/badge/warden
+	allowed_roles = list("Warden")
+
+/datum/gear/accessory/hosbadge
+	display_name = "badge, HoS"
+	path = /obj/item/clothing/accessory/badge/hos
+	allowed_roles = list("Head of Security")
+
+/datum/gear/accessory/detbadge
+	display_name = "badge, detective"
+	path = /obj/item/clothing/accessory/badge/dia
+	allowed_roles = list("Detective")
+
+/datum/gear/accessory/idbadge
+	display_name = "badge, identification"
+	path = /obj/item/clothing/accessory/badge/idbadge
+
+/datum/gear/accessory/nt_idbadge
+	display_name = "badge, NanoTrasen ID"
+	path = /obj/item/clothing/accessory/badge/idbadge/nt
+
+/datum/gear/accessory/electronic_idbadge
+	display_name = "badge, electronic"
+	path = /obj/item/clothing/accessory/badge/idbadge/intel
+
+/datum/gear/accessory/sleeve_patch
+	display_name = "shoulder sleeve patch"
+	path = /obj/item/clothing/accessory/sleevepatch
+
+/datum/gear/accessory/sleeve_patch/New()
+	..()
+	gear_tweaks += gear_tweak_free_color_choice
