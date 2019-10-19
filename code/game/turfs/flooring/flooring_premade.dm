@@ -324,6 +324,8 @@
 	name = "asphalt road"
 	icon = 'icons/turf/themis-asphalt.dmi'
 	icon_state = "asphalt"
+	initial_flooring = /decl/flooring/tiling
+
 
 /turf/simulated/floor/themis/road/asphalt/asphalt1
 	name = "asphalt road"
