@@ -211,6 +211,11 @@
 	desc = "A direction sign, pointing out which way the Science department is."
 	icon_state = "direction_sci"
 
+/obj/structure/sign/directions/science/z03
+	name = "\improper Z-03 Artificial Intelligence Facility"
+	desc = "A direction sign, pointing out which way the Artificial Intelligence Facility is."
+	icon_state = "direction_z3"
+
 /obj/structure/sign/directions/engineering
 	name = "\improper Engineering department"
 	desc = "A direction sign, pointing out which way the Engineering department is."
