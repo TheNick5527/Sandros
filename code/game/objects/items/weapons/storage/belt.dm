@@ -54,7 +54,6 @@
 		/obj/item/device/analyzer/plant_analyzer,
 		/obj/item/weapon/extinguisher/mini,
 		/obj/item/weapon/pipewrench,
-		/obj/item/powerdrill
 		)
 
 
@@ -66,7 +65,6 @@
 		/obj/item/weapon/crowbar = 1,
 		/obj/item/weapon/wirecutters = 1,
 		/obj/item/stack/cable_coil/random = 1,
-		/obj/item/powerdrill = 1
 	)
 
 
@@ -350,7 +348,7 @@
 /obj/item/weapon/storage/belt/ninja //credits to BurgerBB
 	name = "advanced combat belt"
 	desc = "A very robust belt that can hold various specialized gear such as swords, grenades, shurikens, and food rations."
-	icon_state = "securitybelt"
+	icon_state = "swatbelt"
 	item_state = "security"
 	storage_slots = 9
 	max_w_class = 4

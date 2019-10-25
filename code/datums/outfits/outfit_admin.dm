@@ -20,7 +20,7 @@
 	back = /obj/item/weapon/gun/energy/rifle/pulse
 	gloves = /obj/item/clothing/gloves/force/basic
 	shoes = /obj/item/clothing/shoes/magboots
-	belt = /obj/item/weapon/storage/belt/military
+	belt = /obj/item/weapon/storage/belt/holster/security/tactical
 	l_ear = /obj/item/device/radio/headset/ert
 	id = /obj/item/weapon/card/id/syndicate
 	suit_store = /obj/item/weapon/tank/oxygen
@@ -88,10 +88,7 @@
 							/obj/item/weapon/reagent_containers/syringe = 1,
 							/obj/item/weapon/personal_inhaler/combat = 1,
 							/obj/item/weapon/reagent_containers/personal_inhaler_cartridge/large = 2,
-							/obj/item/weapon/reagent_containers/glass/bottle/dexalin_plus = 1,
-							/obj/item/weapon/reagent_containers/glass/bottle/epinephrine = 1,
-							/obj/item/weapon/reagent_containers/glass/bottle/spaceacillin = 1,
-							
+
 						)
 	accessory_contents = list(/obj/item/weapon/gun/energy/pulse/pistol = 1)
 	var/id_access = "Lance Medic"
@@ -166,7 +163,7 @@
 	name = "Syndicate Operative"
 
 	suit = /obj/item/clothing/suit/space/void/merc
-	belt = /obj/item/weapon/storage/belt/military/syndicate
+	belt = /obj/item/weapon/storage/belt/holster/security
 	head = /obj/item/clothing/head/helmet/space/void/merc
 	mask = /obj/item/clothing/mask/gas/syndicate
 	l_ear = /obj/item/device/radio/headset/syndicate
