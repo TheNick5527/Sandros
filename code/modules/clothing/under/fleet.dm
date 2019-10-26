@@ -74,3 +74,23 @@
 /obj/item/clothing/under/fleet/officer/fem
 	icon_state = "officer_f"
 	worn_state = "officer_f"
+
+
+//Beyond this point is Lancer equipment, which will be for Ceres Lance. Which is going to be repurposed for a future point. Likely special -
+// forces of some kind. Bear with me for this.
+
+/obj/item/clothing/under/lance
+	name = "section seven fatigues"
+	desc = "A terrifyingly bland pair of fatigues, belonging to elite operatives from the secretive 'Section Seven' of the Terran Military."
+	icon_state = "lance_fatigues"
+	worn_state = "lance_fatigues"
+
+/obj/item/clothing/under/lancer/dress/female
+	name = "section seven dress uniform"
+	desc = "A terrifying bland dress uniform, belonging to the elite operative from the secretive 'Section Seven' of the Terran Military."
+	icon_state = "lance_dress_f"
+	worn_state = "lance_dress_f"
+
+/obj/item/clothing/under/lancer/dress/male
+	icon_state = "lance_dress_m"
+	worn_state = "lance_dress_m"

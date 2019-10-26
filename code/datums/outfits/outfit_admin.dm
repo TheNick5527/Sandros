@@ -99,7 +99,7 @@
 /datum/outfit/admin/lance_operative
 	name = "Lance Operative"
 
-	uniform = /obj/item/clothing/under/dress/lance_dress/male
+	uniform = /obj/item/clothing/under/lancer/dress/male
 	back = /obj/item/weapon/storage/backpack/satchel
 	gloves = /obj/item/clothing/gloves/latex
 	shoes = /obj/item/clothing/shoes/laceup
@@ -120,6 +120,10 @@
 							/obj/item/device/multitool = 1
 	)
 	var/id_access = "Lance Operative"
+
+/datum/outfit/admin/lance_operative/female
+
+	uniform = /obj/item/clothing/under/lancer/dress/female
 
 /datum/outfit/admin/lance_operative/get_id_access()
 	return get_syndicate_access(id_access)
@@ -235,7 +239,6 @@
 	id = /obj/item/weapon/card/id/syndicate
 	l_pocket = null
 	r_pocket = null
-	accessory = /obj/item/clothing/accessory/storage/black_pouches
 
 	backpack_contents = list()
 

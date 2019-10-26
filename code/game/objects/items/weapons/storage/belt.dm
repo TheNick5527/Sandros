@@ -339,12 +339,12 @@
 	max_w_class = 3
 	max_storage_space = 28
 
-/obj/item/weapon/storage/belt/military
+/obj/item/weapon/storage/belt/holster/security/tactical
 	name = "military belt"
 	desc = "A lightweight, quick to use, military belt. Designed to be comfortably worn even during lengthy military operations."
 	icon_state = "militarybelt"
 	item_state = "militarybelt"
-	storage_slots = 9 //same as a combat belt now
+	storage_slots = 18 //same as a combat belt now
 	max_w_class = 3
 	max_storage_space  = 28
 	can_hold = list(
@@ -372,11 +372,6 @@
 		/obj/item/weapon/reagent_containers/hypospray/combat,
 		/obj/item/stack/telecrystal
 		)
-
-/obj/item/weapon/storage/belt/military/syndicate
-	desc = "A syndicate belt designed to be used by boarding parties. Its style is modeled after the hardsuits they wear."
-	icon_state = "militarybelt_syndie"
-	item_state = "militarybelt_syndie"
 
 /obj/item/weapon/storage/belt/janitor
 	name = "janibelt"
