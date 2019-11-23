@@ -14,23 +14,23 @@
 	station_area = 1
 
 /area/maintenance/civ
-	name = "\improper Spaceport Maintenance"
+	name = "\improper Civilian Maintenance"
 	icon_state = "maintcentral"
 
 /area/maintenance/aft
-	name = "Spaceport Airlock - South"
+	name = "Aft Maintenance"
 	icon_state = "amaint"
 
 /area/maintenance/fore
-	name = "Spaceport Airlock - North"
+	name = "Fore Maintenance"
 	icon_state = "fmaint"
 
 /area/maintenance/starboard
-	name = "Spaceport Airlock - East"
+	name = "Starboard Maintenance"
 	icon_state = "smaint"
 
 /area/maintenance/port
-	name = "Spaceport Airlock - West"
+	name = "Port Maintenance"
 	icon_state = "pmaint"
 
 /area/maintenance/atmos_control
@@ -70,16 +70,27 @@
 	icon_state = "asmaint"
 
 /area/maintenance/apmaint
-	name = "Supply Maintenance"
+	name = "Cargo Maintenance"
 	icon_state = "apmaint"
 
 /area/maintenance/maintcentral
-	name = "Admin Offices Maintenance"
+	name = "Bridge Maintenance"
 	icon_state = "maintcentral"
 
+/area/maintenance/bridge_elevator
+	name = "Bridge Elevator Maintenance"
+	icon_state = "maintcentral"
+
+/area/maintenance/bridge_elevator/surface
+	name = "Surface - Bridge Elevator Maintenance"
+
 /area/maintenance/arrivals
-	name = "Spaceport Arrivals Maintenance"
+	name = "Surface Maintenance"
 	icon_state = "maint_arrivals"
+
+/area/maintenance/store
+	name = "\improper Commissary Maintenance"
+	icon_state = "maint_cargo"
 
 /area/maintenance/bar
 	name = "Bar Maintenance"
@@ -90,7 +101,7 @@
 	icon_state = "red"
 
 /area/maintenance/cargo
-	name = "Supply Maintenance"
+	name = "Cargo Maintenance"
 	icon_state = "maint_cargo"
 
 /area/maintenance/cargo/surface
@@ -161,6 +172,10 @@
 	name = "\improper Telecoms Ladder Shaft"
 	icon_state = "tcomsatentrance"
 
+/area/maintenance/engineering_ladder
+	name = "\improper Engineering Ladder Shaft"
+	icon_state = "maint_engineering"
+
 /area/maintenance/research_xenobiology
 	name = "Research Maintenance - Xenobiology"
 	icon_state = "maint_research_port"
@@ -212,6 +227,15 @@
 /area/maintenance/interstitial_construction_site/office
 	name = "\improper Construction Office"
 
+/area/maintenance/elevator
+	name = "\improper Primary Elevator Shaft Maintenance"
+	sound_env = SMALL_ENCLOSED
+	icon_state = "green"
+
+/area/maintenance/vault
+	name = "\improper Vault Maintenance"
+	icon_state = "green"
+
 // SUBSTATIONS (Subtype of maint, that should let them serve as shielded area during radstorm)
 
 /area/maintenance/substation
@@ -219,10 +243,12 @@
 	icon_state = "substation"
 	sound_env = SMALL_ENCLOSED
 
-/area/maintenance/substation/engineering // Probably will be connected to engineering SMES room, as wires cannot be crossed properly without them sharing powernets.
+/area/maintenance/substation/engineering // Engineering
 	name = "Engineering Substation"
 
-// No longer used:
+/area/maintenance/substation/engineering_sublevel // Engineering
+	name = "Engineering Sublevel Substation"
+
 /area/maintenance/substation/medical_science // Medbay and Science. Each has it's own separated machinery, but it originates from the same room.
 	name = "Medical Research Substation"
 
@@ -241,7 +267,7 @@
 /area/maintenance/substation/civilian_east // Bar, kitchen, dorms, ...
 	name = "Surface Lvl. Civilian Substation"
 
-/area/maintenance/substation/civilian_west // Cargo, PTS, locker room, probably arrivals, ...)
+/area/maintenance/substation/civilian_west // PTS, locker room, probably arrivals, ...)
 	name = "Main Lvl. Civilian Substation"
 
 /area/maintenance/substation/command // AI and central cluster. This one will be between HoP office and meeting room (probably).
@@ -252,6 +278,9 @@
 
 /area/maintenance/substation/interstitial // Construction Level.
 	name = "Construction Level Substation"
+
+/area/maintenance/substation/supply // Cargo and Mining.
+	name = "Main Lvl. Supply Substation"
 
 //Solars
 

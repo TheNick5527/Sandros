@@ -26,22 +26,14 @@
 
 //Creates a new turf.
 // N is the type of the turf.
-#define NO_SPACE_TILES
-
-/turf/proc/ChangeTurf(N, tell_universe = TRUE, force_lighting_update = FALSE)
+/turf/proc/ChangeTurf(N, tell_universe = TRUE, force_lighting_update = FALSE, var/ignore_override)
 	if (!N)
 		return
 	if(!use_preloader && N == type) // Don't no-op if the map loader requires it to be reconstructed
 		return src
 
-	#ifdef NO_SPACE_TILES
-	if (istype(src, /turf/simulated))
-		if (istype(N, /turf/space) || ispath(N, /turf/space))
-			return
-	#endif
-
 	// This makes sure that turfs are not changed to space when there's a multi-z turf below
-	if(N == /turf/space && HasBelow(z))
+	if(N == /turf/space && HasBelow(z) && !ignore_override)
 		N = openspace_override_type || /turf/simulated/open/airless
 
 	var/obj/fire/old_fire = fire
@@ -150,6 +142,11 @@
 	other.icon = icon
 	other.icon_state = icon_state
 	other.underlays = underlays.Copy()
+	other.name = name
+	other.layer = layer
+	other.decals = decals
+	other.roof_flags = roof_flags
+	other.roof_type = roof_type
 
 	if (our_overlays)
 		other.our_overlays = our_overlays
@@ -173,3 +170,11 @@
 	SSair.mark_for_update(other)
 
 	other.update_icon()
+
+/turf/simulated/wall/copy_turf(turf/simulated/wall/other, ignore_air = FALSE)
+	.=..()
+	other.damage = damage
+
+/turf/simulated/wall/shuttle/dark/corner/underlay/copy_turf(turf/simulated/wall/shuttle/dark/corner/underlay/other, ignore_air = FALSE)
+	.=..()
+	other.underlay_dir = underlay_dir

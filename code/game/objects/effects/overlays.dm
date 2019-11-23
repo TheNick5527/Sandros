@@ -6,7 +6,7 @@
 /obj/effect/overlay/Destroy()
 	i_attached = null
 	return ..()
-
+	
 /obj/effect/overlay/beam//Not actually a projectile, just an effect.
 	name="beam"
 	icon='icons/effects/beam.dmi'
@@ -64,14 +64,6 @@
 	name = "snow"
 	icon = 'icons/turf/overlays.dmi'
 	icon_state = "snowfloor"
-	density = 0
-	anchored = 1
-	layer = 3
-
-/obj/effect/overlay/footprints
-	name = "footprints"
-	icon = 'icons/turf/overlays.dmi'
-	icon_state = "snow_footprints"
 	density = 0
 	anchored = 1
 	layer = 3

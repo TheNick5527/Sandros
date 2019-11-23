@@ -496,13 +496,13 @@
 		return
 	if(I.isscrewdriver())
 		src.panelopen = !src.panelopen
-		playsound(src.loc, 'sound/items/Screwdriver.ogg', 100, 1)
+		playsound(src.loc, I.usesound, 100, 1)
 		to_chat(user, text("<font color='blue'>You [] the unit's maintenance panel.</font>",(src.panelopen ? "open up" : "close") ))
 		update_icon()
 		src.updateUsrDialog()
 		return
-	if ( istype(I, /obj/item/weapon/grab) )
-		var/obj/item/weapon/grab/G = I
+	if ( istype(I, /obj/item/grab) )
+		var/obj/item/grab/G = I
 		if( !(ismob(G.affecting)) )
 			return
 		if (!src.isopen)
@@ -697,7 +697,7 @@
 	can_repair = 1
 
 /obj/machinery/suit_cycler/hos
-	name = "Security Chief suit cycler"
+	name = "Head of Security suit cycler"
 	model_text = "Head of Security"
 	req_access = list(access_hos)
 	departments = list("Head of Security")
@@ -705,7 +705,7 @@
 	can_repair = 1
 
 /obj/machinery/suit_cycler/captain
-	name = "Colony Director suit cycler"
+	name = "Captain suit cycler"
 	model_text = "Captain"
 	req_access = list(access_captain)
 	departments = list("Captain")
@@ -727,8 +727,8 @@
 			attack_hand(user)
 		return
 	//Other interface stuff.
-	if(istype(I, /obj/item/weapon/grab))
-		var/obj/item/weapon/grab/G = I
+	if(istype(I, /obj/item/grab))
+		var/obj/item/grab/G = I
 
 		if(!(ismob(G.affecting)))
 			return

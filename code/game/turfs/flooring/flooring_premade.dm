@@ -208,63 +208,11 @@
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "ice"
 
-// SNOW STUFF
-
 /turf/simulated/floor/snow
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
 	footstep_sound = "gravelstep"
-	temperature = T0C-20
-
-/turf/simulated/floor/snow/snow1
-	name = "shallow snow layer"
-	desc = "Shallow snow. You could almost walk through it."
-	icon = 'icons/turf/snow.dmi'
-	icon_state = "snow_1"
-	footstep_sound = "gravelstep"
-
-/turf/simulated/floor/snow/snow2
-	name = "snow layer"
-	desc = "It's snow. What did you expect?"
-	icon = 'icons/turf/snow.dmi'
-	icon_state = "snow_2"
-	footstep_sound = "gravelstep"
-
-/turf/simulated/floor/snow/snow3
-	name = "thick snow layer"
-	desc = "No yellow snow angels, please!"
-	icon = 'icons/turf/snow.dmi'
-	icon_state = "snow_3"
-	footstep_sound = "gravelstep"
-
-/turf/simulated/floor/snow/gravelroad
-	name = "gravel road"
-	desc = "A gravel road. How grim."
-	icon = 'icons/turf/snow.dmi'
-	icon_state = "old_dirt"
-	footstep_sound = "gravelstep"
-
-/turf/simulated/floor/snow/innercorner
-	name = "gravel road"
-	desc = "A gravel road. How grim."
-	icon = 'icons/turf/snow.dmi'
-	icon_state = "snow_innercornerT"
-	footstep_sound = "gravelstep"
-
-/turf/simulated/floor/snow/outercorner
-	name = "gravel road"
-	desc = "A gravel road. How grim."
-	icon = 'icons/turf/snow.dmi'
-	icon_state = "snow_outercornerT"
-	footstep_sound = "gravelstep"
-
-/turf/simulated/floor/snow/icefloor
-	name = "frozen surface"
-	desc = "Completely frozen. Don't lick this. It makes it uncomfortable."
-	icon = 'icons/turf/snow.dmi'
-	icon_state = "ice_floor"
-	footstep_sound = "concretestep"
 
 /turf/simulated/floor/snow/Initialize()
 	. = ..()
@@ -316,81 +264,14 @@
 	icon = 'icons/turf/flooring/misc.dmi'
 	icon_state = "vaurca"
 
-/*
- * THEMIS ROADS
-*/
+/turf/simulated/floor/foamedmetal
+	name = "foamed metal"
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "metalfoam"
+	footstep_sound = "gravelstep"
 
-/turf/simulated/floor/themis/road/asphalt
-	name = "asphalt road"
-	icon = 'icons/turf/themis-asphalt.dmi'
-	icon_state = "asphalt"
-	footstep_sound = "concretestep"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt1
-	name = "asphalt road"
-	icon = 'icons/turf/themis-asphalt.dmi'
-	icon_state = "asphalt1"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt2
-	name = "asphalt road"
-	icon_state = "asphalt2"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt3
-	name = "asphalt road"
-	icon_state = "asphalt3"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt4
-	name = "asphalt road"
-	icon_state = "asphalt4"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt5
-	name = "asphalt road"
-	icon_state = "asphalt5"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt6
-	name = "asphalt road"
-	icon_state = "asphalt6"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt7
-	name = "asphalt road"
-	icon_state = "asphalt7"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt8
-	name = "asphalt road"
-	icon_state = "asphalt8"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt9
-	name = "asphalt road"
-	icon_state = "asphalt9"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt10
-	name = "asphalt road"
-	icon_state = "asphalt10"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt11
-	name = "asphalt road"
-	icon_state = "asphalt11"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt12
-	name = "asphalt road"
-	icon_state = "asphalt12"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt13
-	name = "asphalt road"
-	icon_state = "asphalt13"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt14
-	name = "asphalt road"
-	icon_state = "asphalt14"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt15
-	name = "asphalt road"
-	icon_state = "asphalt15"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt16
-	name = "asphalt road"
-	icon_state = "asphalt16"
-
-/turf/simulated/floor/themis/road/asphalt/asphalt17
-	name = "asphalt road"
-	icon_state = "asphalt17"
+/turf/simulated/floor/foamedmetal/attack_hand(var/mob/user)
+	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	if(ishuman(user))
+		ChangeTurf(/turf/space)
+		to_chat(user, span("notice","You clear away the metal foam."))

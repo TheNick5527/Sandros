@@ -61,6 +61,7 @@
 	. = ..()
 	for(var/obj/machinery/door/firedoor/F in loc)
 		if(F != src)
+			crash_with("Duplicate firedoors at [x]-[y]-[z]. Deleting one.")
 			QDEL_IN(src, 1)
 			return .
 	var/area/A = get_area(src)
@@ -265,12 +266,12 @@
 		nextstate = FIREDOOR_CLOSED
 		close()
 
-/obj/machinery/door/firedoor/attackby(obj/item/weapon/C as obj, mob/user as mob)
+/obj/machinery/door/firedoor/attackby(obj/item/C as obj, mob/user as mob)
 	add_fingerprint(user)
 	if(operating)
 		return//Already doing something.
 	if(C.iswelder() && !repairing)
-		var/obj/item/weapon/weldingtool/W = C
+		var/obj/item/weldingtool/W = C
 		if(W.remove_fuel(0, user))
 			blocked = !blocked
 			user.visible_message("<span class='danger'>\The [user] [blocked ? "welds" : "unwelds"] \the [src] with \a [W].</span>",\
@@ -293,16 +294,16 @@
 		else
 			user.visible_message("<span class='danger'>[user] is removing the electronics from \the [src].</span>",
 									"You start to remove the electronics from [src].")
-			if(do_after(user,30))
+			if(do_after(user,30/C.toolspeed))
 				if(blocked && density && hatch_open)
 					playsound(src.loc, 'sound/items/Crowbar.ogg', 100, 1)
 					user.visible_message("<span class='danger'>[user] has removed the electronics from \the [src].</span>",
 										"You have removed the electronics from [src].")
 
 					if (stat & BROKEN)
-						new /obj/item/weapon/circuitboard/broken(src.loc)
+						new /obj/item/circuitboard/broken(src.loc)
 					else
-						new/obj/item/weapon/airalarm_electronics(src.loc)
+						new/obj/item/airalarm_electronics(src.loc)
 
 					var/obj/structure/firedoor_assembly/FA = new/obj/structure/firedoor_assembly(src.loc)
 					FA.anchored = 1
@@ -316,7 +317,7 @@
 		to_chat(user, "<span class='danger'>\The [src] is welded shut!</span>")
 		return
 
-	if(C.iscrowbar() || istype(C,/obj/item/weapon/material/twohanded/fireaxe) || (istype(C, /obj/item/weapon/melee/hammer)))
+	if(C.iscrowbar() || istype(C,/obj/item/material/twohanded/fireaxe) || (istype(C, /obj/item/melee/hammer)))
 		if(operating)
 			return
 
@@ -326,16 +327,16 @@
 			"You hear someone struggle and metal straining.")
 			return
 
-		if(istype(C,/obj/item/weapon/material/twohanded/fireaxe))
-			var/obj/item/weapon/material/twohanded/fireaxe/F = C
+		if(istype(C,/obj/item/material/twohanded/fireaxe))
+			var/obj/item/material/twohanded/fireaxe/F = C
 			if(!F.wielded)
 				return
 
 		user.visible_message("<span class='danger'>\The [user] starts to force \the [src] [density ? "open" : "closed"] with \a [C]!</span>",\
 				"You start forcing \the [src] [density ? "open" : "closed"] with \the [C]!",\
 				"You hear metal strain.")
-		if(do_after(user,30))
-			if(C.iscrowbar() || (istype(C, /obj/item/weapon/melee/hammer)))
+		if(do_after(user,30/C.toolspeed))
+			if(C.iscrowbar() || (istype(C, /obj/item/melee/hammer)))
 				if(stat & (BROKEN|NOPOWER) || !density)
 					user.visible_message("<span class='danger'>\The [user] forces \the [src] [density ? "open" : "closed"] with \a [C]!</span>",\
 					"You force \the [src] [density ? "open" : "closed"] with \the [C]!",\

@@ -35,7 +35,6 @@
 	armbands["engineering armband"] = /obj/item/clothing/accessory/armband/engine
 	armbands["hydroponics armband"] = /obj/item/clothing/accessory/armband/hydro
 	armbands["science armband"] = /obj/item/clothing/accessory/armband/science
-	armbands["synthetic intelligence movement armband"] = /obj/item/clothing/accessory/armband/movement
 	armbands["ATLAS armband"] = /obj/item/clothing/accessory/armband/atlas
 	armbands["IAC armband"] = /obj/item/clothing/accessory/armband/iac
 	gear_tweaks += new/datum/gear_tweak/path(armbands)
@@ -126,6 +125,18 @@
 /datum/gear/accessory/pouches/New()
 	..()
 	gear_tweaks += gear_tweak_free_color_choice
+
+/datum/gear/accessory/overalls_mining
+	display_name = "overalls, mining"
+	path = /obj/item/clothing/accessory/storage/overalls/mining
+	allowed_roles = list("Shaft Miner")
+	cost = 2
+
+/datum/gear/accessory/overalls_engineer
+	display_name = "overalls, engineering"
+	path = /obj/item/clothing/accessory/storage/overalls/engineer
+	allowed_roles = list("Station Engineer", "Atmospheric Technician", "Chief Engineer", "Engineering Apprentice")
+	cost = 2
 
 /datum/gear/accessory/sweater
 	display_name = "sweater"

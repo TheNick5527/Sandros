@@ -14,6 +14,7 @@
 
 /datum/reagent/toxin/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(strength)
+		M.add_chemical_effect(CE_TOXIN, 1)
 		M.adjustToxLoss(strength * removed)
 
 /datum/reagent/toxin/plasticide
@@ -58,6 +59,7 @@
 	taste_description = "stinging needles"
 
 /datum/reagent/toxin/panotoxin/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	M.add_chemical_effect(CE_TOXIN, 1)
 	M.adjustHalLoss(removed*15)
 
 /datum/reagent/toxin/phoron
@@ -76,11 +78,12 @@
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
 
-		var/obj/item/organ/parasite/PA = H.internal_organs_by_name["blackkois"]
+		var/obj/item/organ/internal/parasite/PA = H.internal_organs_by_name["blackkois"]
 		if((istype(PA) && PA.stage >= 3))
 			H.heal_organ_damage(2 * removed, 2 * removed)
 			H.add_chemical_effect(CE_BLOODRESTORE, 8 * removed)
 			H.adjustToxLoss(-2 * removed)
+			return
 
 		if(alien == IS_VAURCA && H.species.has_organ["filtration bit"])
 			metabolism = REM * 20 //vaurcae metabolise phoron faster than other species - good for them if their filter isn't broken.
@@ -111,7 +114,7 @@
 /datum/reagent/toxin/phoron/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
 	if(istype(M, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = M
-		var/obj/item/organ/parasite/P = H.internal_organs_by_name["blackkois"]
+		var/obj/item/organ/internal/parasite/P = H.internal_organs_by_name["blackkois"]
 		if((alien == IS_VAURCA) || (istype(P) && P.stage >= 3))
 			return
 
@@ -149,8 +152,9 @@
 	if(!istype(M))
 		return
 
-	var/obj/item/organ/parasite/P = M.internal_organs_by_name["blackkois"]
+	var/obj/item/organ/internal/parasite/P = M.internal_organs_by_name["blackkois"]
 	if((alien == IS_VAURCA) || (istype(P) && P.stage >= 3))
+		M.add_chemical_effect(CE_TOXIN, 1)
 		M.adjustToxLoss(removed * strength*2)
 	else
 		M.adjustToxLoss(removed * strength)
@@ -432,6 +436,7 @@
 		return
 	if(prob(10))
 		to_chat(M, "<span class='danger'>Your insides are burning!</span>")
+		M.add_chemical_effect(CE_TOXIN, 10)
 		M.adjustToxLoss(rand(100, 300) * removed)
 	else if(prob(40))
 		M.heal_organ_damage(25 * removed, 0)
@@ -490,6 +495,7 @@
 		M.sleeping = max(M.sleeping, 30)
 
 	if(dose > 1)
+		M.add_chemical_effect(CE_TOXIN, 2)
 		M.adjustToxLoss(removed)
 
 /datum/reagent/chloralhydrate/beer2 //disguised as normal beer for use by emagged brobots
@@ -542,7 +548,7 @@
 	M.cut_overlays()
 	M.invisibility = 101
 	for(var/obj/item/W in M)
-		if(istype(W, /obj/item/weapon/implant)) //TODO: Carn. give implants a dropped() or something
+		if(istype(W, /obj/item/implant)) //TODO: Carn. give implants a dropped() or something
 			qdel(W)
 			continue
 		W.layer = initial(W.layer)
@@ -600,13 +606,13 @@
 
 /datum/reagent/toxin/tobacco/affect_blood(var/mob/living/carbon/human/M, var/alien, var/removed)
 	if(istype(M))
-		var/obj/item/organ/H = M.internal_organs_by_name["heart"]
+		var/obj/item/organ/H = M.internal_organs_by_name[BP_HEART]
 		if(istype(H))
 			H.take_damage(removed * strength * 0.5,1)
-		var/obj/item/organ/L = M.internal_organs_by_name["lungs"]
+		var/obj/item/organ/L = M.internal_organs_by_name[BP_LUNGS]
 		if(istype(L))
 			L.take_damage(removed * strength,1)
-		var/obj/item/organ/A = M.internal_organs_by_name["liver"]
+		var/obj/item/organ/A = M.internal_organs_by_name[BP_LIVER]
 		if(istype(A))
 			A.take_damage(removed * strength * 0.25,1)
 
@@ -684,12 +690,12 @@
 			return
 
 		if(!H.internal_organs_by_name["zombie"] && prob(15))
-			var/obj/item/organ/external/affected = H.get_organ("chest")
-			var/obj/item/organ/parasite/zombie/infest = new()
+			var/obj/item/organ/external/affected = H.get_organ(BP_CHEST)
+			var/obj/item/organ/internal/parasite/zombie/infest = new()
 			infest.replaced(H, affected)
 
-		if(ishuman_species(H))
-			if(!H.internal_organs_by_name["brain"])	//destroying the brain stops trioxin from bringing the dead back to life
+		if(H.species.zombie_type)
+			if(!H.internal_organs_by_name[BP_BRAIN])	//destroying the brain stops trioxin from bringing the dead back to life
 				return
 
 			if(H && H.stat != DEAD)
@@ -698,7 +704,12 @@
 			for(var/datum/language/L in H.languages)
 				H.remove_language(L.name)
 
-			H.set_species("Zombie")
+			var/r = H.r_skin
+			var/g = H.g_skin
+			var/b = H.b_skin
+
+			H.set_species(H.species.zombie_type, 0, 0, 0)
 			H.revive()
+			H.change_skin_color(r, g, b)
 			playsound(H.loc, 'sound/hallucinations/far_noise.ogg', 50, 1)
 			to_chat(H,"<font size='3'><span class='cult'>You return back to life as the undead, all that is left is the hunger to consume the living and the will to spread the infection.</font></span>")

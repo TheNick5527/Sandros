@@ -429,12 +429,12 @@ Buildable meters
 /obj/item/pipe/attack_self(mob/user as mob)
 	return rotate()
 
-/obj/item/pipe/attackby(var/obj/item/weapon/W as obj, var/mob/user as mob)
+/obj/item/pipe/attackby(var/obj/item/W as obj, var/mob/user as mob)
 	..()
 	//*
-	if (!W.iswrench() && !istype(W, /obj/item/weapon/pipewrench))
+	if (!W.iswrench() && !istype(W, /obj/item/pipewrench))
 		return ..()
-	if(istype(W, /obj/item/weapon/pipewrench))
+	if(istype(W, /obj/item/pipewrench))
 		var/action = alert(user, "Change pipe?", "Change pipe", "Yes", "No")
 		if(action == "Yes")
 			action = alert(user, "Change pipe type?", "Change pipe", "Yes", "No")
@@ -1180,7 +1180,7 @@ Buildable meters
 			P.atmos_init()
 			P.build_network()
 
-	playsound(src.loc, 'sound/items/Ratchet.ogg', 50, 1)
+	playsound(src.loc, W.usesound, 50, 1)
 	user.visible_message( \
 		"[user] fastens the [src].", \
 		"<span class='notice'>You have fastened the [src].</span>", \
@@ -1202,7 +1202,7 @@ Buildable meters
 	item_state = "buildpipe"
 	w_class = 4
 
-/obj/item/pipe_meter/attackby(var/obj/item/weapon/W as obj, var/mob/user as mob)
+/obj/item/pipe_meter/attackby(var/obj/item/W as obj, var/mob/user as mob)
 	..()
 
 	if (!W.iswrench())
@@ -1211,7 +1211,7 @@ Buildable meters
 		to_chat(user, "<span class='warning'>You need to fasten it to a pipe</span>")
 		return 1
 	new/obj/machinery/meter( src.loc )
-	playsound(src.loc, 'sound/items/Ratchet.ogg', 50, 1)
+	playsound(src.loc, W.usesound, 50, 1)
 	to_chat(user, "<span class='notice'>You have fastened the meter to the pipe</span>")
 	qdel(src)
 //not sure why these are necessary

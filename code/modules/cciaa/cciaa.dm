@@ -1,71 +1,3 @@
-/client/proc/returntobody()
-	set name = "Return to mob"
-	set desc = "The Agent's work is done, return to your original mob"
-	set category = "Special Verbs"
-
-	if(!check_rights(0))		return
-
-	if (!mob.mind || !(mob.mind.special_role in list("CCIA Agent", "ERT Commander")))
-		verbs -= /client/proc/returntobody
-		return
-
-	if(!holder)		return
-
-	var/mob/M = mob
-	var/area/A = get_area(M)
-
-	if(M.stat == DEAD)
-		if(holder.original_mob)
-			if(holder.original_mob.client)
-				if(alert(src, "There is someone else in your old body.\nWould you like to ghost instead?", "There is someone else in your old body, you will be ghosted", "Yes", "No") == "Yes")
-					M.mind.special_role = null
-					mob.ghostize(1)
-					return
-				else
-					return
-			holder.original_mob.key = key
-			holder.original_mob = null
-			return
-		M.mind.special_role = null
-		mob.ghostize(1)
-		return
-
-	if(!is_type_in_list(A,centcom_areas))
-		to_chat(src, "<span class='warning'>You need to be back at central to do this.</span>")
-		return
-
-	if(holder.original_mob)
-		if(holder.original_mob == M)
-			verbs -= /client/proc/returntobody
-			return
-
-		if(holder.original_mob.client)
-			if(alert(src, "There is someone else in your old body.\nWould you like to ghost instead?", "There is someone else in your old body, you will be ghosted", "Yes", "No") == "Yes")
-				M.mind.special_role = null
-				mob.ghostize(0)
-			else
-				return
-		else
-			holder.original_mob.key = key
-
-		holder.original_mob = null
-	else
-		if(mob.mind.admin_mob_placeholder)
-			if(mob.mind.admin_mob_placeholder.client)
-				if(alert(src, "There is someone else in your old body.\nWould you like to ghost instead?", "There is someone else in your old body, you will be ghosted", "Yes", "No") == "Yes")
-					M.mind.special_role = null
-					mob.ghostize(0)
-				else
-					return
-			else
-				mob.mind.admin_mob_placeholder.key = key
-			M.mind.admin_mob_placeholder = null
-		else
-			M.mind.special_role = null
-			mob.ghostize(0)
-	verbs -= /client/proc/returntobody
-	qdel(M)
-
 /proc/clear_cciaa_job(var/mob/living/carbon/human/M)
 	addtimer(CALLBACK(GLOBAL_PROC, /proc/actual_clear_ccia_job, M), 9000)
 
@@ -113,7 +45,7 @@
 		announce = 1
 
 	// Create the reply message
-	var/obj/item/weapon/paper/P = new /obj/item/weapon/paper( null ) //hopefully the null loc won't cause trouble for us
+	var/obj/item/paper/P = new /obj/item/paper( null ) //hopefully the null loc won't cause trouble for us
 	P.name = "[current_map.boss_name] - [customname]"
 	P.info = input
 	P.update_icon()
@@ -123,7 +55,7 @@
 	stampoverlay.icon_state = "paper_stamp-cent"
 	if(!P.stamped)
 		P.stamped = new
-	P.stamped += /obj/item/weapon/stamp
+	P.stamped += /obj/item/stamp
 	P.add_overlay(stampoverlay)
 	P.stamps += "<HR><i>This paper has been stamped by the Central Command Quantum Relay.</i>"
 

@@ -302,7 +302,7 @@ main ui datum.
 				src.data = ret
 				return 2
 		else if (force)
-			if(!nopush)
+			if(!nopush) 
 				push_change(null)
 				return 1
 			else
@@ -330,7 +330,7 @@ main ui datum.
 		if(nstatus > STATUS_DISABLED)
 			return check_for_change(TRUE, !autopush) == 2 // Gather data and update it
 		else if (nstatus == STATUS_DISABLED && autopush)
-			if(autopush)
+			if(autopush) 
 				push_change(null) // Only update ui data
 			else
 				return 1

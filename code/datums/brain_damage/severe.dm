@@ -10,7 +10,7 @@
 	scan_desc = "extensive damage to the brain's language center"
 	gain_text = "<span class='warning'>You forget how to speak!</span>"
 	lose_text = "<span class='notice'>You suddenly remember how to speak.</span>"
-	cure_type = CURE_SURGERY
+	cure_type = CURE_CRYSTAL
 
 /datum/brain_trauma/severe/mute/on_gain()
 	owner.sdisabilities |= MUTE
@@ -72,7 +72,7 @@
 	scan_desc = "traumatic narcolepsy"
 	gain_text = "<span class='warning'>You have a constant feeling of drowsiness...</span>"
 	lose_text = "<span class='notice'>You feel awake and aware again.</span>"
-	cure_type = CURE_SURGERY
+	cure_type = CURE_HYPNOSIS
 	can_gain = FALSE
 
 /datum/brain_trauma/severe/narcolepsy/on_life()
@@ -100,7 +100,7 @@
 	gain_text = ""
 	lose_text = "<span class='notice'>You feel like you could be safe on your own.</span>"
 	var/stress = 0
-	cure_type = CURE_SURGERY
+	cure_type = CURE_HYPNOSIS
 
 /datum/brain_trauma/severe/monophobia/on_gain()
 	..()
@@ -167,7 +167,7 @@
 			else
 				if(prob(15) && ishuman(owner))
 					var/mob/living/carbon/human/H = owner
-					var/obj/item/organ/heart/heart = H.internal_organs_by_name["heart"]
+					var/obj/item/organ/internal/heart/heart = H.internal_organs_by_name[BP_HEART]
 					heart.take_damage(heart.min_bruised_damage)
 					to_chat(H, "<span class='danger'>You feel a stabbing pain in your heart!</span>")
 				else
@@ -180,7 +180,7 @@
 	scan_desc = "extreme discoordination"
 	gain_text = "<span class='warning'>You can barely control your hands!</span>"
 	lose_text = "<span class='notice'>You feel in control of your hands again.</span>"
-	cure_type = CURE_SURGERY
+	cure_type = CURE_CRYSTAL
 
 /datum/brain_trauma/severe/discoordination/on_gain()
 	owner.disabilities |= MONKEYLIKE
@@ -220,7 +220,7 @@
 	scan_desc = "pacific syndrome"
 	gain_text = "<span class='notice'>You feel oddly peaceful.</span>"
 	lose_text = "<span class='notice'>You no longer feel compelled to not harm.</span>"
-	cure_type = CURE_SURGERY
+	cure_type = CURE_HYPNOSIS
 
 /datum/brain_trauma/severe/pacifism/on_gain()
 	owner.disabilities |= PACIFIST

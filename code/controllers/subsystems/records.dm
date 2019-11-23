@@ -86,7 +86,9 @@
 	qdel(record)
 
 /datum/controller/subsystem/records/proc/remove_record_by_field(var/field, var/value, var/record_type = RECORD_GENERAL)
-	remove_record(find_record(field, value, record_type))
+	. = find_record(field, value, record_type)
+	if(.)
+		remove_record(.)
 
 /datum/controller/subsystem/records/proc/find_record(var/field, var/value, var/record_type = RECORD_GENERAL)
 	if(excluded_fields[field])
@@ -196,7 +198,7 @@
 		var/rank = sanitize(t.rank)
 		var/real_rank = make_list_rank(t.real_rank)
 
-		var/isactive = t.phisical_status
+		var/isactive = t.physical_status
 		var/department = 0
 		var/depthead = 0            // Department Heads will be placed at the top of their lists.
 
@@ -234,9 +236,9 @@
  * Helping functions for everyone
  */
 /proc/GetAssignment(var/mob/living/carbon/human/H)
-	if(H.mind.role_alt_title)
+	if(H.mind?.role_alt_title)
 		return H.mind.role_alt_title
-	else if(H.mind.assigned_role)
+	else if(H.mind?.assigned_role)
 		return H.mind.assigned_role
 	else if(H.job)
 		return H.job

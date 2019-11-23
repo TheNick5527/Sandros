@@ -270,7 +270,7 @@ var/datum/controller/subsystem/vote/SSvote
 						AddChoice(antag.role_text)
 				AddChoice("None")
 			if("custom")
-				question = sanitizeSafe(input(usr,"What is the vote for?") as text|null)
+				question = input(usr,"What is the vote for?") as text|null
 				if(!question)	return 0
 				for(var/i=1,i<=10,i++)
 					var/option = capitalize(sanitize(input(usr,"Please enter an option or hit cancel to finish") as text|null))
@@ -283,7 +283,7 @@ var/datum/controller/subsystem/vote/SSvote
 		started_time = world.time
 		var/text = "[capitalize(mode)] vote started by [initiator]."
 		if(mode == "custom")
-			text += "\n[question]"
+			text += "\n[sanitizeSafe(question)]"
 
 		log_vote(text)
 		to_world("<font color='purple'><b>[text]</b>\nType <b>vote</b> or click <a href='?src=\ref[src];open=1'>here</a> to place your votes.\nYou have [config.vote_period/10] seconds to vote.</font>")
@@ -294,9 +294,9 @@ var/datum/controller/subsystem/vote/SSvote
 					if("crew_transfer")
 						C << sound('sound/effects/vote.ogg', repeat = 0, wait = 0, volume = 50, channel = 3)
 					if("gamemode")
-						C << sound('sound/effects/start_your_voting.ogg', repeat = 0, wait = 0, volume = 50, channel = 3)
+						C << sound('sound/ambience/alarm4.ogg', repeat = 0, wait = 0, volume = 50, channel = 3)
 					if("custom")
-						C << sound('sound/effects/start_your_voting.ogg', repeat = 0, wait = 0, volume = 50, channel = 3)
+						C << sound('sound/ambience/alarm4.ogg', repeat = 0, wait = 0, volume = 50, channel = 3)
 		if(mode == "gamemode" && round_progressing)
 			round_progressing = 0
 			to_world("<font color='red'><b>Round start has been delayed.</b></font>")
@@ -315,7 +315,7 @@ var/datum/controller/subsystem/vote/SSvote
 	if(href_list["open"])
 		OpenVotingUI(usr)
 	var/isstaff = usr.client.holder && (usr.client.holder.rights & (R_ADMIN|R_MOD))
-
+	
 	switch(href_list["action"])
 		if("cancel")
 			if(isstaff)
@@ -376,14 +376,14 @@ var/datum/controller/subsystem/vote/SSvote
 	for(var/choice in choices)
 		VUEUI_SET_IFNOTSET(data["choices"][choice], deepCopyList(choices[choice]), ., data)
 		VUEUI_SET_CHECK(data["choices"][choice]["votes"], choices[choice]["votes"], ., data) // Only votes trigger data update
-
+	
 	VUEUI_SET_CHECK(data["mode"], mode, ., data)
 	VUEUI_SET_CHECK(data["voted"], current_votes[user.ckey], ., data)
 	VUEUI_SET_CHECK(data["endtime"], started_time + config.vote_period, ., data)
 	VUEUI_SET_CHECK(data["allow_vote_restart"], config.allow_vote_restart, ., data)
 	VUEUI_SET_CHECK(data["allow_vote_mode"], config.allow_vote_mode, ., data)
 	VUEUI_SET_CHECK(data["allow_extra_antags"], (!antag_add_failed && config.allow_extra_antags), ., data)
-
+	
 	if(!question)
 		VUEUI_SET_CHECK(data["question"], capitalize(mode), ., data)
 	else
@@ -391,7 +391,7 @@ var/datum/controller/subsystem/vote/SSvote
 	VUEUI_SET_CHECK(data["isstaff"], (user.client.holder && (user.client.holder.rights & (R_ADMIN|R_MOD))), ., data)
 	var/slevel = get_security_level()
 	VUEUI_SET_CHECK(data["is_code_red"], (slevel == "red" || slevel == "delta"), ., data)
-
+	
 
 
 /datum/controller/subsystem/vote/proc/OpenVotingUI(var/mob/user)

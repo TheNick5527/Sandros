@@ -123,7 +123,7 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 			if(C.is_afk())
 				admin_number_afk++
 			if(C.prefs.toggles & SOUND_ADMINHELP)
-				sound_to(C, 'sound/effects/adminhelp_new.ogg')
+				sound_to(C, 'sound/effects/adminhelp.ogg')
 
 			to_chat(C, msg)
 

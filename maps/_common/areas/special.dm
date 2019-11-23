@@ -54,7 +54,15 @@
 	name = "\improper Aft Checkpoint"
 
 /area/centcom/legion
-	name = "\improper Tau Ceti Foreign Legion Base"
+	name = "\improper BLV The Tower - Deck 1"
+	icon_state = "blvtower"
+
+/area/centcom/legion/hangar5
+	name = "\improper BLV The Tower - Hangar 5"
+	icon_state = "blvhangar5"
+
+/area/centcom/distress_prep
+	name = "\improper Distress Team Preparation"
 
 //SYNDICATES
 
@@ -167,6 +175,7 @@
 /area/syndicate_station/transit
 	name = "\improper Hyperspace"
 	icon_state = "shuttle"
+	base_turf = /turf/space/transit/north
 	centcomm_area = 1
 
 /area/wizard_station
@@ -193,6 +202,7 @@
 /area/skipjack_station/transit
 	name = "\improper Hyperspace"
 	icon_state = "shuttle"
+	base_turf = /turf/space/transit/north
 	centcomm_area = 1
 
 /area/skipjack_station/surface
@@ -229,7 +239,7 @@
 //merchant station and shuttle
 
 /area/merchant_station
-	name = "\improper Free-Trader Post"
+	name = "\improper Merchant Station"
 	icon_state = "merchant"
 	requires_power = 0
 	dynamic_lighting = 1
@@ -242,14 +252,14 @@
 	centcomm_area = 1
 
 /area/merchant_ship
-	name = "\improper Free-Trader Ship"
+	name = "\improper Merchant Ship"
 	icon_state = "yellow"
 	requires_power = 0
 	flags = RAD_SHIELDED | SPAWN_ROOF
 	no_light_control = 1
 
 /area/merchant_ship/start
-	name = "\improper Free-Trader Ship Docked"
+	name = "\improper Merchant Ship Docked"
 	icon_state = "yellow"
 	centcomm_area = 1
 	base_turf = /turf/space
@@ -261,16 +271,12 @@
 	base_turf = /turf/unsimulated/floor/asteroid/ash
 
 /area/beach
-	name = "Planet Surface"
+	name = "Keelin's private beach"
 	icon_state = "null"
 	luminosity = 1
+	dynamic_lighting = 0
+	requires_power = 0
 	no_light_control = 1
-
-/area/beach/mining
-	name = "Planet Mountain Range"
-
-/area/beach/telecomms
-	name = "Planetary Satellite Area"
 
 //dungeon areas
 

@@ -49,7 +49,7 @@
 	item_state = "tophat"
 
 /obj/item/clothing/head/collectable/captain
-	name = "collectable director's hat"
+	name = "collectable captain's hat"
 	desc = "A Collectable Hat that'll make you look just like a real comdom!"
 	icon_state = "captain"
 	item_state_slots = list(
@@ -116,7 +116,7 @@
 	icon_state = "hardhat0_yellow"
 
 /obj/item/clothing/head/collectable/HoS
-	name = "collectable SC hat"
+	name = "collectable HoS hat"
 	desc = "Now you can beat prisoners, set silly sentences and arrest for no reason too!"
 	icon_state = "hoscap"
 

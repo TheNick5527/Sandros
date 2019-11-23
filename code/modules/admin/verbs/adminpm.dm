@@ -144,7 +144,7 @@
 	//play the recieving admin the adminhelp sound (if they have them enabled)
 	//non-admins shouldn't be able to disable this
 	if(C.prefs && C.prefs.toggles & SOUND_ADMINHELP)
-		sound_to(C, 'sound/effects/adminhelp-reply.ogg')
+		sound_to(C, 'sound/effects/adminhelp.ogg')
 
 	log_admin("PM: [key_name(src)]->[key_name(C)]: [msg]", admin_key = key_name(src), ckey_target = key_name(C))
 
@@ -169,10 +169,11 @@
 	if(!msg)
 		return
 
-	sanitize(msg)
+	msg = sanitize(msg)
+	sender = sanitize(sender, encode=0)
 
-	post_webhook_event(WEBHOOK_ADMIN_PM, list("title"="Help is requested", "message"="PlayerPM to **[sender]** from **[key_name(src)]**: ```[html_decode(msg)]```"))
-	discord_bot.send_to_admins("PlayerPM to [sender] from [key_name(src)]: [html_decode(msg)]")
+	post_webhook_event(WEBHOOK_ADMIN_PM, list("title"="Help is requested", "message"="PlayerPM to **[discord_escape(sender)]** from **[discord_escape(key_name(src))]**: ```[discord_escape(html_decode(msg))]```"))
+	discord_bot.send_to_admins("PlayerPM to [discord_escape(sender)] from [discord_escape(key_name(src))]: [discord_escape(html_decode(msg))]")
 
 	to_chat(src, "<span class='pm'><span class='out'>" + create_text_tag("pm_out_alt", "", src) + " to <span class='name'>Discord-[sender]</span>: <span class='message'>[msg]</span></span></span>")
 

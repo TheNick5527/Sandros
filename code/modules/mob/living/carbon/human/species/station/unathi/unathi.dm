@@ -56,7 +56,8 @@
 
 	inherent_verbs = list(
 		/mob/living/proc/devour,
-		/mob/living/carbon/human/proc/regurgitate
+		/mob/living/carbon/human/proc/regurgitate,
+		/mob/living/carbon/human/proc/tongue_flick
 	)
 
 
@@ -86,6 +87,8 @@
 
 	allowed_citizenships = list(CITIZENSHIP_IZWESKI, CITIZENSHIP_DOMINIA, CITIZENSHIP_BIESEL, CITIZENSHIP_SOL, CITIZENSHIP_FRONTIER, CITIZENSHIP_ELYRA, CITIZENSHIP_ERIDANI)
 	allowed_religions = list(RELIGION_THAKH, RELIGION_SKAKH, RELIGION_AUTAKH, RELIGION_MOROZ, RELIGION_NONE, RELIGION_OTHER, RELIGION_CHRISTIANITY, RELIGION_ISLAM)
+
+	zombie_type = "Unathi Zombie"
 
 /datum/species/unathi/before_equip(var/mob/living/carbon/human/H)
 	. = ..()

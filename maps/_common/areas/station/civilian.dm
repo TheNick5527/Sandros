@@ -99,6 +99,7 @@
 
 /area/crew_quarters/fitness/changing
 	name = "\improper Surface - Changing Room"
+	sound_env = SMALL_ENCLOSED
 
 /area/crew_quarters/fitness/running
 	name = "\improper Surface - Running Track"
@@ -111,6 +112,10 @@
 /area/crew_quarters/kitchen
 	name = "\improper Kitchen"
 	icon_state = "kitchen"
+
+/area/crew_quarters/kitchen/freezer
+	name = "\improper Kitchen Freezer"
+	sound_env = SMALL_ENCLOSED
 
 /area/crew_quarters/bar
 	name = "\improper Bar"
@@ -154,48 +159,51 @@
 	station_area = 1
 
 /area/quartermaster
-	name = "\improper Supply Officer"
+	name = "\improper Quartermasters"
 	icon_state = "quart"
 	station_area = 1
 	holomap_color = HOLOMAP_AREACOLOR_CARGO
 
 /area/quartermaster/office
-	name = "\improper Supply Office"
+	name = "\improper Cargo Office"
 	icon_state = "quartoffice"
 
 /area/quartermaster/lobby
-	name = "\improper Supply Lobby"
+	name = "\improper Cargo Lobby"
 	icon_state = "green"
 
 /area/quartermaster/break_room
-	name = "\improper Supply Break Room"
+	name = "\improper Cargo Break Room"
 	icon_state = "blue"
 
 /area/quartermaster/mail_room
-	name = "\improper Supply Mail Room"
+	name = "\improper Cargo Mail Room"
 	icon_state = "red"
 
 /area/quartermaster/storage
-	name = "\improper Supply Warehouse"
+	name = "\improper Cargo Warehouse"
 	icon_state = "quartstorage"
 	sound_env = LARGE_ENCLOSED
 
 /area/quartermaster/loading
-	name = "\improper Shipping Bay"
+	name = "\improper Cargo Bay"
 	icon_state = "quartloading"
 
 /area/quartermaster/qm
-	name = "\improper Supply - Supply Officer's Office"
+	name = "\improper Cargo - Quartermaster's Office"
 	icon_state = "quart"
 
 /area/quartermaster/miningdock
-	name = "\improper Supply Mining Dock"
+	name = "\improper Cargo Mining Dock"
 	icon_state = "mining"
 
 /area/janitor/
 	name = "\improper Custodial Closet"
 	icon_state = "janitor"
 	station_area = 1
+
+/area/janitor/surface
+	name = "\improper Surface - Custodial Closet"
 
 /area/hydroponics
 	name = "\improper Hydroponics"
@@ -208,7 +216,7 @@
 	icon_state = "garden"
 
 /area/store
-	name = "\improper Station Store"
+	name = "\improper Surface - Commissary"
 	icon_state = "quartstorage"
 	station_area = 1
 

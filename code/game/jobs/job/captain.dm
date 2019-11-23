@@ -16,6 +16,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	minimal_player_age = 14
 	economic_modifier = 20
 
+	minimum_character_age = 35
+
 	ideal_character_age = 70 // Old geezer captains ftw
 
 	outfit = /datum/outfit/job/captain
@@ -29,20 +31,20 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	head = /obj/item/clothing/head/caphat
 	l_ear = /obj/item/device/radio/headset/heads/captain
 	glasses = /obj/item/clothing/glasses/sunglasses
-	id = /obj/item/weapon/card/id/gold
+	id = /obj/item/card/id/gold
 	pda = /obj/item/device/pda/captain
 	backpack_contents = list(
-		/obj/item/weapon/storage/box/ids = 1
+		/obj/item/storage/box/ids = 1
 	)
 
 	implants = list(
-		/obj/item/weapon/implant/loyalty
+		/obj/item/implant/loyalty
 	)
 
-	backpack = /obj/item/weapon/storage/backpack/captain
-	satchel = /obj/item/weapon/storage/backpack/satchel_cap
-	dufflebag = /obj/item/weapon/storage/backpack/duffel/cap
-	messengerbag = /obj/item/weapon/storage/backpack/messenger/com
+	backpack = /obj/item/storage/backpack/captain
+	satchel = /obj/item/storage/backpack/satchel_cap
+	dufflebag = /obj/item/storage/backpack/duffel/cap
+	messengerbag = /obj/item/storage/backpack/messenger/com
 
 /datum/outfit/job/captain/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
@@ -76,6 +78,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	economic_modifier = 10
 	ideal_character_age = 50
 
+	minimum_character_age = 30
+
 	outfit = /datum/outfit/job/hop
 
 	access = list(access_sec_doors, access_medical, access_engine, access_change_ids, access_eva, access_heads,
@@ -96,10 +100,10 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	uniform = /obj/item/clothing/under/rank/head_of_personnel
 	shoes = /obj/item/clothing/shoes/brown
 	l_ear = /obj/item/device/radio/headset/heads/hop
-	id = /obj/item/weapon/card/id/silver
+	id = /obj/item/card/id/navy
 	pda = /obj/item/device/pda/heads/hop
 	backpack_contents = list(
-		/obj/item/weapon/storage/box/ids = 1
+		/obj/item/storage/box/ids = 1
 	)
 
-	messengerbag = /obj/item/weapon/storage/backpack/messenger/com
+	messengerbag = /obj/item/storage/backpack/messenger/com

@@ -269,10 +269,6 @@
 	max_ammo = 20
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/c762/sniper
-	icon_state = "s762"
-	max_ammo = 5
-
 /obj/item/ammo_magazine/c762/sol
 	icon_state = "battlerifle_mag"
 	multiple_sprites = 0
@@ -444,3 +440,13 @@
 	caliber = "plasma bolt"
 	ammo_type = /obj/item/ammo_casing/plasma_bolt
 	max_ammo = 30
+
+/obj/item/ammo_magazine/nuke
+	name = "nuclear launcher cartridge"
+	icon_state = "nukemag"
+	w_class = 3
+	mag_type = MAGAZINE
+	caliber = "nuke"
+	ammo_type = /obj/item/ammo_casing/nuke
+	max_ammo = 2
+	multiple_sprites = 1

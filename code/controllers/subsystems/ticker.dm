@@ -201,11 +201,11 @@ var/datum/controller/subsystem/ticker/SSticker
 				if(wait_for_tickets)
 					if(!delay_notified)
 						delay_notified = 1
-						message_admins("<span class='warning'><center><b>***<br>Automatically delaying restart due to active tickets.<br>***</b></center></span>")
-						to_world("<span class='notice'><center><b><u>***<br>An admin has delayed the round end!<br>***</u></b></center></span>")
+						message_admins("<span class='warning'><b>Automatically delaying restart due to active tickets.</b></span>")
+						to_world("<span class='notice'><b>An admin has delayed the round end</b></span>")
 					sleep(15 SECONDS)
 				else if(delay_notified)
-					message_admins("<span class='warning'><center><b>***<br>No active tickets remaining, restarting in [restart_timeout/10] seconds if an admin has not delayed the round end.<br>***</b></center></span>")
+					message_admins("<span class='warning'><b>No active tickets remaining, restarting in [restart_timeout/10] seconds if an admin has not delayed the round end.</b></span>")
 			while(wait_for_tickets)
 
 			if(!delay_end)
