@@ -353,3 +353,53 @@
 /turf/simulated/floor/themis/road/asphalt/asphalt17
 	name = "asphalt road"
 	icon_state = "asphalt17"
+
+/*
+ * NEW SNOW!
+*/
+
+// SNOW STUFF
+/turf/simulated/floor/snow
+	name = "snow"
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "snow"
+	footstep_sound = "gravelstep"
+	temperature = T0C-20
+
+/turf/simulated/floor/snow/snow1
+	name = "shallow snow layer"
+	desc = "Shallow snow. You could almost walk through it."
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "snow_1"
+	footstep_sound = "gravelstep"
+/turf/simulated/floor/snow/snow2
+	name = "snow layer"
+	desc = "It's snow. What did you expect?"
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "snow_2"
+	footstep_sound = "gravelstep"
+/turf/simulated/floor/snow/snow3
+	name = "thick snow layer"
+	desc = "No yellow snow angels, please!"
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "snow_3"
+	footstep_sound = "gravelstep"
+/turf/simulated/floor/snow/gravelroad
+	name = "gravel road"
+	desc = "A gravel road. How grim."
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "old_dirt"
+	footstep_sound = "gravelstep"
+
+/turf/simulated/floor/snow/innercorner
+	name = "gravel road"
+	desc = "A gravel road. How grim."
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "snow_innercornerT"
+	footstep_sound = "gravelstep"
+/turf/simulated/floor/snow/outercorner
+	name = "gravel road"
+	desc = "A gravel road. How grim."
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "snow_outercornerT"
+	footstep_sound = "gravelstep"
