@@ -610,6 +610,31 @@
 	name = "Large Republic of Biesel flag"
 	flag_size = 1
 
+
+/*
+ * THEMIS SIGNS
+*/
+
+/obj/structure/sign/directions/themis/science/z03
+	name = "\improper Z-03 Artificial Intelligence Facility"
+	desc = "A direction sign, pointing out which way the Artificial Intelligence Facility is."
+	icon_state = "direction_z3"
+
+/obj/structure/sign/directions/themis/engineering/x03
+	name = "\improper X-03 - Engineering Wing"
+	desc = "A direction sign, pointing out which way the Engineering wing is."
+	icon_state = "direction_x3"
+/obj/structure/sign/directions/themis/engineering/x12
+	name = "\improper X-12 - Primary Power Plant"
+	desc = "A direction sign, pointing out which way the power plant is."
+	icon_state = "direction_x12"
+
+/obj/structure/sign/directions/themis/info
+	name = "\improper Information Desk"
+	desc = "A direction sign, pointing out which way the Information Desk is."
+	icon_state = "direction_info"
+
+
 /obj/item/flag/afterattack(var/atom/A, var/mob/user, var/adjacent, var/clickparams)
 	if (!adjacent)
 		return
