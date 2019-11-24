@@ -2596,4 +2596,10 @@
 #include "maps\exodus\code\exodus_unittest.dm"
 #include "maps\runtime\code\runtime.dm"
 #include "maps\runtime\code\runtime_unittest.dm"
+#include "maps\themis\code\decals.dm"
+#include "maps\themis\code\themis.dm"
+#include "maps\themis\code\themis_areas.dm"
+#include "maps\themis\code\themis_holodeck.dm"
+#include "maps\themis\code\themis_shuttles.dm"
+#include "maps\themis\code\themis_unittest.dm"
 // END_INCLUDE
