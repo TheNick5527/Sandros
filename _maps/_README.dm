@@ -8,3 +8,7 @@
 DO NOT EVER PUSH CHANGES OF INCLUSION TO THESE FILES TO THE REPOSITORY UNLESS YOU WANT ME TO RAIN HELL ON YOU.
 - Lion
 */
+
+/*Only remove the experimental tag after it's been thoroughly playtested, preferably by 4+ people, depending on map size.
+- Lion
+*/
