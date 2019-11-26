@@ -1,6 +1,6 @@
 /obj/vehicle/bike
-	name = "space-bike"
-	desc = "Space wheelies! Woo! "
+	name = "moped"
+	desc = "Wheelies! Woo!"
 	icon = 'icons/obj/bike.dmi'
 	icon_state = "bike_off"
 	dir = SOUTH
@@ -14,7 +14,7 @@
 	brute_dam_coeff = 0.5
 	var/protection_percent = 60
 
-	var/land_speed = 10 //if 0 it can't go on turf
+	var/land_speed = 1 //if 0 it can't go on turf
 	var/space_speed = 1
 	var/bike_icon = "bike"
 
