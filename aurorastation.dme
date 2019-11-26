@@ -10,6 +10,7 @@
 #define DEBUG
 // END_PREFERENCES
 // BEGIN_INCLUDE
+#include "_maps\themis.dm"
 #include "code\global.dm"
 #include "code\hub.dm"
 #include "code\names.dm"
@@ -2597,10 +2598,10 @@
 #include "maps\exodus\code\exodus_unittest.dm"
 #include "maps\runtime\code\runtime.dm"
 #include "maps\runtime\code\runtime_unittest.dm"
-#include "maps\themis_alpha\code\decals.dm"
-#include "maps\themis_alpha\code\themis.dm"
-#include "maps\themis_alpha\code\themis_areas.dm"
-#include "maps\themis_alpha\code\themis_holodeck.dm"
-#include "maps\themis_alpha\code\themis_shuttles.dm"
-#include "maps\themis_alpha\code\themis_unittest.dm"
+#include "maps\themis\code\decals.dm"
+#include "maps\themis\code\themis.dm"
+#include "maps\themis\code\themis_areas.dm"
+#include "maps\themis\code\themis_holodeck.dm"
+#include "maps\themis\code\themis_shuttles.dm"
+#include "maps\themis\code\themis_unittest.dm"
 // END_INCLUDE

@@ -1144,7 +1144,7 @@ Note that amputating the affected organ does in fact remove the infection from t
 			wound_descriptors[this_wound_desc] += W.amount
 		else
 			wound_descriptors[this_wound_desc] = W.amount
-	
+
 	if(open > 1)
 		var/bone = encased ? encased : "bone"
 		if(status & ORGAN_BROKEN)
