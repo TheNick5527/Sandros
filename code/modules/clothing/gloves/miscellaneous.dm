@@ -276,6 +276,8 @@
 	name = "enhanced force gloves"
 	amplification = 2.5 //because *2.5 is kind of scary okay.  sometimes you want the scary effect.  sometimes not.
 
+/obj/item/clothing/gloves/force/syndicate/commando
+	siemens_coefficient = 0
 
 /obj/item/clothing/gloves/brassknuckles
 	name = "brass knuckles"

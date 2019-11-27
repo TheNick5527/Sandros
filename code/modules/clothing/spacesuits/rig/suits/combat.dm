@@ -261,12 +261,7 @@
 
 	species_restricted = list("Skrell")
 
-	glove_type = /obj/item/clothing/gloves/rig/commando
-
-/obj/item/clothing/gloves/rig/commando
-	siemens_coefficient = 0
-	amplification = 2.5
-
+	glove_type = /obj/item/clothing/gloves/force/syndicate/commando
 
 /obj/item/rig/commando/equipped
 
