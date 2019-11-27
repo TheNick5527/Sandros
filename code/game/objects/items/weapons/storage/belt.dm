@@ -193,8 +193,8 @@
 /obj/item/storage/belt/military
 	name = "military belt"
 	desc = "A lightweight, quick to use, military belt. Designed to be comfortably worn even during lengthy military operations."
-	icon_state = "militarybelt"
-	item_state = "militarybelt"
+	icon_state = "swatbelt"
+	item_state = "swatbelt"
 	storage_slots = 9 //same as a combat belt now
 	max_w_class = 3
 	max_storage_space  = 28
@@ -226,8 +226,8 @@
 
 /obj/item/storage/belt/military/syndicate
 	desc = "A syndicate belt designed to be used by boarding parties. Its style is modeled after the hardsuits they wear."
-	icon_state = "militarybelt_syndie"
-	item_state = "militarybelt_syndie"
+	icon_state = "swatbelt"
+	item_state = "swatbelt"
 
 /obj/item/storage/belt/janitor
 	name = "janibelt"

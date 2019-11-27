@@ -31,11 +31,11 @@
 		switch(anchored)
 			if(0)
 				anchored = 1
-				playsound(src.loc, W.usesound, 75, 1)
+				playsound(src.loc, 'sound/items/Ratchet.ogg', 75, 1)
 				user.visible_message("[user.name] secures [src.name] to the floor.", "You secure [src.name] to the floor.", "You hear a ratchet")
 			if(1)
 				anchored = 0
-				playsound(src.loc, W.usesound, 75, 1)
+				playsound(src.loc, 'sound/items/Ratchet.ogg', 75, 1)
 				user.visible_message("[user.name] unsecures [src.name] reinforcing bolts from the floor.", "You unsecure [src.name] from the floor.", "You hear a ratchet")
 		return
 
@@ -122,3 +122,33 @@
 	desc = "A banner depicting the flag of New Gibson."
 	icon_state = "newgibson_down"
 	icon_up = "newgibson_up"
+
+/obj/structure/banner/eng
+	name = "engineering banner"
+	desc = "A banner depicting the insignia of the engineering department."
+	icon_state = "eng_down"
+	icon_up = "eng_up"
+
+/obj/structure/banner/med
+	name = "medical banner"
+	desc = "A banner depicting the insignia of the medical department."
+	icon_state = "med_down"
+	icon_up = "med_up"
+
+obj/structure/banner/sci
+	name = "science banner"
+	desc = "A banner depicting the insignia of the science department."
+	icon_state = "sci_down"
+	icon_up = "sci_up"
+
+obj/structure/banner/sec
+	name = "security banner"
+	desc = "A banner depicting the insignia of the security department."
+	icon_state = "sec_down"
+	icon_up = "sec_up"
+
+obj/structure/banner/tar
+	name = "terran republic banner"
+	desc = "A banner depicting the insignia of the Terran Republics, showing Luna in all it's glory."
+	icon_state = "tar_down"
+	icon_up = "tar_up"
