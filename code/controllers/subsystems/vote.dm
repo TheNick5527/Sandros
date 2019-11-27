@@ -294,9 +294,9 @@ var/datum/controller/subsystem/vote/SSvote
 					if("crew_transfer")
 						C << sound('sound/effects/vote.ogg', repeat = 0, wait = 0, volume = 50, channel = 3)
 					if("gamemode")
-						C << sound('sound/effects/start_your_voting.ogg', repeat = 0, wait = 0, volume = 50, channel = 3)
+						C << sound('sound/effects/vote.ogg', repeat = 0, wait = 0, volume = 50, channel = 3)
 					if("custom")
-						C << sound('sound/effects/start_your_voting.ogg', repeat = 0, wait = 0, volume = 50, channel = 3)
+						C << sound('sound/effects/vote.ogg', repeat = 0, wait = 0, volume = 50, channel = 3)
 		if(mode == "gamemode" && round_progressing)
 			round_progressing = 0
 			to_world("<font color='red'><b>Round start has been delayed.</b></font>")
