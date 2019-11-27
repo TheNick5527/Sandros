@@ -526,40 +526,40 @@
 	name = "faintly luminescent river"
 	icon_state = "shallow_water_toxic"
 	light_color = LIGHT_COLOR_SLIME_LAMP
-	light_range = 2
+	light_range = 3
 //shallow water transition to deep
 /turf/open/themis/river/toxic/shallow_edge_toxic
 	name = "faintly luminescent river"
 	icon_state = "shallow_to_deep_toxic_water1"
 	light_color = LIGHT_COLOR_TOXIC
-	light_range = 2
+	light_range = 3
 //deep water
 /turf/open/themis/river/toxic/deep_water_toxic
 	name = "faintly luminescent river"
 	icon_state = "deep_water_toxic"
 	light_color = LIGHT_COLOR_LAVA
-	light_range = 2
+	light_range = 4
 //shallow water coast
 /turf/open/themis/river/toxic/shallow_water_desert_coast_toxic
 	name = "faintly luminescent river"
 	icon_state = "shallow_water_desert_coast_toxic1"
 	light_color = LIGHT_COLOR_SLIME_LAMP
-	light_range = 2
+	light_range = 3
 //desert floor waterway
 /turf/open/themis/river/toxic/shallow_water_desert_waterway_toxic
 	name = "faintly luminescent river"
 	icon_state = "desert_waterway_toxic1"
 	light_color = LIGHT_COLOR_SLIME_LAMP
-	light_range = 2
+	light_range = 3
 //shallow water cave coast
 /turf/open/themis/river/toxic/shallow_water_cave_coast_toxic
 	name = "faintly luminescent river"
 	icon_state = "shallow_water_cave_coast_toxic1"
 	light_color = LIGHT_COLOR_SLIME_LAMP
-	light_range = 2
+	light_range = 3
 //cave floor waterway
 /turf/open/themis/river/toxic/shallow_water_cave_waterway_toxic
 	name = "faintly luminescent river"
 	icon_state = "shallow_water_cave_waterway_toxic1"
 	light_color = LIGHT_COLOR_SLIME_LAMP
-	light_range = 2
+	light_range = 3
