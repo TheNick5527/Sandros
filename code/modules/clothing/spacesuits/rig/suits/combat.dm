@@ -250,7 +250,7 @@
 	name = "commando hardsuit control module"
 	desc = "A surprisingly lightweight, yes extremely defensive suit used by the Skrellian Commandos that their species calls ''Kishayanta''."
 	icon_state = "tup"
-	suit_type = "tup hardsuit"
+	suit_type = "commando hardsuit"
 	req_access = list(access_syndicate)
 	armor = list(melee = 80, bullet = 60, laser = 70, energy = 70, bomb = 50, bio = 100, rad = 100)
 	siemens_coefficient = 0.1
@@ -260,6 +260,13 @@
 	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY | MODULE_VAURCA
 
 	species_restricted = list("Skrell")
+
+	glove_type = /obj/item/clothing/gloves/rig/commando
+
+/obj/item/clothing/gloves/rig/commando
+	siemens_coefficient = 0
+	amplification = 2.5
+
 
 /obj/item/rig/commando/equipped
 
