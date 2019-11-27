@@ -280,3 +280,9 @@ var/list/flooring_types
 
 /decl/flooring/shuttle/dark_blue
 	icon_base = "floor9"
+
+/decl/flooring/themis/sidewalk
+	name = "floor"
+	icon = 'maps/themis/icons/turfs.dmi'
+	icon_base = "sidewalk"
+	flags = TURF_ACID_IMMUNE
