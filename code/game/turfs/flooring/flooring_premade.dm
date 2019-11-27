@@ -416,7 +416,7 @@
 	icon = 'maps/themis/icons/turfs.dmi'
 	icon_state = "desert1"
 
-/turf/open/desert/dam/ex_act(severity) //Should make it indestructable
+/turf/open/themis/ex_act(severity) //Should make it indestructable
 	return
 
 /turf/open/themis/fire_act(exposed_temperature, exposed_volume)
