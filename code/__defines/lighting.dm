@@ -91,6 +91,7 @@
 #define LIGHT_COLOR_TUNGSTEN   "#FAE1AF" //Extremely diluted yellow, close to skin color (for some reason). rgb(250, 225, 175)
 #define LIGHT_COLOR_HALOGEN    "#F0FAFA" //Barely visible cyan-ish hue, as the doctor prescribed. rgb(240, 250, 250)
 #define LIGHT_COLOR_EMERGENCY  "#FF3232" //Red color used by emergency lighting. rgb(255, 50, 50)
+#define LIGHT_COLOR_TOXIC	   "BAA62F"
 
 //Defines for lighting status, see power/lighting.dm
 #define LIGHT_OK     0

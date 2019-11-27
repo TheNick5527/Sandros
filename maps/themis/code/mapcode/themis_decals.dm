@@ -75,3 +75,18 @@
 	name = "road marker"
 	icon = 'maps/themis/icons/decals.dmi'
 	icon_state = "stop_decal4"
+
+
+/obj/effect/floor_decal/themis/industrial/outline
+	name = "orange outline"
+	icon = 'maps/themis/icons/decals.dmi'
+	icon_state = "outline-orange"
+
+/obj/effect/floor_decal/themis/industrial/outline/yellow
+	name = "yellow outline"
+	icon_state = "outline-yellow"
+
+/obj/effect/floor_decal/themis/industrial/hatch/
+	name = "full hatch markings"
+	icon = 'maps/themis/icons/decals.dmi'
+	icon_state = "danger-fulltile"
