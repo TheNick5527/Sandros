@@ -354,6 +354,12 @@
 	name = "asphalt road"
 	icon_state = "asphalt17"
 
+/turf/simulated/floor/themis/road/sidewalk
+	name = "road sidewalk"
+	icon = 'maps/themis/icons/turfs.dmi'
+	icon_state = "sidewalk"
+	initial_flooring = /decl/flooring/themis/sidewalk
+
 /*
  * NEW SNOW!
 */
@@ -403,3 +409,157 @@
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow_outercornerT"
 	footstep_sound = "gravelstep"
+
+
+/turf/open/themis //Basic groundmap turf parent
+	name = "desert dirt"
+	icon = 'maps/themis/icons/turfs.dmi'
+	icon_state = "desert1"
+
+/turf/open/desert/dam/ex_act(severity) //Should make it indestructable
+	return
+
+/turf/open/themis/fire_act(exposed_temperature, exposed_volume)
+	return
+
+/turf/open/themis/attackby() //This should fix everything else. No cables, etc
+	return
+
+//desert floor
+/turf/open/themis/desert
+	name = "desert"
+	icon_state = "desert1"
+
+
+//asphalt road
+/turf/open/themis/asphault
+	name = "asphault"
+	icon_state = "sunbleached_asphalt1"
+
+
+
+//CAVE
+/turf/open/themis/cave
+	icon_state = "outer_cave_floor1"
+
+//desert floor to outer cave floor transition
+/turf/open/themis/cave/desert_into_outer_cave_floor
+	name = "cave"
+	icon_state = "outer_cave_transition1"
+
+//outer cave floor
+/turf/open/themis/cave/outer_cave_floor
+	name = "cave"
+	icon_state = "outer_cave_floor1"
+
+//outer to inner cave floor transition
+/turf/open/themis/cave/outer_cave_to_inner_cave
+	name = "cave"
+	icon_state = "outer_cave_to_inner1"
+
+//inner cave floor
+/turf/open/themis/cave/inner_cave_floor
+	name = "cave"
+	icon_state = "inner_cave_1"
+
+//River
+/turf/open/themis/river
+	icon_state = "shallow_water_clean"
+
+
+//shallow water
+/turf/open/themis/river/clean/shallow
+	name = "faintly luminescent river"
+	icon_state = "shallow_water_clean"
+	desc = "This does not look safe to swim in, as it's boiling hot!"
+	light_color = LIGHT_COLOR_BLUE
+	light_range = 2
+//shallow water transition to deep
+/turf/open/themis/river/clean/shallow_edge
+	name = "faintly luminescent river"
+	icon_state = "shallow_to_deep_clean_water1"
+	desc = "This does not look safe to swim in, as it's boiling hot!"
+	light_color = LIGHT_COLOR_BLUE
+	light_range = 2
+//deep water
+/turf/open/themis/river/clean/deep_water_clean
+	name = "faintly luminescent river"
+	icon_state = "deep_water_clean"
+	desc = "This does not look safe to swim in, as it's boiling hot!"
+	light_color = LIGHT_COLOR_BLUE
+	light_range = 2
+//shallow water coast
+/turf/open/themis/river/clean/shallow_water_desert_coast
+	name = "faintly luminescent river"
+	icon_state = "shallow_water_desert_coast1"
+	desc = "This does not look safe to swim in, as it's boiling hot!"
+	light_color = LIGHT_COLOR_BLUE
+	light_range = 2
+//desert floor waterway
+/turf/open/themis/river/clean/shallow_water_desert_waterway
+	name = "faintly luminescent river"
+	icon_state = "desert_waterway1"
+	desc = "This does not look safe to swim in, as it's boiling hot!"
+	light_color = LIGHT_COLOR_BLUE
+	light_range = 2
+//shallow water cave coast
+/turf/open/themis/river/clean/shallow_water_cave_coast
+	name = "faintly luminescent river"
+	icon_state = "shallow_water_cave_coast1"
+	desc = "This does not look safe to swim in, as it's boiling hot!"
+	light_color = LIGHT_COLOR_BLUE
+	light_range = 2
+//cave floor waterway
+/turf/open/themis/river/clean/shallow_water_cave_waterway
+	name = "faintly luminescent river"
+	icon_state = "shallow_water_cave_waterway1"
+	desc = "This does not look safe to swim in, as it's boiling hot!"
+	light_color = LIGHT_COLOR_BLUE
+	light_range = 2
+
+//TOXIC
+/turf/open/themis/river/toxic
+	icon_state = "shallow_water_toxic"
+
+//shallow water
+/turf/open/themis/river/toxic/shallow_water_toxic
+	name = "faintly luminescent river"
+	icon_state = "shallow_water_toxic"
+	light_color = LIGHT_COLOR_SLIME_LAMP
+	light_range = 2
+//shallow water transition to deep
+/turf/open/themis/river/toxic/shallow_edge_toxic
+	name = "faintly luminescent river"
+	icon_state = "shallow_to_deep_toxic_water1"
+	light_color = LIGHT_COLOR_TOXIC
+	light_range = 2
+//deep water
+/turf/open/themis/river/toxic/deep_water_toxic
+	name = "faintly luminescent river"
+	icon_state = "deep_water_toxic"
+	light_color = LIGHT_COLOR_LAVA
+	light_range = 2
+//shallow water coast
+/turf/open/themis/river/toxic/shallow_water_desert_coast_toxic
+	name = "faintly luminescent river"
+	icon_state = "shallow_water_desert_coast_toxic1"
+	light_color = LIGHT_COLOR_SLIME_LAMP
+	light_range = 2
+//desert floor waterway
+/turf/open/themis/river/toxic/shallow_water_desert_waterway_toxic
+	name = "faintly luminescent river"
+	icon_state = "desert_waterway_toxic1"
+	light_color = LIGHT_COLOR_SLIME_LAMP
+	light_range = 2
+//shallow water cave coast
+/turf/open/themis/river/toxic/shallow_water_cave_coast_toxic
+	name = "faintly luminescent river"
+	icon_state = "shallow_water_cave_coast_toxic1"
+	light_color = LIGHT_COLOR_SLIME_LAMP
+	light_range = 2
+//cave floor waterway
+/turf/open/themis/river/toxic/shallow_water_cave_waterway_toxic
+	name = "faintly luminescent river"
+	icon_state = "shallow_water_cave_waterway_toxic1"
+	light_color = LIGHT_COLOR_SLIME_LAMP
+	light_range = 2
