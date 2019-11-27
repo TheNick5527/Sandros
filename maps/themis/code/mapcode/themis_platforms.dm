@@ -6,7 +6,6 @@
 	desc = "A square metal surface resting on four legs."
 	icon = 'maps/themis/icons/platforms.dmi'
 	icon_state = "platform"
-	climbable = TRUE
 	anchored = TRUE
 	density = 1
 	throwpass = TRUE //You can throw objects over this, despite its density.
