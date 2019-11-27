@@ -97,3 +97,17 @@
 		var/atom/movable/AM = A
 		AM.forceMove(dest)
 	..()
+
+/obj/structure/lattice/catwalk/catwalk_plated
+	name = "plated catwalk spawner"
+	icon_state = "catwalk_plated"
+	density = 1
+	anchored = 1.0
+	var/activated = FALSE
+	layer = 2.7
+
+/obj/structure/lattice/catwalk/catwalk_plated/dark
+	icon_state = "catwalk_plateddark"
+
+/obj/structure/lattice/catwalk/catwalk_plated/white
+	icon_state = "catwalk_platedwhite"
