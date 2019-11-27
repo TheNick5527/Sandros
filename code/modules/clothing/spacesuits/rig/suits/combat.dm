@@ -209,3 +209,72 @@
 		/obj/item/rig_module/device/drill,
 		/obj/item/rig_module/fabricator/energy_net
 		)
+
+/obj/item/rig/terran
+	name = "fortress hardsuit control module"
+	desc = "A massive, hulking suit if plasteel and extremely durable composites. The wearer looks, and feels, like a walking tank."
+	icon_state = "vanguard"
+	suit_type = "fortress hardsuit"
+	emp_protection = 100
+	req_access = list(access_cent_specops)
+	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100)
+	siemens_coefficient = 0.1
+	offline_slowdown = 2
+	offline_vision_restriction = TINT_HEAVY
+
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/melee/energy/sword,/obj/item/handcuffs)
+
+	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY | MODULE_VAURCA
+
+	species_restricted = list("Human")
+
+/obj/item/rig/terran/equipped
+
+	initial_modules = list(
+		/obj/item/rig_module/mounted/energy_blade,
+		/obj/item/rig_module/vision,
+		/obj/item/rig_module/fabricator/energy_net,
+		/obj/item/rig_module/chem_dispenser,
+		/obj/item/rig_module/device/healthscanner/vitalscanner,
+		/obj/item/rig_module/chem_dispenser/combat,
+		/obj/item/rig_module/mounted/xray,
+		/obj/item/rig_module/grenade_launcher,
+		/obj/item/rig_module/ai_container,
+		/obj/item/rig_module/power_sink,
+		/obj/item/rig_module/datajack,
+		/obj/item/rig_module/self_destruct,
+		/obj/item/rig_module/actuators/combat
+		)
+
+/obj/item/rig/commando
+	name = "commando hardsuit control module"
+	desc = "A surprisingly lightweight, yes extremely defensive suit used by the Skrellian Commandos that their species calls ''Kishayanta''."
+	icon_state = "tup"
+	suit_type = "tup hardsuit"
+	req_access = list(access_syndicate)
+	armor = list(melee = 80, bullet = 60, laser = 70, energy = 70, bomb = 50, bio = 100, rad = 100)
+	siemens_coefficient = 0.1
+
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/melee/energy/sword,/obj/item/handcuffs)
+
+	allowed_module_types = MODULE_GENERAL | MODULE_LIGHT_COMBAT | MODULE_HEAVY_COMBAT | MODULE_SPECIAL | MODULE_MEDICAL | MODULE_UTILITY | MODULE_VAURCA
+
+	species_restricted = list("Skrell")
+
+/obj/item/rig/commando/equipped
+
+	initial_modules = list(
+		/obj/item/rig_module/teleporter,
+		/obj/item/rig_module/stealth_field,
+		/obj/item/rig_module/mounted/energy_blade,
+		/obj/item/rig_module/vision,
+		/obj/item/rig_module/voice,
+		/obj/item/rig_module/fabricator/energy_net,
+		/obj/item/rig_module/chem_dispenser,
+		/obj/item/rig_module/grenade_launcher,
+		/obj/item/rig_module/ai_container,
+		/obj/item/rig_module/power_sink,
+		/obj/item/rig_module/datajack,
+		/obj/item/rig_module/self_destruct,
+		/obj/item/rig_module/actuators/combat
+		)
