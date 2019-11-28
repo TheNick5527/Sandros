@@ -98,16 +98,52 @@
 		AM.forceMove(dest)
 	..()
 
-/obj/structure/lattice/catwalk/catwalk_plated
-	name = "plated catwalk spawner"
+
+
+/obj/structure/catwalk_plated
+	name = "modern catwalk"
+	desc = "A modernized version of the industrial catwalks for general area's."
 	icon_state = "catwalk_plated"
-	density = 1
-	anchored = 1.0
-	var/activated = FALSE
+	icon = 'maps/themis/icons/catwalks.dmi'
+	density = FALSE
+	anchored = TRUE
 	layer = 2.7
 
-/obj/structure/lattice/catwalk/catwalk_plated/dark
+/obj/structure/catwalk_plated/dark
 	icon_state = "catwalk_plateddark"
 
-/obj/structure/lattice/catwalk/catwalk_plated/white
+/obj/structure/catwalk_plated/white
 	icon_state = "catwalk_platedwhite"
+
+/obj/structure/catwalk_plated/attackby(obj/item/C, mob/user)
+	if (C.iswelder())
+		var/obj/item/weldingtool/WT = C
+		if (do_after(user, 5/C.toolspeed, act_target = src) && WT.remove_fuel(1, user))
+			to_chat(user, "<span class='notice'>You slice apart [src].</span>")
+			playsound(src, 'sound/items/Welder.ogg', 50, 1)
+			new /obj/item/stack/rods{amount = 3}(loc)
+			qdel(src)
+
+/obj/structure/catwalk_plated/attackby(obj/item/C, mob/user)
+	if (C.isscrewdriver())
+		anchored = !anchored
+		to_chat(user, "<span class='notice'>You [anchored ? "" : "un"]anchor [src].</span>")
+		playsound(src, C.usesound, 50, 1)
+		queue_smooth(src)
+		queue_smooth_neighbors(src)
+	else
+		..()
+
+/obj/structure/catwalk_plated/hoist_act(turf/dest)
+	for (var/A in loc)
+		var/atom/movable/AM = A
+		AM.forceMove(dest)
+	..()
+
+/obj/structure/catwalk_plated/ex_act(severity)
+	switch(severity)
+		if(1.0)
+			qdel(src)
+		if(2.0)
+			qdel(src)
+	return

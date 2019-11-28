@@ -2601,6 +2601,7 @@
 #include "maps\themis\code\themis_holodeck.dm"
 #include "maps\themis\code\themis_shuttles.dm"
 #include "maps\themis\code\themis_unittest.dm"
+#include "maps\themis\code\mapcode\themis_catwalks.dm"
 #include "maps\themis\code\mapcode\themis_decals.dm"
 #include "maps\themis\code\mapcode\themis_platforms.dm"
 #include "maps\themis\code\mapcode\themis_turfs.dm"
