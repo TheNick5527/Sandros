@@ -1214,9 +1214,9 @@
 	icon = 'icons/obj/telescience.dmi'
 	icon_state = "telecrystal"
 	spawnlist = list(
-		/obj/item/stack/telecrystal{amount = 5} = 0.7,
-		/obj/item/stack/telecrystal{amount = 10} = 0.1,
-		/obj/item/stack/telecrystal{amount = 15} = 0.2,
+		/obj/item/stack/telecrystal{amount = 10} = 0.7,
+		/obj/item/stack/telecrystal{amount = 20} = 0.1,
+		/obj/item/stack/telecrystal{amount = 30} = 0.2,
 	)
 
 /obj/random/bad_ai
