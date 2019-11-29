@@ -1,76 +1,31 @@
-
-//Officer
-/obj/item/clothing/suit/storage/fleet/officer
-	name = "Intelligence dress coat"
-	desc = "A clean white coat with blue pauldrons and gold embroidery, worn by Intelligence Officers of the Terran Eighth Fleet."
-	icon_state = "officercoat"
-	item_state = "officercoat"
-
-/obj/item/clothing/suit/storage/fleet/officer/long
-	icon_state = "officercoatlong"
-	item_state = "officercoatlong"
-
-//SNCO
-/obj/item/clothing/suit/storage/fleet/snco
-	name = "Administrative Service Coat"
-	desc = "A clean and sharp Terran Military service coat, belonging to a dedicated member of the Terran Eigth Fleet. Probably worn by someone who definitely knows what they're doing."
+//ADMIN
+/obj/item/clothing/suit/storage/military/dress/admin
+	name = "Administrative Dress Coat"
+	desc = "A clean and sharp Terran Military dress coat, belonging to a dedicated member of the Terran Military. Probably worn by someone who definitely knows what they're doing."
 	icon_state = "sncocoat"
 	item_state = "sncocoat"
-
-//Civil Protection
-/obj/item/clothing/suit/storage/fleet/troopercoat
-	name = "Operative dress coat"
-	desc = "A dress uniform coat worn by Naval Intelligence Operatives of the Terran Eighth Fleet."
-	icon_state = "troopercoat_civil"
-	item_state = "troopercoat_civil"
-
-/obj/item/clothing/suit/storage/fleet/commandercoat
-	name = "Commander dress coat"
-	desc = "A dress uniform coat worn by Naval Intelligence Security Commanders of the Terran Eighth Fleet."
-	icon_state = "troopercoat_commander"
-	item_state = "troopercoat_commander"
-
-//Civil Protection Armour
-/obj/item/clothing/suit/storage/vest/heavy/fleet
-	name = "Operative plate carrier"
-	desc = "A plate carrier worn by Naval Intelligence Operatives of the Terran Eighth Fleet."
-	icon_state = "cpvest_trooper"
-	item_state = "cpvest_trooper"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
-	armor = list(melee = 80, bullet = 80, laser = 80, energy = 80, bomb = 20, bio = 0, rad = 0)
-	slowdown = 0
-
-/obj/item/clothing/suit/storage/vest/heavy/fleet/trooper
-	name = "Operative plate carrier"
-	desc = "A plate carrier worn by Naval Intelligence Operatives of the Terran Eighth Fleet when in combat."
-	icon_state = "cpvest_trooper"
-	item_state = "cpvest_trooper"
-
-/obj/item/clothing/suit/storage/vest/heavy/fleet/commander
-	name = "Commander plate carrier"
-	desc = "A plate carrier worn by Naval Intelligence Security Commanders of the Terran Eighth Fleet when in combat."
-	icon_state = "cpvest_commander"
-	item_state = "cpvest_commander"
-
 
 //Plate Carriers and Webbing
 /obj/item/clothing/suit/storage/vest/military
 	name = "plate carrier"
 	desc = "A plate carrier with attached brassard, pouches and pockets, allowing it to hold a variety of extra tools. This one is green."
-	icon_state = "webbing_green"
-	item_state = "armor"
+	icon_state = "carrier_green"
+	item_state = "carrier_green"
 
 /obj/item/clothing/suit/storage/vest/military/black
 	desc = "A plate carrier with attached brassard, pouches and pockets, allowing it to hold a variety of extra tools. This one is black."
 	icon_state = "carrier_black"
+	item_state = "carrier_black"
 
 /obj/item/clothing/suit/storage/vest/military/tan
 	desc = "A plate carrier with attached brassard, pouches and pockets, allowing it to hold a variety of extra tools. This one is tan."
 	icon_state = "carrier_tan"
+	item_state = "carrier_tan"
 
 /obj/item/clothing/suit/storage/vest/military/officer
 	desc = "A plate carrier with attached brassard, pouches and pockets, allowing it to hold a variety of extra tools, and belongs to a soldier in administration. This one is green."
 	icon_state = "sncocarrier_green"
+	item_state = "sncocarrier_green"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	armor = list(melee = 60, bullet = 60, laser = 60, energy = 40, bomb = 20, bio = 0, rad = 0)
 	slowdown = 0
@@ -78,7 +33,39 @@
 /obj/item/clothing/suit/storage/vest/military/officer/black
 	desc = "A plate carrier with attached brassard, pouches and pockets, allowing it to hold a variety of extra tools, and belongs to a soldier in administration. This one is black."
 	icon_state = "sncocarrier_black"
+	item_state = "sncocarrier_black"
 
 /obj/item/clothing/suit/storage/vest/military/officer/tan
 	desc = "A plate carrier with attached brassard, pouches and pockets, allowing it to hold a variety of extra tools, and belongs to a soldier in administration. This one is tan."
-	icon_state = "sncocarrier_black"
+	icon_state = "sncocarrier_tan"
+	item_state = "sncocarrier_tan"
+
+//MARINE
+/obj/item/clothing/suit/storage/military/dress/marine
+	name = "Marine Dress Coat"
+	desc = "A clean and sharp Terran Marine dress coat, with a fetching red trim and silver gilding. This one is used by standard enlisted soldiers."
+	icon_state = "marinedress"
+	item_state = "marinedress"
+
+/obj/item/clothing/suit/storage/military/dress/marine/snco
+	desc = "A clean and sharp Terran Marine dress coat, with a fetching red trim and golden gilding. This one is used by senior enlisted soldiers."
+	icon_state = "marinedress_snco"
+	item_state = "marinedress_snco"
+
+/obj/item/clothing/suit/storage/military/dress/marine/officer
+	desc = "A clean and sharp Terran Marine dress coat, with a fetching red trim and even more golden gilding. This one is used by officers."
+	icon_state = "marinedress_off"
+	item_state = "marinedress_off"
+
+//NAVY
+/obj/item/clothing/suit/storage/military/dress/navy
+	name = "Navy Dress Coat"
+	desc = "a clean and sharp Terran Navy dress coat, with a fetching red trim. This is the standard coat given to all naval personnel."
+	icon_state = "navydress"
+	item_state = "navydress"
+
+/obj/item/clothing/suit/storage/military/dress/navy/service
+	name = "Navy Service Coat"
+	desc = "a clean and sharp Terran Navy service coat, with a fetching red trim. This is the standard coat given to all naval personnel."
+	icon_state = "navyservice"
+	item_state = "navyservice"
