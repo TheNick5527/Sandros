@@ -2599,6 +2599,7 @@
 #include "maps\themis\code\themis.dm"
 #include "maps\themis\code\themis_areas.dm"
 #include "maps\themis\code\themis_holodeck.dm"
+#include "maps\themis\code\themis_lifts.dm"
 #include "maps\themis\code\themis_shuttles.dm"
 #include "maps\themis\code\themis_unittest.dm"
 #include "maps\themis\code\mapcode\themis_catwalks.dm"

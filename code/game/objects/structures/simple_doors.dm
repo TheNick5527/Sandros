@@ -244,3 +244,6 @@
 
 /obj/structure/simple_door/resin/New(var/newloc,var/material_name)
 	..(newloc, "resin")
+
+/obj/structure/simple_door/glass
+	icon_state = "glass"
