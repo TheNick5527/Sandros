@@ -249,7 +249,7 @@
 /obj/item/rig/commando
 	name = "commando hardsuit control module"
 	desc = "A surprisingly lightweight, yes extremely defensive suit used by the Skrellian Commandos that their species calls ''Kishayanta''."
-	icon_state = "tup"
+	icon_state = "tup_rig"
 	suit_type = "commando hardsuit"
 	req_access = list(access_syndicate)
 	armor = list(melee = 80, bullet = 60, laser = 70, energy = 70, bomb = 50, bio = 100, rad = 100)

@@ -64,7 +64,7 @@
 
 /obj/machinery/power/rtg/advanced
 	desc = "An advanced RTG capable of moderating isotope decay, increasing power output but reducing lifetime. It uses phoron-fueled radiation collectors to increase output even further."
-	power_gen = 1250 // 2500 on T1, 10000 on T4.
+	power_gen = 5000 // 2500 on T1, 10000 on T4.
 
 	component_types = list(
 		/obj/item/stack/cable_coil{amount = 5},
@@ -98,7 +98,7 @@
 	origin_tech = list(
 		TECH_DATA = 3,
 		TECH_MATERIAL = 4,
-		TECH_POWER = 3, 
+		TECH_POWER = 3,
 		TECH_ENGINEERING = 3,
 		TECH_PHORON = 3
 	)
