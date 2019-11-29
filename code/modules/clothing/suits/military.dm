@@ -10,6 +10,12 @@
 	icon_state = "officercoatlong"
 	item_state = "officercoatlong"
 
+//SNCO
+/obj/item/clothing/suit/storage/fleet/snco
+	name = "Administrative Service Coat"
+	desc = "A clean and sharp Terran Military service coat, belonging to a dedicated member of the Terran Eigth Fleet. Probably worn by someone who definitely knows what they're doing."
+	icon_state = "sncocoat"
+	item_state = "sncocoat"
 
 //Civil Protection
 /obj/item/clothing/suit/storage/fleet/troopercoat
@@ -31,7 +37,7 @@
 	icon_state = "cpvest_trooper"
 	item_state = "cpvest_trooper"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 40, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 80, bullet = 80, laser = 80, energy = 80, bomb = 20, bio = 0, rad = 0)
 	slowdown = 0
 
 /obj/item/clothing/suit/storage/vest/heavy/fleet/trooper
