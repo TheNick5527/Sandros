@@ -1,6 +1,6 @@
 //ADMIN
 /obj/item/clothing/suit/storage/military/dress/admin
-	name = "Administrative Dress Coat"
+	name = "administrative dress coat"
 	desc = "A clean and sharp Terran Military dress coat, belonging to a dedicated member of the Terran Military. Probably worn by someone who definitely knows what they're doing."
 	icon_state = "sncocoat"
 	item_state = "sncocoat"
@@ -42,7 +42,7 @@
 
 //MARINE
 /obj/item/clothing/suit/storage/military/dress/marine
-	name = "Marine Dress Coat"
+	name = "marine dress coat"
 	desc = "A clean and sharp Terran Marine dress coat, with a fetching red trim and silver gilding. This one is used by standard enlisted soldiers."
 	icon_state = "marinedress"
 	item_state = "marinedress"
@@ -59,13 +59,13 @@
 
 //NAVY
 /obj/item/clothing/suit/storage/military/dress/navy
-	name = "Navy Dress Coat"
+	name = "navy dress coat"
 	desc = "a clean and sharp Terran Navy dress coat, with a fetching red trim. This is the standard coat given to all naval personnel."
 	icon_state = "navydress"
 	item_state = "navydress"
 
 /obj/item/clothing/suit/storage/military/dress/navy/service
-	name = "Navy Service Coat"
+	name = "navy service coat"
 	desc = "a clean and sharp Terran Navy service coat, with a fetching red trim. This is the standard coat given to all naval personnel."
 	icon_state = "navyservice"
 	item_state = "navyservice"

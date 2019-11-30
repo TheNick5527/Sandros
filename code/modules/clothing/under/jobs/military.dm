@@ -2,70 +2,70 @@
 
 //Military Uniforms
 /obj/item/clothing/under/military/utility
-	name = "Military Utility Uniform"
+	name = "military utility uniform"
 	desc = "A sturdy uniform, carefully ironed and folded. Worn by military personnel in a cross-branch fashion in the Terran Republics."
 	icon_state = "miluniform"
 	worn_state = "miluniform"
 
 /obj/item/clothing/under/military/utility/security
-	name = "Security Utility Uniform"
+	name = "security utility uniform"
 	desc = "A sturdy uniform, carefully ironed and folded. Worn by military personnel assigned to Security Duties."
 	icon_state = "miluniform_sec"
 	worn_state = "miluniform_sec"
 
 /obj/item/clothing/under/military/utility/security/winter
-	name = "Winterized Security Utility Uniform"
+	name = "winterized security utility uniform"
 	desc = "A sturdy uniform, carefully ironed and folded. Worn by military personnel assigned to Security Duties. This one has a winterized pattern."
 	icon_state = "winter_sec"
 	item_state = "winter_sec"
 
 /obj/item/clothing/under/military/utility/engineering
-	name = "Engineering Utility Uniform"
+	name = "engineering utility uniform"
 	desc = "A sturdy uniform, carefully ironed and folded. Worn by military personnel assigned to Engineering Service Duties."
 	icon_state = "miluniform_eng"
 	worn_state = "miluniform_eng"
 
 /obj/item/clothing/under/military/utility/medical
-	name = "Medical Utility Uniform"
+	name = "medical utility uniform"
 	desc = "A sturdy uniform, carefully ironed and folded. Worn by military personnel assigned to Medical Service Duties."
 	icon_state = "miluniform_med"
 	worn_state = "miluniform_med"
 
 /obj/item/clothing/under/military/utility/intelligence
-	name = "Intelligence Utility Uniform"
+	name = "intelligence utility uniform"
 	desc = "A sturdy uniform, carefully ironed and folded. Worn by military personnel assigned to Intelligence Duties."
 	icon_state = "miluniform_int"
 	worn_state = "miluniform_int"
 
 /obj/item/clothing/under/military/utility/intelligence/winter
-	name = "Winterized Intelligence Utility Uniform"
+	name = "winterized intelligence utility uniform"
 	desc = "A sturdy uniform, carefully ironed and folded. Worn by military personnel assigned to Intelligence Duties. This one has a winterized pattern."
 	icon_state = "winter_int"
 	item_state = "winter_int"
 
 /obj/item/clothing/under/military/utility/command
-	name = "Officer's Utility Uniform"
+	name = "officer's utility uniform"
 	desc = "A sturdy uniform, carefully ironed and folded. Worn by military personnel counted among the Republic's officers."
 	icon_state = "miluniform_com"
 	worn_state = "miluniform_com"
 
 //ADMIN
 /obj/item/clothing/under/military/dress/admin
-	name = "Administrative Dress Uniform"
+	name = "administrative dress uniform"
 	desc = "A clean and sharp Terran Military service uniform, belonging to a dedicated member of the Terran Eighth Fleet. Probably worn by someone who definitely knows what they're doing."
 	icon_state = "snco"
 	worn_state = "snco"
 
 /obj/item/clothing/under/military/dress/admin/fem
-	name = "Administrative Dress Skirt"
+	name = "administrative dress skirt"
 	desc = "A clean and sharp Terran Military service uniform, belonging to a dedicated member of the Terran Eighth Fleet. Probably worn by someone who definitely knows what they're doing."
 	icon_state = "snco_f"
 	worn_state = "snco_f"
 
 //Marine
 /obj/item/clothing/under/military/dress/marine
-	name = "Marine Service Uniform"
-	desc = "A clean and sharp Terran Marine service uniform, with a dark grey dress shirt. Worn by all Terran Marines."
+	name = "marine dress uniform"
+	desc = "A clean and sharp Terran Marine dress uniform, with a dark grey dress shirt. Worn by all Terran Marines."
 	icon_state = "marinedress_m"
 	item_state = "marinedress_m"
 
@@ -75,7 +75,7 @@
 
 //Navy
 /obj/item/clothing/under/military/dress/navy
-	name = "Navy Service Uniform"
+	name = "navy service uniform"
 	desc = "A clean and sharp Terran Navy service uniform, with a light grey dress shirt. Worn by all Terran Naval Personnel."
 	icon_state = "navydress_m"
 	item_state = "navydress_m"

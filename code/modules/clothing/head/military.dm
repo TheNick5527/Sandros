@@ -66,7 +66,7 @@
 	name = "marine officer's garrison cap"
 	desc = "A black garrison cap, used by the Terran Marines. This one has a golden sigil on it."
 	icon_state = "marinegarrisoncap_com"
-	item_State = "marinegarrisoncap_com"
+	item_state = "marinegarrisoncap_com"
 
 /obj/item/clothing/head/military/dress/marine/drill
 	name = "marine campaign cover"
