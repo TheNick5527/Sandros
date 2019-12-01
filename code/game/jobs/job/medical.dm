@@ -27,7 +27,7 @@
 	outfit = /datum/outfit/job/cmo
 
 /datum/outfit/job/cmo
-	name = "Chief Medical Officer"
+	name = "Medical Director"
 	jobtype = /datum/job/cmo
 
 	uniform = /obj/item/clothing/under/rank/chief_medical_officer
@@ -45,7 +45,7 @@
 	messengerbag = /obj/item/storage/backpack/messenger/med
 
 /datum/job/doctor
-	title = "Medical Attending"
+	title = "Attending Doctor"
 	flag = DOCTOR
 	department = "Medical"
 	department_flag = MEDSCI
@@ -70,7 +70,7 @@
 		)
 
 /datum/outfit/job/doctor
-	name = "Medical Doctor"
+	name = "Attending Doctor"
 	base_name = "Medical Doctor"
 	jobtype = /datum/job/doctor
 
