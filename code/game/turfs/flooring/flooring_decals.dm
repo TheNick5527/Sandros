@@ -429,3 +429,9 @@
 
 /obj/effect/floor_decal/sign/c2
 	icon_state = "white_c2"
+
+/obj/effect/floor_decal/sign/c2dir
+	icon_state = "white_c2_dir"
+
+/obj/effect/floor_decal/sign/gtw
+	icon_state = "white_gtw"
