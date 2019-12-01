@@ -1,5 +1,5 @@
 /datum/job/cmo
-	title = "Chief Medical Officer"
+	title = "Medical Director"
 	flag = CMO
 	head_position = 1
 	department = "Medical"
@@ -45,7 +45,7 @@
 	messengerbag = /obj/item/storage/backpack/messenger/med
 
 /datum/job/doctor
-	title = "Medical Doctor"
+	title = "Medical Attending"
 	flag = DOCTOR
 	department = "Medical"
 	department_flag = MEDSCI
