@@ -726,3 +726,20 @@
 
 		qdel(src)
 
+
+
+/*
+ * THEMIS SIGNS
+*/
+
+/obj/structure/sign/themis
+	name = "\improper HAZARD WARNING!"
+	desc = "CAUTION! There are hazards nearby!"
+	icon = 'maps/themis/icons/decals.dmi'
+	icon_state = "hazard-warning"
+
+/obj/structure/sign/themis/high_voltage
+	name = "\improper HIGH VOLTAGE!"
+	desc = "CAUTION! High voltage wiring or machinery present!"
+	icon = 'maps/themis/icons/decals.dmi'
+	icon_state = "high-voltage"
