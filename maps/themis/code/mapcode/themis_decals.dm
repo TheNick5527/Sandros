@@ -86,7 +86,32 @@
 	name = "yellow outline"
 	icon_state = "outline-yellow"
 
-/obj/effect/floor_decal/themis/industrial/hatch/
+/obj/effect/floor_decal/themis/industrial/hatch
 	name = "full hatch markings"
 	icon = 'maps/themis/icons/decals.dmi'
 	icon_state = "danger-fulltile"
+
+/obj/effect/floor_decal/themis/medical
+	name = "staff only decal"
+	icon = 'maps/themis/icons/decals.dmi'
+	icon_state = "docdecal1.5"
+
+/obj/effect/floor_decal/themis/medical/corner
+	name = "corner decal"
+	icon_state = "triagedecaltopleft"
+
+/obj/effect/floor_decal/themis/medical/corner/topright
+	name = "corner decal"
+	icon_state = "triagedecaltopright"
+
+/obj/effect/floor_decal/themis/medical/corner/bottomleft
+	name = "corner decal"
+	icon_state = "triagedecalbottomleft"
+
+/obj/effect/floor_decal/themis/medical/corner/bottomright
+	name = "corner decal"
+	icon_state = "triagedecalbottomright"
+
+/obj/effect/floor_decal/themis/medical/triagedecalleft
+	name = "floor decal"
+	icon_state = "triagedecalleft"
