@@ -252,8 +252,8 @@
 	icon_state = "tup_rig"
 	suit_type = "commando hardsuit"
 	req_access = list(access_syndicate)
-	armor = list(melee = 80, bullet = 60, laser = 70, energy = 70, bomb = 50, bio = 100, rad = 100)
-	siemens_coefficient = 0.1
+	armor = list(melee = 80, bullet = 80, laser = 70, energy = 70, bomb = 50, bio = 100, rad = 100)
+	siemens_coefficient = 0
 
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/melee/energy/sword,/obj/item/handcuffs)
 
@@ -261,7 +261,7 @@
 
 	species_restricted = list("Skrell")
 
-	glove_type = /obj/item/clothing/gloves/force/syndicate/commando
+	glove_type = /obj/item/clothing/gloves/rig/commando
 
 /obj/item/rig/commando/equipped
 
@@ -280,3 +280,10 @@
 		/obj/item/rig_module/self_destruct,
 		/obj/item/rig_module/actuators/combat
 		)
+
+/obj/item/clothing/gloves/rig/commando
+	attack_verb = list("shocked")
+	siemens_coefficient = 0
+	punch_damtype = HALLOSS
+	force = 5
+	punch_force = 100

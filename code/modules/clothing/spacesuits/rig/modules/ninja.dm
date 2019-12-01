@@ -364,3 +364,47 @@
 
 	for(var/obj/item/device/multitool/hacktool/rig/hacktool in M.contents)
 		qdel(hacktool)
+
+/obj/item/rig_module/commando/phase
+
+    name = "skrellian rift module"
+    desc = "The secretive and prized rift module that allows the user to phase through obstacles. Designed by the Swi'yeshi Technocrazy for its more subtle operations."
+    icon_state = "cloak"
+
+    toggleable = 1
+    disruptable = 1
+    disruptive = 1
+    attackdisrupts = 1
+    confined_use = 0
+
+    use_power_cost = 50
+    active_power_cost = 5
+    passive_power_cost = 0
+    module_cooldown = 5
+
+    activate_string = "Enable Phasing"
+    deactivate_string = "Disable Phasing"
+
+    interface_name = "integrated rift system"
+    interface_desc = "An integrated phasing system."
+
+    category = MODULE_SPECIAL
+
+/obj/item/rig_module/skrell/phase/activate()
+
+    if(!..())
+        return 0
+
+    var/mob/living/carbon/human/H = holder.wearer
+
+    to_chat(H, "<font color='blue'><b>You can now phase through obstacles.</b></font>")
+    H.incorporeal_move = 1
+
+    anim(get_turf(H), H, 'icons/effects/effects.dmi', "rift",null,20,null)
+
+    H.visible_message("<span class='notice'>[H] is surrounded by dark blue hue!</span>")
+
+/obj/item/rig_module/skrell/phase/deactivate()
+
+    if(!..())
+        return 0
