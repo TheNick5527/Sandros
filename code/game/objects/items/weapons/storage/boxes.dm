@@ -584,7 +584,6 @@
 	max_storage_space = 21
 	use_to_pickup = 1 // for picking up broken bulbs, not that most people will try
 	chewable = FALSE
-	temperature = T0C-16
 
 /obj/item/storage/box/kitchen
 	name = "kitchen supplies"
