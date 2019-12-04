@@ -266,6 +266,10 @@
 	name = "cyan outline"
 	color = "#b6efe1"
 
+/obj/effect/floor_decal/industrial/outline/blue/actualbluewtf
+	name = "blue outline"
+	color = COLOR_ASSEMBLY_BLUE
+
 /obj/effect/floor_decal/industrial/outline/yellow
 	name = "yellow outline"
 	color = "#CFCF55"
@@ -435,3 +439,73 @@
 
 /obj/effect/floor_decal/sign/gtw
 	icon_state = "white_gtw"
+
+// NEW BORDERS - BLUE
+
+/obj/effect/floor_decal/corner/themis/blue
+	name = "blue corner"
+	icon_state = "bordercolor"
+	color = COLOR_BLUE_GRAY
+
+/obj/effect/floor_decal/corner/themis/blue/bordercorner
+	name = "blue corner"
+	icon_state = "bordercolorcorner"
+
+/obj/effect/floor_decal/corner/themis/blue/bordercorner2
+	name = "blue corner"
+	icon_state = "bordercolorcorner2"
+
+/obj/effect/floor_decal/corner/themis/blue/bordercornerfull
+	name = "blue corner"
+	icon_state = "bordercolorfull"
+
+/obj/effect/floor_decal/corner/themis/blue/bordercornercee
+	name = "blue corner"
+	icon_state = "bordercolorcee"
+
+// NEW BORDERS - BEIGE
+
+/obj/effect/floor_decal/corner/themis/beige/bordercornerhalf
+	name = "beige corner"
+	icon_state = "bordercolorhalf"
+	color = COLOR_BEIGE
+
+// NEW BORDERS - LIGHT GREEN
+
+/obj/effect/floor_decal/corner/themis/lightgreen
+	name = "light green corner"
+	icon_state = "bordercolor"
+	color = COLOR_ASSEMBLY_LGREEN
+
+// NEW BORDERS - GREEN
+
+/obj/effect/floor_decal/corner/themis/green
+	name = "green corner"
+	icon_state = "bordercolor"
+	color = COLOR_GREEN
+
+/obj/effect/floor_decal/corner/themis/green/corner
+	name = "green corner"
+	icon_state = "bordercolorcorner"
+
+// NEW BORDERS - PURPLE
+
+/obj/effect/floor_decal/corner/themis/purple
+	name = "purple corner"
+	icon_state = "bordercolor"
+	color = COLOR_PURPLE_GRAY
+
+/obj/effect/floor_decal/corner/themis/purple/corner
+	name = "purple corner"
+	icon_state = "bordercolorcorner"
+
+// NEW BORDERS - RED
+
+/obj/effect/floor_decal/corner/themis/red
+	name = "red corner"
+	icon_state = "bordercolor"
+	color = COLOR_RED_GRAY
+
+/obj/effect/floor_decal/corner/themis/red/corner
+	name = "red corner"
+	icon_state = "bordercolorcorner"
