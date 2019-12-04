@@ -115,3 +115,11 @@
 /obj/effect/floor_decal/themis/medical/triagedecalleft
 	name = "floor decal"
 	icon_state = "triagedecalleft"
+
+/obj/effect/floor_decal/themis/medical/stafforpatient/one
+	name = "floor decal"
+	icon_state = "docdecal1"
+
+/obj/effect/floor_decal/themis/medical/stafforpatient/two
+	name = "floor decal"
+	icon_state = "docdecal2"
