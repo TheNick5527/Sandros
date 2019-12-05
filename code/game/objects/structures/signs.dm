@@ -105,6 +105,11 @@
 	desc = "A warning sign which reads 'DANGER! DROP HAZARD'."
 	icon_state = "drop"
 
+/obj/structure/sign/doors
+	name = "\improper Airlock"
+	desc = "Automatic airlocks."
+	icon_state = "doors"
+
 /obj/structure/sign/deathsposal
 	name = "\improper DISPOSAL LEADS TO SPACE"
 	desc = "A warning sign which reads 'DISPOSAL LEADS TO SPACE'."
