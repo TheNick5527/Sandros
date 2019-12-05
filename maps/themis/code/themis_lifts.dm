@@ -14,8 +14,8 @@
 	lift_size_y = 4
 
 	areas_to_use = list(
-		/area/turbolift/themis/medical/primary/medical_carpark,
-		/area/turbolift/themis/medical/primary/medical_mainlevel
+		/area/turbolift/themis/medical/primary/medical_mainlevel,
+		/area/turbolift/themis/medical/primary/medical_carpark
 		)
 
 /obj/turbolift_map_holder/themis/primary/medical/aux
@@ -27,8 +27,8 @@
 	lift_size_y = 4
 
 	areas_to_use = list(
-		/area/turbolift/themis/medical/primary/medical_carpark/aux,
-		/area/turbolift/themis/medical/primary/medical_mainlevel/aux
+		/area/turbolift/themis/medical/primary/medical_mainlevel/aux,
+		/area/turbolift/themis/medical/primary/medical_carpark/aux
 		)
 
 /area/turbolift/themis/medical/primary/medical_carpark
@@ -36,7 +36,7 @@
 	lift_announce_str = "Arriving at the Car Park. Facilities on this floor include: Car Park."
 
 	lift_floor_label = "Car Park."
-	lift_floor_name = "Car Park.."
+	lift_floor_name = "Car Park."
 
 /area/turbolift/themis/medical/primary/medical_carpark/aux
 	name = "Medical Lift - Car Park"
@@ -47,7 +47,7 @@
 
 /area/turbolift/themis/medical/primary/medical_mainlevel
 	name = "Medical Lift - Main Floor"
-	lift_announce_str = "Arriving at the Main Floor. Facilities on this floor include: Reception, Primary Treatment Rooms, Admission Wards and Surgical Facilities."
+	lift_announce_str = "Arriving at the Main Floor. Facilities on this floor include: Reception, Primary Treatment Rooms, Regular Wards and Surgical Facilities."
 
 	lift_floor_label = "Main Floor."
 	lift_floor_name = "Main Floor."

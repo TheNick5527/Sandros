@@ -317,22 +317,18 @@
 	new /obj/item/storage/belt/security(src)
 
 /obj/structure/closet/secure_closet/security/cargo/fill()
-	..()
 	new /obj/item/clothing/accessory/armband/cargo(src)
 	new /obj/item/device/encryptionkey/headset_cargo(src)
 
 /obj/structure/closet/secure_closet/security/engine/fill()
-	..()
 	new /obj/item/clothing/accessory/armband/engine(src)
 	new /obj/item/device/encryptionkey/headset_eng(src)
 
 /obj/structure/closet/secure_closet/security/science/fill()
-	..()
 	new /obj/item/clothing/accessory/armband/science(src)
 	new /obj/item/device/encryptionkey/headset_sci(src)
 
 /obj/structure/closet/secure_closet/security/med/fill()
-	..()
 	new /obj/item/clothing/accessory/armband/medgreen(src)
 	new /obj/item/device/encryptionkey/headset_med(src)
 
@@ -441,6 +437,7 @@
 /obj/structure/closet/secure_closet/wall
 	name = "wall locker"
 	req_access = list(access_security)
+	icon = 'icons/obj/walllocker.dmi'
 	icon_state = "wall-locker1"
 	density = 1
 	icon_closed = "wall-locker"

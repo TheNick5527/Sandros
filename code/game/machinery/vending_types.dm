@@ -431,7 +431,7 @@
 	temperature_setting = -1
 
 /obj/machinery/vending/wallmed2
-	name = "NanoMed"
+	name = "Emergency NanoMed"
 	desc = "A wall-mounted version of the NanoMed, containing only vital first aid equipment."
 	icon_state = "wallmed"
 	icon_deny = "wallmed-deny"

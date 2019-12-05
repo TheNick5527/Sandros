@@ -152,6 +152,12 @@
 	icon_state = "lino"
 	initial_flooring = /decl/flooring/linoleum
 
+/turf/simulated/floor/lino/modern
+	name = "lino"
+	icon = 'icons/turf/flooring/linoleum.dmi'
+	icon_state = "linonew"
+	initial_flooring = /decl/flooring/linoleum
+
 //ATMOS PREMADES
 /turf/simulated/floor/reinforced/airless
 	name = "vacuum floor"
@@ -355,7 +361,7 @@
 	icon_state = "asphalt17"
 
 /turf/simulated/floor/themis/road/sidewalk
-	name = "road sidewalk"
+	name = "floor"
 	icon = 'maps/themis/icons/turfs.dmi'
 	icon_state = "sidewalk"
 	initial_flooring = /decl/flooring/themis/sidewalk
@@ -410,6 +416,9 @@
 	icon_state = "snow_outercornerT"
 	footstep_sound = "gravelstep"
 
+/*
+ * THEMIS
+*/
 
 /turf/open/themis //Basic groundmap turf parent
 	name = "desert dirt"
@@ -563,3 +572,17 @@
 	icon_state = "shallow_water_cave_waterway_toxic1"
 	light_color = LIGHT_COLOR_SLIME_LAMP
 	light_range = 3
+
+/turf/simulated/floor/tiled/mono
+	name = "floor"
+	icon = 'maps/themis/icons/turfs.dmi'
+	icon_state = "monotile"
+	initial_flooring = /decl/flooring/monotile
+
+/turf/simulated/floor/tiled/mono/light
+	icon_state = "monotile_light"
+	initial_flooring = /decl/flooring/monotile/light
+
+/turf/simulated/floor/tiled/mono/dark
+	icon_state = "steel_monotile"
+	initial_flooring = /decl/flooring/monotile/dark

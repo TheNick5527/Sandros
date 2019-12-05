@@ -281,8 +281,23 @@ var/list/flooring_types
 /decl/flooring/shuttle/dark_blue
 	icon_base = "floor9"
 
+// THEMIS TURFS
+
 /decl/flooring/themis/sidewalk
 	name = "floor"
 	icon = 'maps/themis/icons/turfs.dmi'
 	icon_base = "sidewalk"
-	flags = TURF_ACID_IMMUNE
+	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_CROWBAR
+
+/decl/flooring/monotile
+	name = "floor"
+	desc = "A tiled floor that is just one large tile, instead of 4. Marvellous."
+	icon = 'maps/themis/icons/turfs.dmi'
+	icon_base = "monotile"
+	flags = TURF_REMOVE_CROWBAR | TURF_CAN_BREAK
+
+/decl/flooring/monotile/light
+	icon_base = "monotile_light"
+
+/decl/flooring/monotile/dark
+	icon_base = "steel_monotile"

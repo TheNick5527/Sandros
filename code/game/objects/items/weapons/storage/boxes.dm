@@ -118,7 +118,7 @@
 	desc = "A faithful box that will remain with you, no matter where you go, and probably save you."
 	icon_state = "e_box"
 	autodrobe_no_remove = 1
-	starts_with = list(/obj/item/clothing/mask/breath = 1, 
+	starts_with = list(/obj/item/clothing/mask/breath = 1,
 					   /obj/item/tank/emergency_oxygen = 1,
 					   /obj/item/device/flashlight/flare = 1
 						)
@@ -584,6 +584,21 @@
 	max_storage_space = 21
 	use_to_pickup = 1 // for picking up broken bulbs, not that most people will try
 	chewable = FALSE
+	var/target_temp = T0C - 40
+	var/cooling_power = 40
+
+	return_air()
+		var/datum/gas_mixture/gas = (..())
+		if(!gas)	return null
+		var/datum/gas_mixture/newgas = new/datum/gas_mixture()
+		newgas.copy_from(gas)
+		if(newgas.temperature <= target_temp)	return
+
+		if((newgas.temperature - cooling_power) > target_temp)
+			newgas.temperature -= cooling_power
+		else
+			newgas.temperature = target_temp
+		return newgas
 
 /obj/item/storage/box/kitchen
 	name = "kitchen supplies"
