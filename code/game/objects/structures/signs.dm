@@ -145,6 +145,111 @@
 	desc = "A sign that reads 'DANGER! ONE OR MORE (ENVIRONMENTAL) HAZARDS PRESENT.'"
 	icon_state = "hazard"
 
+/obj/structure/sign/ladder
+	name = "Ladderway"
+	desc = "A sign that reads 'Ladderway present.'"
+	icon_state = "ladder"
+
+/obj/structure/sign/ladder
+	name = "RADIATION SHIELDED!"
+	desc = "A sign that reads 'RADIATION SHIELDED ROOM!'"
+	icon_state = "rad_shield"
+
+/obj/structure/sign/commandcenter
+	name = "Command Center"
+	desc = "A sign that reads 'Command Center. AUTHORIZED PERSONNEL ONLY!'"
+	icon_state = "bridge"
+
+/obj/structure/sign/electronics
+	name = "Electronics"
+	desc = "A sign that reads 'Electronic Facility'"
+	icon_state = "electronics"
+
+/obj/structure/sign/blastdoor
+	name = "BLASTDOOR!"
+	desc = "A sign that reads 'CAUTION! BLASTDOOR NEARBY!'"
+	icon_state = "blastdoor"
+
+/obj/structure/sign/pressurizedarea
+	name = "Pressurized Area"
+	desc = "A sign that reads 'Pressurized Area.'"
+	icon_state = "pressurized_area"
+
+/obj/structure/sign/maintenance
+	name = "Maintenance Shaft"
+	desc = "A sign that reads 'Maintenance Shaft.'"
+	icon_state = "maint"
+
+/obj/structure/sign/storage
+	name = "Storage"
+	desc = "A sign that notifies you of a storage area."
+	icon_state = "storage"
+
+/obj/structure/sign/storage/biological
+	name = "Biological Storage"
+	desc = "A sign that notifies you of biological components being stored here."
+	icon_state = "food_storage"
+
+/obj/structure/sign/storage/cooled
+	name = "COOLED STORAGE!"
+	desc = "A sign that reads 'CAUTION! COOLED STORAGE!'"
+	icon_state = "cold_storage"
+
+/obj/structure/sign/storage/cooledbiological
+	name = "COOLED BIOLOGICAL STORAGE!"
+	desc = "A sign that reads 'CAUTION! COOLED BIOLOGICAL STORAGE!'"
+	icon_state = "food_fridge"
+
+/obj/structure/sign/highradiation
+	name = "CAUTION! HIGH RADIATION PRESENT!"
+	desc = "A sign that reads 'CAUTION! HIGH LEVELS OF RADIATION ARE PRESENT. PROTECTIVE EQUIPMENT IS REQUIRED.'"
+	icon_state = "high_rad"
+
+/obj/structure/sign/galley
+	name = "Galley"
+	desc = "A sign that reads 'Galley and Food Preperation present.'"
+	icon_state = "galley"
+
+/obj/structure/sign/stafffacilities
+	name = "Staff Facilities"
+	desc = "A sign that reads 'Staff Facilities present.'"
+	icon_state = "coffee"
+
+/obj/structure/sign/cryogenics
+	name = "Cryogenics"
+	desc = "A sign that reads 'Cryogenic Stasis present.'"
+	icon_state = "cryo_vault"
+
+/obj/structure/sign/radhazard
+	name = "RADIATION HAZARD!"
+	desc = "A sign that reads 'CAUTION! RADIATION PRESENT. PROTECTIVE EQUIPMENT IS REQUIRED.'"
+	icon_state = "rad_hazard"
+
+/obj/structure/sign/spacesuitlocker
+	name = "External Equipment"
+	desc = "A sign that reads 'External Equipment present.'"
+	icon_state = "space_suit_locker"
+
+/obj/structure/sign/sign
+	name = "Directional Sign"
+	desc = "A sign that notifies you of a direction you're going, or where something is. How inquisitive."
+	icon_state = "sign"
+
+/obj/structure/sign/artgrav
+	name = "Pressurised / Artificial Gravity"
+	desc = "A sign that notifies you of Artificial Gravity being present in a pressurised area."
+	icon_state = "pressurised_artgrav"
+
+/obj/structure/sign/depressurizedartgrav
+	name = "Depressurised / Artificial Gravity"
+	desc = "A sign that reads 'CAUTION! DEPRESSURISED AREA REQUIRING EXTERNAL EQUIPMENT!'"
+	icon_state = "pressurised_artgrav"
+
+/obj/structure/sign/depressurizednograv
+	name = "Depressurised / Zero Gravity"
+	desc = "A sign that reads 'CAUTION! DEPRESSURISED, ZERO GRAVITY AREA REQUIRING EXTERNAL EQUIPMENT!'"
+	icon_state = "vacuum_suit"
+
 /obj/structure/sign/goldenplaque
 	name = "The Most Robust Men Award for Robustness"
 	desc = "To be Robust is not an action or a way of life, but a mental state. Only those with the force of Will strong enough to act during a crisis, saving friend from foe, are truly Robust. Stay Robust my friends."
