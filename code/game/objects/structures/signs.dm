@@ -140,6 +140,11 @@
 	desc = "The Intergalactic symbol of Medical institutions. You'll probably get help here."
 	icon_state = "greencross"
 
+/obj/structure/sign/hazard
+	name = "DANGER! HAZARD!"
+	desc = "A sign that reads 'DANGER! ONE OR MORE (ENVIRONMENTAL) HAZARDS PRESENT.'"
+	icon_state = "hazard"
+
 /obj/structure/sign/goldenplaque
 	name = "The Most Robust Men Award for Robustness"
 	desc = "To be Robust is not an action or a way of life, but a mental state. Only those with the force of Will strong enough to act during a crisis, saving friend from foe, are truly Robust. Stay Robust my friends."
