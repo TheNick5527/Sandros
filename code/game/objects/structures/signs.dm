@@ -150,7 +150,7 @@
 	desc = "A sign that reads 'Ladderway present.'"
 	icon_state = "ladder"
 
-/obj/structure/sign/ladder
+/obj/structure/sign/radshield
 	name = "RADIATION SHIELDED!"
 	desc = "A sign that reads 'RADIATION SHIELDED ROOM!'"
 	icon_state = "rad_shield"
@@ -241,12 +241,12 @@
 	icon_state = "pressurised_artgrav"
 
 /obj/structure/sign/depressurizedartgrav
-	name = "Depressurised / Artificial Gravity"
+	name = "DEPRESSURISED! / Artificial Gravity"
 	desc = "A sign that reads 'CAUTION! DEPRESSURISED AREA REQUIRING EXTERNAL EQUIPMENT!'"
 	icon_state = "pressurised_artgrav"
 
 /obj/structure/sign/depressurizednograv
-	name = "Depressurised / Zero Gravity"
+	name = "DEPRESSURISED! / ZERO GRAVITY!"
 	desc = "A sign that reads 'CAUTION! DEPRESSURISED, ZERO GRAVITY AREA REQUIRING EXTERNAL EQUIPMENT!'"
 	icon_state = "vacuum_suit"
 
