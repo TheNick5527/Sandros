@@ -173,7 +173,7 @@
 /obj/structure/sign/pressurizedarea
 	name = "Pressurized Area"
 	desc = "A sign that reads 'Pressurized Area.'"
-	icon_state = "pressurized_area"
+	icon_state = "pressurized_artgrav"
 
 /obj/structure/sign/maintenance
 	name = "Maintenance Shaft"
