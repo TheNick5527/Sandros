@@ -31,6 +31,36 @@
 		/area/turbolift/themis/medical/primary/medical_carpark/aux
 		)
 
+// Morgue
+
+/obj/turbolift_map_holder/themis/primary/medical/morgue
+	name = "Themis lift placeholder - Primary Morgue"
+	dir = SOUTH
+
+	depth = 2
+	lift_size_x = 4
+	lift_size_y = 4
+
+	areas_to_use = list(
+		/area/turbolift/themis/medical/primary/medical_sublevel/morgue/sublevel,
+		/area/turbolift/themis/medical/primary/medical_sublevel/morgue/mainlevel
+		)
+
+// Upper Level Floors 1 and 2. CTW + Viro.
+
+/obj/turbolift_map_holder/themis/primary/medical/upper
+	name = "Themis lift placeholder - Upper Levels"
+	dir = SOUTH
+
+	depth = 3
+	lift_size_x = 4
+	lift_size_y = 4
+
+	areas_to_use = list(
+		)
+
+// Areas
+// Primary and Primary Aux
 /area/turbolift/themis/medical/primary/medical_carpark
 	name = "Medical Lift - Car Park"
 	lift_announce_str = "Arriving at the Car Park. Facilities on this floor include: Car Park."
@@ -58,6 +88,24 @@
 
 	lift_floor_label = "Main Floor."
 	lift_floor_name = "Main Floor."
+
+// Morgue
+
+/area/turbolift/themis/medical/primary/medical_sublevel/morgue/sublevel
+	name = "Medical Lift - Lower Floor"
+	lift_announce_str = "Arriving at the Lower Floor. Facilities on this floor include: Morgue, Autopsy Facilities and organic disposal."
+
+	lift_floor_label = "Lower Floor."
+	lift_floor_name = "Lower Floor."
+
+/area/turbolift/themis/medical/primary/medical_sublevel/morgue/mainlevel
+	name = "Medical Lift - Main Floor"
+	lift_announce_str = "Arriving at the Main Floor. Facilities on this floor include: Reception, Primary Treatment Rooms, Regular Wards and Surgical Facilities."
+
+	lift_floor_label = "Main Floor."
+	lift_floor_name = "Main Floor."
+
+
 
 //Security
 /obj/turbolift_map_holder/aurora/security
