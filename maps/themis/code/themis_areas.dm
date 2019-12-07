@@ -81,7 +81,85 @@ area/syndicate_station/southwest
  * THEMIS AREAS
 */
 
+// Main areas
+
 /area/themis/entry/gammadock
 	name = "\improper Gamma Dock"
 	icon_state = "gamma_dock"
 	holomap_color = HOLOMAP_AREACOLOR_ARRIVALS
+
+// Medical HOLOMAP_AREACOLOR_MEDICAL
+
+/area/themis/medical
+	station_area = 1
+	holomap_color = HOLOMAP_AREACOLOR_MEDICAL
+
+/area/themis/medical/sublevel/morguea
+	name = "\improper Morgue A"
+	icon_state = "morgue"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/sublevel/morgueb
+	name = "\improper Morgue B"
+	icon_state = "morgue"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/sublevel/controlroom
+	name = "\improper Morgue Control Room"
+	icon_state = "exam_room"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/sublevel/autopsy
+	name = "\improper Autopsy Room"
+	icon_state = "morgue"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/sublevel/storage
+	name = "\improper Sublevel Morgue Storage"
+	icon_state = "exam_room"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/sublevel/coroneroffice
+	name = "\improper Coroner's Office"
+	icon_state = "morgue"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/sublevel/hallway
+	name = "\improper Medical Sublevel Hallway"
+	icon_state = "medbay"
+	sound_env = LARGE_ENCLOSED
+
+/area/themis/medical/sublevel/substation
+	name = "Medical Sublevel Substation"
+	icon_state = "substation"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/sublevel/ventshaft
+	name = "Medical Sublevel Vent Shaft"
+	icon_state = "maint_medbay"
+	flags = RAD_SHIELDED | HIDE_FROM_HOLOMAP
+	sound_env = TUNNEL_ENCLOSED
+	turf_initializer = new /datum/turf_initializer/maintenance()
+	ambience = list(
+		'sound/ambience/ambimaint1.ogg',
+		'sound/ambience/ambimaint2.ogg',
+		'sound/ambience/ambimaint3.ogg',
+		'sound/ambience/ambimaint4.ogg',
+		'sound/ambience/ambimaint5.ogg'
+	)
+	station_area = 1
+
+/area/themis/medical/sublevel/elevatorshaft
+	name = "\improper Medical Sublevel Elevator Shaft"
+	icon_state = "maint_medbay"
+	flags = RAD_SHIELDED | HIDE_FROM_HOLOMAP
+	sound_env = TUNNEL_ENCLOSED
+	turf_initializer = new /datum/turf_initializer/maintenance()
+	ambience = list(
+		'sound/ambience/ambimaint1.ogg',
+		'sound/ambience/ambimaint2.ogg',
+		'sound/ambience/ambimaint3.ogg',
+		'sound/ambience/ambimaint4.ogg',
+		'sound/ambience/ambimaint5.ogg'
+	)
+	station_area = 1
