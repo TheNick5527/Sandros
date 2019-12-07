@@ -115,6 +115,11 @@
 /obj/structure/catwalk_plated/white
 	icon_state = "catwalk_platedwhite"
 
+/obj/structure/catwalk_plated/grate
+	name = "grated catwalk"
+	desc = "Grated catwalks are a change from modern catwalks in optimization for fluid drainage on the floor."
+	icon_state = "catwalk-grate"
+
 /obj/structure/catwalk_plated/attackby(obj/item/C, mob/user)
 	if (C.iswelder())
 		var/obj/item/weldingtool/WT = C
