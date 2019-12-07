@@ -90,9 +90,84 @@ area/syndicate_station/southwest
 
 // Medical HOLOMAP_AREACOLOR_MEDICAL
 
+
 /area/themis/medical
 	station_area = 1
 	holomap_color = HOLOMAP_AREACOLOR_MEDICAL
+
+// Main level
+
+/area/themis/medical/mainlevel/hallwaywest
+	name = "\improper Medical Main Level Hallway West"
+	icon_state = "medbay"
+	sound_env = LARGE_ENCLOSED
+
+/area/themis/medical/mainlevel/staffhallwaynorth
+	name = "\improper Medical Main Level Staff Hallway North"
+	icon_state = "medbay2"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/mainlevel/reception
+	name = "\improper Medical Main Level Reception"
+	icon_state = "medbay3"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/mainlevel/gtw
+	name = "\improper Medical Main General Treatment Ward #1"
+	icon_state = "patients"
+	sound_env = LARGE_ENCLOSED
+
+/area/themis/medical/mainlevel/gtw/two
+	name = "\improper Medical Main General Treatment Ward #2"
+	icon_state = "patients"
+	sound_env = LARGE_ENCLOSED
+
+/area/themis/medical/mainlevel/pharmacy
+	name = "\improper Medical Main Level Pharmacy"
+	icon_state = "phar"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/mainlevel/primarystorage
+	name = "\improper Medical Main Level Primary Storage"
+	icon_state = "exam_room"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/mainlevel/surgicalstorage
+	name = "\improper Medical Main Level Surgical Storage"
+	icon_state = "exam_room"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/mainlevel/surgicalhallway
+	name = "\improper Medical Main Level Surgical Hallway North"
+	icon_state = "surgery"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/mainlevel/surgicalhallway/south
+	name = "\improper Medical Main Level Surgical Hallway South"
+	icon_state = "surgery"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/mainlevel/operatingtheatre
+	name = "\improper Medical Main Level Operating Theatre #1"
+	icon_state = "surgery"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/mainlevel/operatingtheatre/two
+	name = "\improper Medical Main Level Operating Theatre #2"
+	icon_state = "surgery"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/mainlevel/powerfacilities
+	name = "Medical Main Level Power Sub-room"
+	icon_state = "substation"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/mainlevel/substation
+	name = "Medical Main Level Substation"
+	icon_state = "substation"
+	sound_env = SMALL_ENCLOSED
+
+// Sub level
 
 /area/themis/medical/sublevel/morguea
 	name = "\improper Morgue A"
