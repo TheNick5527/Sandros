@@ -122,6 +122,12 @@ area/syndicate_station/southwest
 	icon_state = "patients"
 	sound_env = LARGE_ENCLOSED
 
+
+/area/themis/medical/mainlevel/staffrotunda
+	name = "\improper Medical Main Level Staff Facilities Rotunda"
+	icon_state = "medbay4"
+	sound_env = LARGE_ENCLOSED
+
 /area/themis/medical/mainlevel/pharmacy
 	name = "\improper Medical Main Level Pharmacy"
 	icon_state = "phar"
@@ -165,6 +171,21 @@ area/syndicate_station/southwest
 /area/themis/medical/mainlevel/substation
 	name = "Medical Main Level Substation"
 	icon_state = "substation"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/mainlevel/mdoffice
+	name = "Medical Main Level Medical Director's Office"
+	icon_state = "head_quarters"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/mainlevel/janitorial
+	name = "Medical Main Level Medical Janitorial Closet"
+	icon_state = "janitor"
+	sound_env = SMALL_ENCLOSED
+
+/area/themis/medical/mainlevel/security
+	name = "Medical Main Level Medical Security Office"
+	icon_state = "checkpoint1"
 	sound_env = SMALL_ENCLOSED
 
 // Sub level
