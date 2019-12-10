@@ -456,10 +456,12 @@
 			user.add_language(LANGUAGE_SIIK_MAAS)
 			user.add_language(LANGUAGE_SKRELLIAN)
 			user.add_language(LANGUAGE_ROOTSONG)
+			user.add_language(LANGUAGE_AVIACHIRP)
 		else
 			user.remove_language(LANGUAGE_UNATHI)
 			user.remove_language(LANGUAGE_SIIK_MAAS)
 			user.remove_language(LANGUAGE_SKRELLIAN)
+			user.remove_language(LANGUAGE_AVIACHIRP)
 			user.add_language(LANGUAGE_ROOTSONG)
 
 	is_active(mob/living/silicon/pai/user)

@@ -69,7 +69,7 @@ Follow by example and make good judgement based on length which list to include 
 		name = "Bald"   // try to capitalize the names please~
 		icon_state = "bald" // you do not need to define _s or _l sub-states, game automatically does this for you
 		gender = MALE
-		species_allowed = list("Human","Unathi")
+		species_allowed = list("Human","Unathi", "Aviskree")
 		length = 0
 		chatname = "bald head" //aim to keep these lowercase so they fit into the hair tugging message
 
@@ -174,16 +174,19 @@ Follow by example and make good judgement based on length which list to include 
 
 	bedhead
 		name = "Bedhead"
+		species_allowed = list("Human","Aviskree")
 		icon_state = "hair_bedhead"
 		chatname = "messy locks"
 
 	bedhead2
 		name = "Bedhead 2"
+		species_allowed = list("Human","Aviskree")
 		icon_state = "hair_bedhead2"
 		chatname = "messy locks"
 
 	bedhead3
 		name = "Bedhead 3"
+		species_allowed = list("Human","Aviskree")
 		icon_state = "hair_bedhead3"
 		chatname = "wavy hair"
 
@@ -244,7 +247,7 @@ Follow by example and make good judgement based on length which list to include 
 		name = "Bob"
 		icon_state = "hair_bob"
 		gender = FEMALE
-		species_allowed = list("Human","Unathi")
+		species_allowed = list("Human","Unathi","Aviskree")
 		chatname = "short hair"
 
 	bob_chin
@@ -268,7 +271,7 @@ Follow by example and make good judgement based on length which list to include 
 		name = "Bobcurl"
 		icon_state = "hair_bobcurl"
 		gender = FEMALE
-		species_allowed = list("Human","Unathi")
+		species_allowed = list("Human","Unathi","Aviskree")
 		chatname = "curls"
 
 	bobcurl2
@@ -603,6 +606,7 @@ Follow by example and make good judgement based on length which list to include 
 
 	feather
 		name = "Feather"
+		species_allowed = list("Human","Aviskree")
 		icon_state = "hair_feather"
 		length = 2
 		chatname = "short hair"
@@ -747,6 +751,7 @@ Follow by example and make good judgement based on length which list to include 
 
 	jensen
 		name = "Jensen Hair"  // Removing Videogame References
+		species_allowed = list("Human","Aviskree")
 		icon_state = "hair_jensen"
 		gender = MALE
 		chatname = "short hair"
@@ -801,16 +806,19 @@ Follow by example and make good judgement based on length which list to include 
 
 	messy
 		name = "Messy"
+		species_allowed = list("Human","Aviskree")
 		icon_state = "hair_messy"
 		chatname = "messy hair"
 
 	messy2
 		name = "Messy 2"
+		species_allowed = list("Human","Aviskree")
 		icon_state = "hair_messy2"
 		chatname = "messy hair"
 
 	messy3
 		name = "Messy 3"
+		species_allowed = list("Human","Aviskree")
 		icon_state = "hair_messy3"
 		chatname = "messy hair"
 
@@ -1302,21 +1310,25 @@ Follow by example and make good judgement based on length which list to include 
 
 	short
 		name = "Short Hair"
+		species_allowed = list("Human","Aviskree")
 		icon_state = "hair_shorthair" //hair_a
 		chatname = "short hair"
 
 	short2
 		name = "Short Hair 2"
+		species_allowed = list("Human","Aviskree")
 		icon_state = "hair_shorthair2"
 		chatname = "short hair"
 
 	short3
 		name = "Short Hair 3"
+		species_allowed = list("Human","Aviskree")
 		icon_state = "hair_shorthair3"
 		chatname = "short hair"
 
 	short4
 		name = "Short Hair 4"
+		species_allowed = list("Human","Aviskree")
 		icon_state = "hair_shorthair4"
 		chatname = "short hair"
 
@@ -2828,6 +2840,12 @@ Follow by example and make good judgement based on length which list to include 
 		icon_state = "diona_leaves"
 		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_CHEST,BP_GROIN,BP_HEAD)
 		species_allowed = list("Diona")
+
+	avis_beak
+		name = "Aviskree Beak"
+		icon_state = "avis_beak"
+		body_parts = list(BP_HEAD)
+		species_allowed = list("Aviskree")
 
 
 // Branded IPC markings - disabled for now, some layering issues.

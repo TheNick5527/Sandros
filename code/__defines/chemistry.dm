@@ -40,10 +40,11 @@
 #define IS_SKRELL  4
 #define IS_UNATHI  8
 #define IS_TAJARA  16
-#define IS_XENOS   32
-#define IS_MACHINE 64
-#define IS_VAURCA  128
-#define IS_UNDEAD  256
+#define IS_AVISKREE 32
+#define IS_XENOS   64
+#define IS_MACHINE 128
+#define IS_VAURCA  256
+#define IS_UNDEAD  512
 
 #define CE_STABLE "stable" // Inaprovaline
 #define CE_ANTIBIOTIC "antibiotic" // Spaceacilin

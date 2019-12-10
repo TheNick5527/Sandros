@@ -70,6 +70,7 @@
 		interpreter.SetVar("L_YASSA",	LANGUAGE_YA_SSA)
 		interpreter.SetVar("L_DELVAHII",LANGUAGE_DELVAHII)
 		interpreter.SetVar("L_DIONAEA", LANGUAGE_ROOTSONG)
+		interpreter.SetVar("L_AVISKREE", LANGUAGE_AVIACHIRP)
 		interpreter.SetVar("L_UNATHI",  LANGUAGE_UNATHI)
 		interpreter.SetVar("L_SKRELL",  LANGUAGE_SKRELLIAN)
 		interpreter.SetVar("L_VAURCA",  LANGUAGE_VAURCA)

@@ -108,6 +108,12 @@
 		return
 	..()
 
+/obj/item/clothing/accessory/avischain
+	name = "Aviskree Medallion"
+	desc = "A Silver Medallion on a chain, a name is written on it in Aviachirp"
+	icon_state = "Aneck"
+	overlay_state = "Aneck"
+
 /obj/item/clothing/accessory/blue
 	name = "blue tie"
 	icon_state = "bluetie"
