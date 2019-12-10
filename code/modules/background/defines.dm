@@ -14,6 +14,8 @@
 
 #define CITIZENSHIP_ZORA "Zo'ra Hive"
 
+#define CITIZENSHIP_AVIS "Aviskree Council"
+
 #define CITIZENSHIP_NONE "None"
 
 //religion defines
@@ -35,6 +37,8 @@
 
 #define RELIGION_QEBLAK "Qeblak"
 #define RELIGION_WEISHII "Weishii"
+
+#define RELIGION_AVIKAN "Avikan"
 
 #define RELIGION_TWINSUNS "S'rendarr and Messa"
 #define RELIGION_MATAKE "Ma'ta'ke"

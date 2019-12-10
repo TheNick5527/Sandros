@@ -20,6 +20,21 @@
 
 	return new_name
 
+/datum/language/aviskree
+	name = LANGUAGE_AVIACHIRP
+	desc = "The common language of the Aviskree, comprised mostly of various chirping syllables, known to be rather shrill, even when whispered."
+	speech_verb = "chirps"
+	ask_verb = "chirps"
+	exclaim_verb = "squawks"
+	colour = "aviskree"
+	key = "]"
+	flags = WHITELISTED|TCOMSSIM
+	space_chance = 25
+	syllables = list(
+		"co", "cu", "ca", "ci", "ce", "ko", "ku", "ka", "ki", "ke", "mo", "mu", "ma", "mi", "me",
+		"no", "nu", "na", "ni", "ne", "bo", "bu", "ba", "bi", "be", "yo", "yu", "ya", "yi", "ye"
+	)
+
 /datum/language/unathi
 	name = LANGUAGE_UNATHI
 	desc = "The common language of Moghes, composed of sibilant hisses and rattles. Spoken natively by Unathi."

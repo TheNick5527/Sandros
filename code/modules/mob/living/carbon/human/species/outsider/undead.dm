@@ -221,6 +221,27 @@
 
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
+//datum/species/zombie/aviskree
+//	name = "Aviskree Zombie"
+//	name_plural = "Aviskree Zombies"
+//	bodytype = "Aviskree"
+//	icobase = 'icons/mob/human_races/zombie/r_zombie_aviskree.dmi'
+//	deform = 'icons/mob/human_races/zombie/r_zombie_aviskree.dmi'
+//	tail = "aviskreetail"
+
+//	slowdown = -1.25
+//	brute_mod = 1.3
+//	fall_mod = 0.25
+
+//	name_language = LANGUAGE_AVIACHIRP
+
+//	remains_type = /obj/effect/decal/remains/xeno
+
+//	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw
+
+//	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
+
+
 /datum/species/zombie/unathi
 	name = "Unathi Zombie"
 	name_plural = "Unathi Zombies"
