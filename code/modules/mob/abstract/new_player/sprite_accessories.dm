@@ -2684,6 +2684,16 @@ Follow by example and make good judgement based on length which list to include 
 			name = "Eyestalk"
 			icon_state = "eyestalk"
 
+//Aviskree Beak
+
+		aviskree_beak
+			icon = 'icons/mob/human_face/aviskree_facial_hair.dmi'
+			name = "Aviskree Beak"
+			icon_state = "facial_beak_s"
+			species_allowed = list("Aviskree")
+			do_colouration = 1
+			gender = NEUTER
+
 /*
 ////////////////////////////
 /  =--------------------=  /
