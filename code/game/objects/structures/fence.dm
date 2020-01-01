@@ -59,7 +59,7 @@
 	density = 1
 	anchored = 1
 
-/obj/structure/fence/cornersoutheast1
+/obj/structure/fence/cornersoutheast2
 	name = "fence"
 	desc = "A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it."
 	icon = 'icons/obj/structures.dmi'
@@ -151,6 +151,7 @@
 //If an user is passed, it will create a "user smashes through the window" message. AM is the item that hits
 //Please only fire this after a hit
 /obj/structure/fence/proc/healthcheck(make_hit_sound = 1, create_debris = 1, mob/user, atom/movable/AM)
+
 	if(cut) //It's broken/cut, just a frame!
 		return
 	if(health <= 0)
@@ -160,6 +161,7 @@
 		cut_grille()
 	if(make_hit_sound)
 		playsound(loc, 'sound/effects/grillehit.ogg', 25, 1)
+
 /obj/structure/fence/ex_act(severity)
 	switch(severity)
 		if(1)
@@ -169,6 +171,7 @@
 		if(3)
 			health -= rand(25, 55)
 			healthcheck(0, 1)
+
 /obj/structure/fence/hitby(AM as mob|obj)
 	..()
 	visible_message("<span class='danger'>[src] was hit by [AM].</span>")
@@ -180,13 +183,16 @@
 		tforce = I.throwforce
 	health = max(0, health - tforce)
 	healthcheck()
+
 /obj/structure/fence/attack_hand(mob/user as mob)
 	if(HULK in user.mutations)
 		user.say(pick(";RAAAAAAAARGH!", ";HNNNNNNNNNGGGGGGH!", ";GWAAAAAAAARRRHHH!", "NNNNNNNNGGGGGGGGHH!", ";AAAAAAARRRGH!"))
 		user.visible_message("<span class='danger'>[user] smashes through [src]!</span>")
 		health -= 100
 		healthcheck(1, 1, user)
+
 /obj/structure/fence/attackby(obj/item/W, mob/user)
+
 	if(istype(W, /obj/item/stack/rods) && health < health_max)
 		var/obj/item/stack/rods/R = W
 		var/amount_needed = 2
@@ -212,8 +218,10 @@
 		else
 			user << "<span class='warning'>You need more metal rods to repair [src]."
 			return
+
 	if(cut) //Cut/brokn grilles can't be messed with further than this
 		return
+
 	if(istype(W, /obj/item/wirecutters))
 		user.visible_message("<span class='notice'>[user] starts cutting through [src] with [W].</span>",
 		"<span class='notice'>You start cutting through [src] with [W]")
@@ -232,27 +240,34 @@
 				health -= W.force * 0.1
 		healthcheck(1, 1, user, W)
 		..()
+
 /obj/structure/fence/proc/cut_grille(var/create_debris = 1)
 	if(create_debris)
 		new /obj/item/stack/rods(loc)
 	cut = 1
 	density = 0
 	update_icon() //Make it appear cut through!
+
 /obj/structure/fence/New(Loc, start_dir = null, constructed = 0)
 	..()
+
 	if(start_dir)
 		dir = start_dir
+
 	update_nearby_icons()
+
 /obj/structure/fence/Move()
 	var/ini_dir = dir
 	..()
 	dir = ini_dir
+
 //This proc is used to update the icons of nearby windows.
 /obj/structure/fence/proc/update_nearby_icons()
 	update_icon()
 	for(var/direction in cardinal)
 		for(var/obj/structure/fence/W in get_step(src, direction))
 			W.update_icon()
+
 //merges adjacent full-tile windows into one (blatant ripoff from game/smoothwall.dm)
 /obj/structure/fence/update_icon()
 	//A little cludge here, since I don't know how it will work with slim windows. Most likely VERY wrong.
@@ -267,6 +282,7 @@
 			icon_state = "broken[basestate][junction]"
 		else
 			icon_state = "[basestate][junction]"
+
 /obj/structure/fence/fire_act(exposed_temperature, exposed_volume)
 	if(exposed_temperature > T0C + 800)
 		health -= round(exposed_volume / 100)

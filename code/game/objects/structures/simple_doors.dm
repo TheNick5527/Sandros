@@ -12,8 +12,8 @@
 	var/oreAmount = 7
 	var/datum/lock/lock
 	var/initial_lock_value //for mapping purposes. Basically if this value is set, it sets the lock to this value.
-	var/health = 100
-	var/maxhealth = 100
+	var/health = 500
+	var/maxhealth = 500
 
 /obj/structure/simple_door/fire_act(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	TemperatureAct(exposed_temperature)
@@ -218,32 +218,31 @@
 	for(var/mob/living/L in range(1,src))
 		L.apply_effect(round(material.radioactivity/3),IRRADIATE,0)
 
-/obj/structure/simple_door/iron/New(var/newloc,var/material_name, var/complexity)
-	..(newloc, "iron", complexity)
+/obj/structure/simple_door/iron
+	icon_state = "metal"
 
-/obj/structure/simple_door/silver/New(var/newloc,var/material_name, var/complexity)
-	..(newloc, "silver", complexity)
+/obj/structure/simple_door/silver
+	icon_state = "metal"
 
-/obj/structure/simple_door/gold/New(var/newloc,var/material_name, var/complexity)
-	..(newloc, "gold", complexity)
+/obj/structure/simple_door/gold
+	icon_state = "metal"
 
-/obj/structure/simple_door/uranium/New(var/newloc,var/material_name, var/complexity)
-	..(newloc, "uranium", complexity)
+/obj/structure/simple_door/uranium
+	icon_state = "metal"
 
-/obj/structure/simple_door/sandstone/New(var/newloc,var/material_name, var/complexity)
-	..(newloc, "sandstone", complexity)
+/obj/structure/simple_door/sandstone
+	icon_state = "stone"
 
-/obj/structure/simple_door/phoron/New(var/newloc,var/material_name, var/complexity)
-	..(newloc, "phoron", complexity)
+/obj/structure/simple_door/phoron
+	icon_state = "stone"
 
-/obj/structure/simple_door/diamond/New(var/newloc,var/material_name, var/complexity)
-	..(newloc, "diamond", complexity)
+/obj/structure/simple_door/diamond
+	icon_state = "stone"
 
-/obj/structure/simple_door/wood/New(var/newloc,var/material_name)
-	..(newloc, "wood")
+/obj/structure/simple_door/wood
+	icon_state = "wood"
 
-/obj/structure/simple_door/resin/New(var/newloc,var/material_name)
-	..(newloc, "resin")
+/obj/structure/simple_door/resin
 
 /obj/structure/simple_door/glass
 	icon_state = "glass"
